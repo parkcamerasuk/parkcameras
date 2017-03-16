@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+* {
+  border: 1px solid red; }
+
 .pc-mainwrapper {
   width: 100%;
   max-width: 1140px;
@@ -161,7 +164,7 @@
         justify-content: space-around; }
     .pc-mainwrapper .pc-itemGallery a img {
       max-width: 38vw;
-      margin: 0.5rem 0; } }
+      margin: 0.25rem 0; } }
 
 .pc-mainwrapper .pc-imageGallery {
   display: -webkit-box;
@@ -221,7 +224,7 @@
           flex-flow: column wrap; }
 
 .pc-mainwrapper .pc-col1 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -229,7 +232,7 @@
       flex-basis: 70.25rem; }
 
 .pc-mainwrapper .pc-col2 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -237,7 +240,7 @@
       flex-basis: 33.625rem; }
 
 .pc-mainwrapper .pc-col3 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -245,7 +248,7 @@
       flex-basis: 20.75rem; }
 
 .pc-mainwrapper .pc-col4 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -253,7 +256,7 @@
       flex-basis: 13.8125rem; }
 
 .pc-mainwrapper .pc-col5 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -261,7 +264,7 @@
       flex-basis: 9.25rem; }
 
 .pc-mainwrapper .pc-col6 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -269,7 +272,7 @@
       flex-basis: 5.875rem; }
 
 .pc-mainwrapper .pc-col7 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -277,7 +280,7 @@
       flex-basis: 3.17857rem; }
 
 .pc-mainwrapper .pc-col8 {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
