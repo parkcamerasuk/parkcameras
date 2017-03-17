@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
-* {
-  border: 1px solid red; }
-
 .pc-mainwrapper {
   width: 100%;
   max-width: 1140px;
