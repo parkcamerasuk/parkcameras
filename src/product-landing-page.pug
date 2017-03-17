@@ -1,0 +1,52 @@
+- var title = 'Insert Title Here'
+- var mainImageURL = 'Insert Main Image URL Here';
+- var subImageURL = ['Insert Sub Image URL Here', 'Insert Another Sub Image URL Here'];
+- var description = 'Insert Description Here'
+- var features = ['Insert Feature Here', 'Insert Another Feature Here'];
+- var productSKU = 'Insert Product SKU Here';
+
+// Body and Kits
+
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+
+//
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainwrapper
+          .pc-wrapper.pc-column.pc-col1
+            h1 #{title}
+          hr
+          .pc-wrapper.pc-row
+            .pc-column.pc-col2
+              a.swipebox(rel='1', href=mainImageURL)
+                img(src=mainImageURL, alt='')
+              
+              .pc-itemGallery
+                each URL in subImageURL   
+                    a.swipebox(rel='1', href=URL, alt='')
+                      img(src=URL, alt='')
+
+            .pc-column.pc-col2
+              p #{description}
+              ul.pc-itemFeat
+                  each feats in features
+                    li= feats
+              br
+              a.pc-btn-standard(href='https://www.parkcameras.com/p/' + productSKU) Pre-Order Now
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Trade-In Bonus
+          include includes/tradeIn.pug
+        
+        // FINISH
+    
+        include includes/bottomScripts.pug

@@ -1,0 +1,9 @@
+div
+  section#breadcrumbs.container
+    ul.breadcrumbs
+      li.home(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+        a.home(href='/', itemprop='url')
+          span(itemprop='title') Home
+      li.here(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+        a(href='', itemprop='url')
+          span(itemprop='title') #{title}
