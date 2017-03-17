@@ -27,367 +27,405 @@ $media-tablet: 768px;
 $media-desktop: 1200px;
 // MIXINS
 @mixin media($width) {
-  @media screen and (max-width: $width) {
-    @content;
-  }
+    @media screen and (max-width: $width) {
+        @content;
+    }
 }
 
 //
 // Main Wrapper
 .pc-mainwrapper {
-  width: 100%;
-  max-width: $wrapper-size;
-  margin: 0 auto;
-  padding: 0;
-  font-family: $font-stack;
-  font-size: $base-size;
-  font-weight: $font-light;
-  color: $black;
-  line-height: 1.5;
-  text-align: center;
+    width: 100%;
+    max-width: $wrapper-size;
+    margin: 0 auto;
+    padding: 0;
+    font-family: $font-stack;
+    font-size: $base-size;
+    font-weight: $font-light;
+    color: $black;
+    line-height: 1.5;
+    text-align: center;
 }
 
 // Typography
 .pc-mainwrapper {
-  h4 {
-    margin: $margin-small;
-  }
-  h2,
-  p,
-  ul {
-    margin: $margin-medium;
-  }
-  h1,
-  h2,
-  h3 {
-    margin: $margin-large;
-  }
-  h1,
-  h2,
-  h3,
-  {
-    font-weight: $font-regular;
-  }
-  h4 {
-    font-weight: $font-bold;
-  }
-  h1,
-  h2,
-  h3,
-  table {
-    text-align: center;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  a,
-  .pc-footerNote,
-  .pc-btn-inverse {
-    color: $park-blue;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  li,
-  table,
-  .pc-footerNote {
-    padding: 0;
-  }
-  .pc-footerNote,
-  .pc-wrapper {
-    margin: 0;
-  }
-  .pc-indentLink {
-    a {
-      padding-left: 0.75rem;
+    h4 {
+        margin: $margin-small;
     }
-  }
-  .pc-trademark {
-    text-align: center;
-    font-size: 0.9rem;
-    margin: 1rem;
-  }
-  h4,
-  p,
-  ul,
-  li {
-    text-align: left;
-  }
-  ul {
-    padding: 1rem;
-    background: $park-lightGrey;
-    li {
-      margin: $margin-medium;
-      list-style-type: none;
+    h2,
+    p,
+    ul {
+        margin: $margin-medium;
     }
-  }
-  .pc-itemFeat {
-    margin-top: 1.5rem;
-    li {
-      font-size: 0.9rem;
-      &:before {
-        content: "\2023";
-        padding-right: 0.5rem;
-      }
+    h1,
+    h2,
+    h3 {
+        margin: $margin-large;
     }
-  }
-  .pc-ul2 {
-    columns: 2
-  }
-  .pc-ul4 {
-    columns: 4
-  }
-  @include media($media-phone) {
-    .pc-ul2,
-    .pc-ul4 {
-      columns: 1;
+    h1,
+    h2,
+    h3,
+    {
+        font-weight: $font-regular;
     }
-  }
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
+    h4 {
+        font-weight: $font-bold;
     }
-  }
-  table {
-    background: $white;
-    margin: 0 auto;
-    td {
-      background: $park-lightGrey;
-      padding: 0.3rem 0.6rem;
-      border: 1px solid $park-lightGrey;
+    h1,
+    h2,
+    h3,
+    table {
+        text-align: center;
     }
-  }
-  .pc-footerNote {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  // Image Changes
-  img {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .pc-itemGallery {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 1rem auto;
-    a {
-      img {
-        max-width: 4.5rem;
-        margin: 0.75rem;
-        border: 1px solid $park-lightGrey;
-        &:hover {
-          opacity: 0.75;
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    .pc-footerNote,
+    .pc-btn-inverse {
+        color: $park-blue;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li,
+    table,
+    .pc-footerNote {
+        padding: 0;
+    }
+    .pc-footerNote,
+    .pc-wrapper {
+        margin: 0;
+    }
+    .pc-indentLink {
+        a {
+            padding-left: 0.75rem;
         }
-      }
     }
-  }
-  @include media($media-tablet) {
-    .pc-itemGallery {
-      justify-content: space-around;
-      a {
-        img {
-          max-width: 20vw;
-          margin: 0.5rem 0;
-        }
-      }
-    }
-  }
-  @include media($media-phone) {
-    .pc-itemGallery {
-      justify-content: space-around;
-      a {
-        img {
-          max-width: 38vw;
-          margin: 0.25rem 0;
-        }
-      }
-    }
-  }
-  .pc-imageGallery {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 1rem auto;
-    a {
-      text-decoration: none;
-      img {
-        max-width: 27rem;
+    .pc-trademark {
+        text-align: center;
+        font-size: 0.9rem;
         margin: 1rem;
-      }
     }
-  }
-  // Buttons
-  %pc-btn {
-    padding: 0.5rem 2.5rem;
-    margin: 0 auto;
-    font-weight: $font-regular;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 1;
-    &:hover {
-      opacity: 0.75;
-      text-decoration: none;
+    h4,
+    p,
+    ul,
+    li {
+        text-align: left;
     }
-  }
-  .pc-btn-standard {
-    @extend %pc-btn;
-    color: $white;
-    background-color: $park-blue;
-  }
-  .pc-btn-inverse {
-    @extend %pc-btn;
-    background-color: $white;
-  }
-  // Layout
-  .pc-wrapper {
-    display: flex;
-    margin: 1rem 0.5rem;
-  }
-  .pc-row {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  .pc-column {
-    flex-flow: column wrap;
-  }
-  @for $col from 1 through 8 {
-    .pc-col#{$col} {
-      margin: 0 0.5rem;
-      flex: 1;
-      flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
+    ul {
+        padding: 1rem;
+        background: $park-lightGrey;
+        li {
+            margin: $margin-medium;
+            list-style-type: none;
+        }
     }
-  }
-  @for $col from 1 through 3 {
-    .pc-imageNavCol#{$col} {
-      a {
+    .pc-itemFeat {
+        margin-top: 1.5rem;
+        li {
+            font-size: 0.9rem;
+            &:before {
+                content: "\2023";
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    .pc-ul2 {
+        columns: 2
+    }
+    .pc-ul4 {
+        columns: 4
+    }
+    @include media($media-phone) {
+        .pc-ul2,
+        .pc-ul4 {
+            columns: 1;
+        }
+    }
+    a {
         text-decoration: none;
-        h3 {
-          text-align: center;
-          margin: 0.25rem 0 1rem;
-          padding: 0;
-          font-size: 1rem;
-          line-height: 1;
+        &:hover {
+            text-decoration: underline;
         }
+    }
+    table {
+        background: $white;
+        margin: 0 auto;
+        td {
+            background: $park-lightGrey;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid $park-lightGrey;
+        }
+    }
+    .pc-footerNote {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    // Image Changes
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .pc-itemGallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 1rem auto;
+        a {
+            img {
+                max-width: 4.5rem;
+                margin: 0.75rem;
+                border: 1px solid $park-lightGrey;
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+    @include media($media-tablet) {
+        .pc-itemGallery {
+            justify-content: space-around;
+            a {
+                img {
+                    max-width: 20vw;
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+    @include media($media-phone) {
+        .pc-itemGallery {
+            justify-content: space-around;
+            a {
+                img {
+                    max-width: 38vw;
+                    margin: 0.25rem 0;
+                }
+            }
+        }
+    }
+    .pc-imageGallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 1rem auto;
+        a {
+            text-decoration: none;
+            img {
+                max-width: 27rem;
+                margin: 1rem;
+            }
+        }
+    }
+    // Buttons
+    %pc-btn {
+        padding: 0.5rem 2.5rem;
+        margin: 0 auto;
+        font-weight: $font-regular;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 1;
+        &:hover {
+            opacity: 0.75;
+            text-decoration: none;
+        }
+    }
+    .pc-btn-standard {
+        @extend %pc-btn;
+        color: $white;
+        background-color: $park-blue;
+    }
+    .pc-btn-inverse {
+        @extend %pc-btn;
+        background-color: $white;
+    }
+    // Layout
+    .pc-wrapper {
+        display: flex;
+        margin: 1rem 0.5rem;
+    }
+    .pc-row {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .pc-column {
+        flex-flow: column wrap;
+    }
+    @for $col from 1 through 8 {
+        .pc-col#{$col} {
+            margin: 0 0.5rem;
+            flex: 1;
+            flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
+        }
+    }
+    @for $col from 1 through 3 {
+        .pc-imageNavCol#{$col} {
+            a {
+                text-decoration: none;
+                h3 {
+                    text-align: center;
+                    margin: 0.25rem 0 1rem;
+                    padding: 0;
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+                img:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+    @include media($media-tablet) {
+        @for $col from 1 through 3 {
+            .pc-imageNavCol#{$col} {
+                .pc-col#{$col} {
+                    flex-basis: ((($wrapper-size / $base-size) / $col) - ($col * 3.5))+rem;
+                }
+            }
+        }
+    }
+    @include media($media-phone) {
+        @for $col from 1 through 3 {
+            .pc-imageNavCol#{$col} {
+                .pc-col#{$col} {
+                    flex-basis: ((($wrapper-size / $base-size) / $col) - ($col * 6))+rem;
+                }
+            }
+        }
+    }
+    // SOP
+    .pc-colSop {
+        margin: 1rem 0.5rem;
+        flex: 0;
+        flex-basis: ((($wrapper-size / $base-size) / 3) - 3)+rem;
         img:hover {
-          opacity: 0.75;
+            opacity: 0.75;
         }
-      }
-    }
-  }
-  @include media($media-tablet) {
-    @for $col from 1 through 3 {
-      .pc-imageNavCol#{$col} {
-        .pc-col#{$col} {
-          flex-basis: ((($wrapper-size / $base-size) / $col) - ($col * 3.5))+rem;
+        p {
+            margin-bottom: 1.5rem;
         }
-      }
     }
-  }
-  @include media($media-phone) {
-    @for $col from 1 through 3 {
-      .pc-imageNavCol#{$col} {
-        .pc-col#{$col} {
-          flex-basis: ((($wrapper-size / $base-size) / $col) - ($col * 6))+rem;
+    .pc-btn-sop {
+        @extend .pc-btn-standard;
+        display: none;
+    }
+    @include media($media-tablet) {
+        .pc-colSop {
+            margin: 3rem 0.5rem;
+            img:hover {
+                opacity: 1;
+            }
         }
-      }
+        .pc-btn-sop {
+            display: inline;
+        }
     }
-  }
-  // Plugin
-  .pc-pluginLayout {
-    flex-flow: row wrap;
-    justify-content: space-around;
-    text-align: center;
-    article {
-      border-bottom: 25px solid rgba(0, 0, 0, 0);
-      padding: 1rem 0;
+    @include media($media-phone) {
+        .pc-colSop {
+            margin: 3rem 0.5rem;
+            img:hover {
+                opacity: 1;
+            }
+        }
+        .pc-btn-sop {
+            display: inline;
+        }
     }
-  }
-  // Horizontal Rule
-  hr {
-    opacity: 0.25;
-    margin: 0 0 2rem;
-  }
-  // VENDORS
-  // Accordion
-  button.accordion {
-    cursor: pointer;
-    padding: 0.75rem;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    color: $white;
-    font-size: 1rem;
-    background: $park-blue;
-    border: 1px solid $park-lightGrey;
-    font-weight: $font-bold;
-  }
-  .pc-headline {
-    @extend button.accordion;
-    transition: 0;
-    cursor: auto;
-  }
-  .pc-headlineText {
-    background: $park-lightGrey;
-    margin: 0;
-    padding: 1rem;
-  }
-  .panel {
-    padding: 0 1rem;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background: $park-lightGrey;
-    text-align: left;
-  }
-  .pc-panel {
-    @extend .panel;
-    background: $white;
-  }
-  .accordion.inactive + .panel {
-    max-height: 0;
-  }
-  .pc-wrapperVideo {
-    margin: 1rem 0;
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%
+    // Plugin
+    .pc-pluginLayout {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        text-align: center;
+        article {
+            border-bottom: 25px solid rgba(0, 0, 0, 0);
+            padding: 1rem 0;
+        }
     }
-  }
-  button.accordion {
-    &:after {
-      font-size: 1rem;
-      float: right;
+    // Horizontal Rule
+    hr {
+        opacity: 0.25;
+        margin: 0 0 2rem;
     }
-    &.active:after {
-      content: "-";
+    // VENDORS
+    // Accordion
+    button.accordion {
+        cursor: pointer;
+        padding: 0.75rem;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        color: $white;
+        font-size: 1rem;
+        background: $park-blue;
+        border: 1px solid $park-lightGrey;
+        font-weight: $font-bold;
     }
-    &.inactive:after {
-      content: '+';
+    .pc-headline {
+        @extend button.accordion;
+        transition: 0;
+        cursor: auto;
     }
-  }
-  // ScrollToTop
-  .scrollToTop {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    display: none;
-    background: url('https://content.parkcameras.com/5/1/images/landing_pages/BackToTop.png') no-repeat 0 0;
-  }
+    .pc-headlineText {
+        background: $park-lightGrey;
+        margin: 0;
+        padding: 1rem;
+    }
+    .panel {
+        padding: 0 1rem;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background: $park-lightGrey;
+        text-align: left;
+    }
+    .pc-panel {
+        @extend .panel;
+        background: $white;
+    }
+    .accordion.inactive+.panel {
+        max-height: 0;
+    }
+    .pc-wrapperVideo {
+        margin: 1rem 0;
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+    }
+    button.accordion {
+        &:after {
+            font-size: 1rem;
+            float: right;
+        }
+        &.active:after {
+            content: "-";
+        }
+        &.inactive:after {
+            content: '+';
+        }
+    }
+    // ScrollToTop
+    .scrollToTop {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        display: none;
+        background: url('https://content.parkcameras.com/5/1/images/landing_pages/BackToTop.png') no-repeat 0 0;
+    }
 }
