@@ -4,6 +4,14 @@
         width: 100%;
         margin: 0 auto;
     }
+    .pc-pageBanner {
+        max-width: 35vw;
+    }
+    @include media($media-tablet) {
+        .pc-pageBanner {
+            max-width: 60vw;
+        }
+    }
     .pc-itemGallery {
         display: flex;
         flex-flow: row wrap;
