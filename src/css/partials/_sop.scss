@@ -18,14 +18,16 @@
         display: none;
     }
     @include media($media-tablet) {
-        .pc-colSop {
-            margin: 3rem 0.5rem;
-            img:hover {
-                opacity: 1;
+        @for $col from 1 through 4 {
+            .pc-colSop#{$col} {
+                margin: 4rem 0.5rem;
+                img:hover {
+                    opacity: 1;
+                }
             }
-        }
-        .pc-btn-sop {
-            display: inline;
+            .pc-btn-sop {
+                display: inline;
+            }
         }
     }
 }
