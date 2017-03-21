@@ -1,7 +1,7 @@
 - var title = 'Park Cameras Ambassadors'
 - var photographer = 'Insert Photographer Name Here'
 - var biography = 'Insert Biography Here'
-- var biographyImageURL = 'https://placehold.it/600x400'
+- var biographyImageURL = 'https://placehold.it/400x600'
 - var galleryImageURL =['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400']
 - var gearCamera = ['@@plugin[IndividualProduct{stockcode:1010029H}]', '@@plugin[IndividualProduct{stockcode:1010064B}]'];
 - var gearLens = ['@@plugin[IndividualProduct{stockcode:1240057M}]', '@@plugin[IndividualProduct{stockcode:1240407E}]', '@@plugin[IndividualProduct{stockcode:1240432K}]', '@@plugin[IndividualProduct{stockcode:1240534R}]', '@@plugin[IndividualProduct{stockcode:1240623D}]', '@@plugin[IndividualProduct{stockcode:1240363D}]']
@@ -25,15 +25,11 @@ html(lang="en")
             .pc-column.pc-col2
                 h3 BIOGRAPHY
                 p #{biography}
-          .pc-wrapper.pc-column.pc-col1
-            h3 PHOTOS
-          .pc-wrapper.pc-row
-          
-            each URL in galleryImageURL   
-                  .pc-column.pc-col4
+                h3 PHOTO GALLERY
+                .pc-itemGallery
+                  each URL in galleryImageURL   
                     a.swipebox(rel='1', href=URL, alt='')
                         img(src=URL, alt='')
-                      
           .pc-wrapper.pc-column.pc-col1
             h3 GEAR
           .pc-wrapper.pc-pluginLayout

@@ -1,6 +1,6 @@
 - var title = 'Insert Title Here'
-- var mainImageURL = 'Insert Main Image URL Here';
-- var subImageURL = ['Insert Sub Image URL Here', 'Insert Another Sub Image URL Here'];
+- var mainImageURL = 'https://placehold.it/600x400';
+- var subImageURL = ['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400'];
 - var description = 'Insert Description Here'
 - var features = ['Insert Feature Here', 'Insert Another Feature Here'];
 - var productSKU = 'Insert Product SKU Here';
@@ -35,7 +35,7 @@ html(lang="en")
 
             .pc-column.pc-col2
               p #{description}
-              ul.pc-itemFeat
+              ul.pc-itemFeat Features
                   each feats in features
                     li= feats
               br
