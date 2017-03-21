@@ -1,0 +1,49 @@
+// Main Wrapper
+.pc-mainWrapper {
+    width: 100%;
+    max-width: $wrapper-size;
+    margin: 0 auto;
+    padding: 0;
+    font-family: $font-stack;
+    font-size: $base-size;
+    font-weight: $font-light;
+    color: $black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.pc-mainWrapper {
+    .pc-wrapper {
+        display: flex;
+        margin: 1rem 0.5rem;
+    }
+    .pc-row {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .pc-column {
+        flex-flow: column wrap;
+    }
+    @for $col from 1 through 8 {
+        .pc-col#{$col} {
+            margin: 0 0.5rem;
+            flex: 1;
+            flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
+        }
+    }
+    // Horizontal Rule
+     hr {
+        opacity: 0.25;
+        margin: 0 0 2rem;
+    }
+    // Plugin
+    .pc-pluginLayout {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        text-align: center;
+        article {
+            border-bottom: 25px solid rgba(0, 0, 0, 0);
+            padding: 1rem 0;
+        }
+    }
+}

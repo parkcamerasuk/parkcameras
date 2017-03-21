@@ -1,0 +1,45 @@
+// Image and Gallery Layout
+.pc-mainWrapper {
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .pc-itemGallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 1rem auto;
+        a {
+            img {
+                max-width: 4.5rem;
+                margin: 0.75rem;
+                border: 1px solid $park-lightGrey;
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+    @include media($media-tablet) {
+        .pc-itemGallery {
+            justify-content: space-around;
+            a {
+                img {
+                    max-width: 20vw;
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+    @include media($media-phone) {
+        .pc-itemGallery {
+            justify-content: space-around;
+            a {
+                img {
+                    max-width: 38vw;
+                    margin: 0.25rem 0;
+                }
+            }
+        }
+    }
+}

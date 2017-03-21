@@ -1,0 +1,67 @@
+.pc-mainWrapper {
+    button.accordion {
+        cursor: pointer;
+        padding: 0.75rem;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        color: $white;
+        font-size: 1rem;
+        background: $park-blue;
+        border: 1px solid $park-lightGrey;
+        font-weight: $font-bold;
+    }
+    .pc-headline {
+        @extend button.accordion;
+        transition: 0;
+        cursor: auto;
+    }
+    .pc-headlineText {
+        background: $park-lightGrey;
+        margin: 0;
+        padding: 1rem;
+    }
+    .panel {
+        padding: 0 1rem;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background: $park-lightGrey;
+        text-align: left;
+    }
+    .pc-panel {
+        @extend .panel;
+        background: $white;
+    }
+    .accordion.inactive+.panel {
+        max-height: 0;
+    }
+    .pc-wrapperVideo {
+        margin: 1rem 0;
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 1.5rem;
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+    }
+    button.accordion {
+        &:after {
+            font-size: 1rem;
+            float: right;
+        }
+        &.active:after {
+            content: "-";
+        }
+        &.inactive:after {
+            content: '+';
+        }
+    }
+}

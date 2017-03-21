@@ -1,0 +1,140 @@
+.pc-mainWrapper {
+    h4 {
+        margin: $margin-small;
+    }
+    h2,
+    p,
+    ul {
+        margin: $margin-medium;
+    }
+    h1,
+    h2,
+    h3 {
+        margin: $margin-large;
+    }
+    h1,
+    h2,
+    h3,
+    {
+        font-weight: $font-regular;
+    }
+    h4 {
+        font-weight: $font-bold;
+    }
+    h1,
+    h2,
+    h3,
+    table {
+        text-align: center;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    .pc-footerNote,
+    .pc-btn-inverse {
+        color: $park-blue;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li,
+    table,
+    .pc-footerNote {
+        padding: 0;
+    }
+    .pc-footerNote,
+    .pc-wrapper {
+        margin: 0;
+    }
+    .pc-indentLink {
+        a {
+            padding-left: 0.75rem;
+        }
+    }
+    .pc-trademark {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 1rem;
+    }
+    h4,
+    p,
+    ul,
+    li {
+        text-align: left;
+    }
+    ul {
+        padding: 1rem;
+        background: $park-lightGrey;
+        li {
+            margin: $margin-medium;
+            list-style-type: none;
+        }
+    }
+    .pc-itemFeat {
+        margin-top: 1.5rem;
+        li {
+            font-size: 0.9rem;
+            &:before {
+                content: "\2023";
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    .pc-ul2 {
+        columns: 2
+    }
+    .pc-ul4 {
+        columns: 4
+    }
+    @include media($media-phone) {
+        .pc-ul2,
+        .pc-ul4 {
+            columns: 1;
+        }
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    table {
+        background: $white;
+        margin: 0 auto;
+        td {
+            background: $park-lightGrey;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid $park-lightGrey;
+        }
+    }
+    .pc-footerNote {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    // Buttons
+    %pc-btn {
+        padding: 0.5rem 2.5rem;
+        margin: 0 auto;
+        font-weight: $font-regular;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 1;
+        &:hover {
+            opacity: 0.75;
+            text-decoration: none;
+        }
+    }
+    .pc-btn-standard {
+        @extend %pc-btn;
+        color: $white;
+        background-color: $park-blue;
+    }
+    .pc-btn-inverse {
+        @extend %pc-btn;
+        background-color: $white;
+    }
+}

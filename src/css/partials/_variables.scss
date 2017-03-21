@@ -1,0 +1,32 @@
+// Wrapper and Base Font Size
+$wrapper-size: 1140px;
+$base-size: 16px;
+
+// Margins
+$margin-small: 0.25rem 0;
+$margin-medium: 0.5rem 0;
+$margin-large: 1rem 0;
+
+// Media Query Breakpoints
+$media-phone: 375px;
+$media-tablet: 768px;
+$media-desktop: 1200px;
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+$font-stack: Montserrat,
+Helvetica,
+sans-serif;
+
+// Font Weights
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+// Colors
+$park-blue: #2D4C9C;
+$park-lightGrey: #EEE;
+$park-darkGrey: #444;
+$white: #FFF;
+$black: #000;
+

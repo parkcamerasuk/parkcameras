@@ -1,0 +1,31 @@
+// SOP
+.pc-mainWrapper {
+    @for $col from 1 through 4 {
+        .pc-colSop#{$col} {
+            flex: 0;
+            flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
+            margin: 1rem 0.5rem;
+            img:hover {
+                opacity: 0.75;
+            }
+            p {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .pc-btn-sop {
+        @extend .pc-btn-standard;
+        display: none;
+    }
+    @include media($media-tablet) {
+        .pc-colSop {
+            margin: 3rem 0.5rem;
+            img:hover {
+                opacity: 1;
+            }
+        }
+        .pc-btn-sop {
+            display: inline;
+        }
+    }
+}

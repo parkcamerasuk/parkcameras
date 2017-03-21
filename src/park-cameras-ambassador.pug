@@ -1,4 +1,10 @@
-- var title = 'Park Cameras Ambassador - Andy Rouse'
+- var title = 'Park Cameras Ambassadors'
+- var photographer = 'Insert Photographer Name Here'
+- var biography = 'Insert Biography Here'
+- var biographyImageURL = 'https://placehold.it/600x400'
+- var galleryImageURL =['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400']
+- var gearCamera = ['@@plugin[IndividualProduct{stockcode:1010029H}]', '@@plugin[IndividualProduct{stockcode:1010064B}]'];
+- var gearLens = ['@@plugin[IndividualProduct{stockcode:1240057M}]', '@@plugin[IndividualProduct{stockcode:1240407E}]', '@@plugin[IndividualProduct{stockcode:1240432K}]', '@@plugin[IndividualProduct{stockcode:1240534R}]', '@@plugin[IndividualProduct{stockcode:1240623D}]', '@@plugin[IndividualProduct{stockcode:1240363D}]']
 
 doctype html
 html(lang="en")
@@ -7,26 +13,45 @@ html(lang="en")
         include includes/breadcrumbs.pug
 
         // START
-        .pc-mainwrapper
+        .pc-mainWrapper
           .pc-wrapper.pc-column.pc-col1
             h1 #{title}
           hr
+          .pc-wrapper.pc-column.pc-col
+            h2 #{photographer}
           .pc-wrapper.pc-row
             .pc-column.pc-col2
-              img(src='https://placehold.it/600x400', alt='')
-              .pc-itemGallery
-                a.swipebox(rel='1', href='https://placehold.it/600x400')
-                  img(src='https://placehold.it/600x400', alt='')
-                a.swipebox(rel='1', href='https://placehold.it/600x400')
-                  img(src='https://placehold.it/600x400', alt='')
-                a.swipebox(rel='1', href='https://placehold.it/600x400')
-                  img(src='https://placehold.it/600x400', alt='') 
-                a.swipebox(rel='1', href='https://placehold.it/600x400')
-                  img(src='https://placehold.it/600x400', alt='')
-              p.pc-trademark &copy; Andy Rouse
+              img(src=biographyImageURL, alt='')
             .pc-column.pc-col2
-                button.pc-headline Biography
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat corporis suscipit eum, voluptates officiis, blanditiis officia harum voluptatum ducimus voluptas dolorum qui a commodi est at reprehenderit labore nisi sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non officia, cupiditate recusandae, omnis est officiis excepturi quasi iusto nihil odit perspiciatis ullam aut maiores. Amet laborum officiis cumque nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugit harum velit praesentium aut molestias perferendis voluptates mollitia est, aliquam porro repellendus recusandae provident! Quae neque iste consequuntur ducimus dolorem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sequi, dolorum molestiae iste eaque eum tenetur quos veritatis nisi, dolores nobis.
+                h3 BIOGRAPHY
+                p #{biography}
+          .pc-wrapper.pc-column.pc-col1
+            h3 PHOTOS
+          .pc-wrapper.pc-row
+          
+            each URL in galleryImageURL   
+                  .pc-column.pc-col4
+                    a.swipebox(rel='1', href=URL, alt='')
+                        img(src=URL, alt='')
+                      
+          .pc-wrapper.pc-column.pc-col1
+            h3 GEAR
+          .pc-wrapper.pc-pluginLayout
+            each SKU in gearCamera
+              .pc-col4
+                span=SKU
+          .pc-wrapper.pc-column.pc-col1
+          .pc-wrapper.pc-pluginLayout
+            each SKU in gearLens
+              .pc-col3
+                span=SKU
+          .pc-wrapper.pc-row
+            .pc-column.pc-col2
+              h3 VIDEO REVIEWS
+              .pc-wrapperVideo
+                iframe(src='https://www.youtube.com/embed/z3s-KQXuES0', allowfullscreen='')
+            .pc-column.pc-col2
+              h3 BLOG POSTS
           // FINISH
     
         include includes/bottomScripts.pug
