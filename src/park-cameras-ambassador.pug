@@ -1,10 +1,11 @@
 - var title = 'Park Cameras Ambassadors'
 - var photographer = 'Insert Photographer Name Here'
-- var biography = 'Insert Biography Here'
+- var biography = ['Insert Biography Here', 'Insert Second Paragraph Here']
 - var biographyImageURL = 'https://placehold.it/400x600'
 - var galleryImageURL =['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400']
 - var gearCamera = ['@@plugin[IndividualProduct{stockcode:1010029H}]', '@@plugin[IndividualProduct{stockcode:1010064B}]'];
 - var gearLens = ['@@plugin[IndividualProduct{stockcode:1240057M}]', '@@plugin[IndividualProduct{stockcode:1240407E}]', '@@plugin[IndividualProduct{stockcode:1240432K}]', '@@plugin[IndividualProduct{stockcode:1240534R}]', '@@plugin[IndividualProduct{stockcode:1240623D}]', '@@plugin[IndividualProduct{stockcode:1240363D}]']
+- var video = ['https://www.youtube.com/embed/z3s-KQXuES0']
 
 doctype html
 html(lang="en")
@@ -20,11 +21,12 @@ html(lang="en")
           .pc-wrapper.pc-column.pc-col
             h2 #{photographer}
           .pc-wrapper.pc-row
-            .pc-column.pc-col2
+            .pc-column.pc-col4
               img(src=biographyImageURL, alt='')
             .pc-column.pc-col2
                 h3 BIOGRAPHY
-                p #{biography}
+                each paragraph in biography
+                    p=paragraph
                 h3 PHOTO GALLERY
                 .pc-itemGallery
                   each URL in galleryImageURL   
@@ -44,8 +46,9 @@ html(lang="en")
           .pc-wrapper.pc-row
             .pc-column.pc-col2
               h3 VIDEO REVIEWS
-              .pc-wrapperVideo
-                iframe(src='https://www.youtube.com/embed/z3s-KQXuES0', allowfullscreen='')
+              each URL in video
+                .pc-wrapperVideo
+                    iframe(src=URL, allowfullscreen='')
             .pc-column.pc-col2
               h3 BLOG POSTS
           // FINISH

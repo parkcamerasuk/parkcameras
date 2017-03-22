@@ -67,16 +67,10 @@
         text-align: left;
     }
     ul {
-        padding: 1rem;
-        background: $park-lightGrey;
+        padding: 0;
         li {
             margin: $margin-medium;
             list-style-type: none;
-        }
-    }
-    .pc-itemFeat {
-        margin-top: 1.5rem;
-        li {
             font-size: 0.9rem;
             &:before {
                 content: "\2023";
@@ -84,16 +78,36 @@
             }
         }
     }
-    .pc-ul2 {
-        columns: 2
+    .pc-itemFeat {
+        background: $park-lightGrey;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        li {
+            margin: $margin-small;
+        }
     }
-    .pc-ul4 {
-        columns: 4
+    .pc-list {
+        li {
+        font-size: $base-size;
+        }
+    }
+    @for $col from 1 through 4 {
+        .pc-ul#{$col} {
+            columns: $col;
+        }
+    }
+    @include media($media-tablet) {
+        @for $col from 1 through 4 {
+            .pc-ul#{$col} {
+                columns: 2;
+            }
+        }
     }
     @include media($media-phone) {
-        .pc-ul2,
-        .pc-ul4 {
-            columns: 1;
+        @for $col from 1 through 4 {
+            .pc-ul#{$col} {
+                columns: 1;
+            }
         }
     }
     a {

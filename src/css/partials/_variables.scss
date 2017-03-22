@@ -3,9 +3,9 @@ $wrapper-size: 1140px;
 $base-size: 16px;
 
 // Margins
-$margin-small: 0.25rem 0;
-$margin-medium: 0.5rem 0;
-$margin-large: 1rem 0;
+$margin-small: 0 0 0.5rem;
+$margin-medium: 0 0 1rem;
+$margin-large: 0 0 2rem;
 
 // Media Query Breakpoints
 $media-phone: 375px;

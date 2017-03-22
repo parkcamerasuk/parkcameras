@@ -5,11 +5,11 @@
         margin: 0 auto;
     }
     .pc-pageBanner {
-        max-width: 35vw;
+        max-width: 35%;
     }
     @include media($media-tablet) {
         .pc-pageBanner {
-            max-width: 60vw;
+            max-width: 60%;
         }
     }
     .pc-itemGallery {

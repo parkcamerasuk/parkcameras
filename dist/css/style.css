@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 .pc-mainWrapper h4 {
-  margin: 0.25rem 0; }
+  margin: 0 0 0.5rem; }
 
 .pc-mainWrapper h2,
 .pc-mainWrapper p,
 .pc-mainWrapper ul {
-  margin: 0.5rem 0; }
+  margin: 0 0 1rem; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
 .pc-mainWrapper h3 {
-  margin: 1rem 0; }
+  margin: 0 0 2rem; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
@@ -64,32 +64,76 @@
   text-align: left; }
 
 .pc-mainWrapper ul {
-  padding: 1rem;
-  background: #EEE; }
+  padding: 0; }
   .pc-mainWrapper ul li {
-    margin: 0.5rem 0;
-    list-style-type: none; }
-
-.pc-mainWrapper .pc-itemFeat {
-  margin-top: 1.5rem; }
-  .pc-mainWrapper .pc-itemFeat li {
+    margin: 0 0 1rem;
+    list-style-type: none;
     font-size: 0.9rem; }
-    .pc-mainWrapper .pc-itemFeat li:before {
+    .pc-mainWrapper ul li:before {
       content: "\2023";
       padding-right: 0.5rem; }
+
+.pc-mainWrapper .pc-itemFeat {
+  background: #EEE;
+  margin-top: 1.5rem;
+  padding: 1rem; }
+  .pc-mainWrapper .pc-itemFeat li {
+    margin: 0 0 0.5rem; }
+
+.pc-mainWrapper .pc-list li {
+  font-size: 16px; }
+
+.pc-mainWrapper .pc-ul1 {
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1; }
 
 .pc-mainWrapper .pc-ul2 {
   -webkit-columns: 2;
      -moz-columns: 2;
           columns: 2; }
 
+.pc-mainWrapper .pc-ul3 {
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3; }
+
 .pc-mainWrapper .pc-ul4 {
   -webkit-columns: 4;
      -moz-columns: 4;
           columns: 4; }
 
+@media screen and (max-width: 768px) {
+  .pc-mainWrapper .pc-ul1 {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2; }
+  .pc-mainWrapper .pc-ul2 {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2; }
+  .pc-mainWrapper .pc-ul3 {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2; }
+  .pc-mainWrapper .pc-ul4 {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2; } }
+
 @media screen and (max-width: 375px) {
-  .pc-mainWrapper .pc-ul2,
+  .pc-mainWrapper .pc-ul1 {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1; }
+  .pc-mainWrapper .pc-ul2 {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1; }
+  .pc-mainWrapper .pc-ul3 {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1; }
   .pc-mainWrapper .pc-ul4 {
     -webkit-columns: 1;
        -moz-columns: 1;
@@ -248,11 +292,11 @@
   margin: 0 auto; }
 
 .pc-mainWrapper .pc-pageBanner {
-  max-width: 35vw; }
+  max-width: 35%; }
 
 @media screen and (max-width: 768px) {
   .pc-mainWrapper .pc-pageBanner {
-    max-width: 60vw; } }
+    max-width: 60%; } }
 
 .pc-mainWrapper .pc-itemGallery {
   display: -webkit-box;
