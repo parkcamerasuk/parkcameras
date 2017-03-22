@@ -41,6 +41,7 @@
     h3,
     h4,
     p,
+    ul,
     li,
     table,
     .pc-footerNote {
@@ -67,7 +68,6 @@
         text-align: left;
     }
     ul {
-        padding: 0;
         li {
             margin: $margin-medium;
             list-style-type: none;
@@ -89,6 +89,10 @@
     .pc-list {
         li {
         font-size: $base-size;
+            &:before {
+                content: "";
+                padding: 0;
+            }
         }
     }
     @for $col from 1 through 4 {
