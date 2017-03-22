@@ -40,6 +40,7 @@
 .pc-mainWrapper h3,
 .pc-mainWrapper h4,
 .pc-mainWrapper p,
+.pc-mainWrapper ul,
 .pc-mainWrapper li,
 .pc-mainWrapper table,
 .pc-mainWrapper .pc-footerNote {
@@ -63,15 +64,13 @@
 .pc-mainWrapper li {
   text-align: left; }
 
-.pc-mainWrapper ul {
-  padding: 0; }
-  .pc-mainWrapper ul li {
-    margin: 0 0 1rem;
-    list-style-type: none;
-    font-size: 0.9rem; }
-    .pc-mainWrapper ul li:before {
-      content: "\2023";
-      padding-right: 0.5rem; }
+.pc-mainWrapper ul li {
+  margin: 0 0 1rem;
+  list-style-type: none;
+  font-size: 0.9rem; }
+  .pc-mainWrapper ul li:before {
+    content: "\2023";
+    padding-right: 0.5rem; }
 
 .pc-mainWrapper .pc-itemFeat {
   background: #EEE;
@@ -82,6 +81,9 @@
 
 .pc-mainWrapper .pc-list li {
   font-size: 16px; }
+  .pc-mainWrapper .pc-list li:before {
+    content: "";
+    padding: 0; }
 
 .pc-mainWrapper .pc-ul1 {
   -webkit-columns: 1;
