@@ -1,11 +1,12 @@
 - var title = 'Park Cameras Ambassadors'
 - var photographer = 'Insert Photographer Name Here'
-- var biography = ['Insert Biography Here', 'Insert Second Paragraph Here']
-- var biographyImageURL = 'https://placehold.it/400x600'
-- var galleryImageURL =['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400']
-- var gearCamera = ['@@plugin[IndividualProduct{stockcode:1010029H}]', '@@plugin[IndividualProduct{stockcode:1010064B}]'];
-- var gearLens = ['@@plugin[IndividualProduct{stockcode:1240057M}]', '@@plugin[IndividualProduct{stockcode:1240407E}]', '@@plugin[IndividualProduct{stockcode:1240432K}]', '@@plugin[IndividualProduct{stockcode:1240534R}]', '@@plugin[IndividualProduct{stockcode:1240623D}]', '@@plugin[IndividualProduct{stockcode:1240363D}]']
-- var video = ['https://www.youtube.com/embed/z3s-KQXuES0']
+- var biography = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis facilisis leo, nec rutrum nisi euismod et. Donec sit amet nisi pellentesque, interdum urna non, viverra lacus. Pellentesque euismod sit amet mi non condimentum. In pretium dui leo, non malesuada arcu iaculis ut. Morbi maximus nisi sem, nec tristique massa ultricies quis. Morbi consequat ullamcorper magna sit amet facilisis. Sed mi ex, porttitor at convallis in, suscipit non nulla. Vestibulum auctor bibendum magna nec volutpat. Nullam et dictum neque. Aliquam eu malesuada arcu. Maecenas fringilla, nisi vel dapibus semper, est dui dictum nibh, ac pulvinar libero nisi ac elit. Nunc dui enim, mattis vitae mauris sit amet, dignissim dapibus tortor. Mauris semper velit diam, nec mattis quam auctor eu.']
+- var accolades = ['Insert Awards Here', 'Insert Another Award Here'];
+- var biographyImageURL = 'https://placehold.it/600x400'
+- var galleryImageURL =['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400']
+- var gearCamera = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+- var gearLens = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]']
+- var video = ['Video Link Here']
 
 doctype html
 html(lang="en")
@@ -18,23 +19,40 @@ html(lang="en")
           .pc-wrapper.pc-column.pc-col1
             h1 #{title}
           hr
-          .pc-wrapper.pc-column.pc-col
+          .pc-wrapper.pc-column.pc-col1
             h2 #{photographer}
-          .pc-wrapper.pc-row
-            .pc-column.pc-col4
-              img(src=biographyImageURL, alt='')
+            h3 BIOGRAPHY
+          .pc-wrapper.pc-rowNoWrap
             .pc-column.pc-col2
-                h3 BIOGRAPHY
+              img(src=biographyImageURL, alt='')
+              .pc-wrapper.pc-rowNoWrap.pc-social
+                h4 Follow #{photographer}
+                a(href='' title='')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Facebook.png' alt='')
+                a(href='' title='')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Twitter.png' alt='')
+                a(href='' title='')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Instagram.png' alt='')
+            .pc-column.pc-col2
                 each paragraph in biography
                     p=paragraph
-                h3 PHOTO GALLERY
-                .pc-itemGallery
-                  each URL in galleryImageURL   
-                    a.swipebox(rel='1', href=URL, alt='')
-                        img(src=URL, alt='')
+                ul.pc-itemFeat 
+                  p Awards &amp; Recognitions
+                  each awards in accolades
+                    li= awards
+          hr
+          .pc-wrapper.pc-column.pc-col1
+            h3 SHOWCASE
+            .pc-itemGallery
+              each URL in galleryImageURL   
+                a.swipebox(rel='1', href=URL, alt='')
+                    img(src=URL, alt='')
+            span.pc-trademark #{photographer}
+          hr
           .pc-wrapper.pc-column.pc-col1
             h3 GEAR
-          .pc-wrapper.pc-pluginLayout
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis facilisis leo, nec rutrum nisi euismod et. Donec sit amet nisi pellentesque, interdum urna non, viverra lacus. Pellentesque euismod sit amet mi non condimentum. In pretium dui leo, non malesuada arcu iaculis ut. Morbi maximus nisi sem, nec tristique massa ultricies quis. Morbi consequat ullamcorper magna sit amet facilisis.
+          .pc-wrapper.pc-pluginLayoutNoInfo
             each SKU in gearCamera
               .pc-col4
                 span=SKU
@@ -43,14 +61,6 @@ html(lang="en")
             each SKU in gearLens
               .pc-col3
                 span=SKU
-          .pc-wrapper.pc-row
-            .pc-column.pc-col2
-              h3 VIDEO REVIEWS
-              each URL in video
-                .pc-wrapperVideo
-                    iframe(src=URL, allowfullscreen='')
-            .pc-column.pc-col2
-              h3 BLOG POSTS
               
           include includes/foot.pug
         

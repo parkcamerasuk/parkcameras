@@ -1,0 +1,53 @@
+- var title = 'Store Locator'
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        .pc-mainWrapper
+            .pc-wrapper.pc-column.pc-col1
+                h1 #{title}
+            hr
+            .pc-wrapper.pc-row
+            
+                .pc-column.pc-col2
+                
+                    h2
+                        a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill
+                    span(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+                        div
+                            span(itemprop='streetAddress') York Road
+                        div
+                            span(itemprop='addressLocality') Burgess Hill
+                        div
+                            span(itemprop='addressRegion') West Sussex
+                        div
+                            span(itemprop='postalCode') RH15 9TT
+                        div T: 
+                            a(href='tel:+44444237070', itemprop='telephone') 01444 23 70 70
+                        div E: 
+                            a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
+                        iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
+                .pc-column.pc-col2
+
+                    h2 
+                        a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London') London
+                    div 53-54 Rathbone Place
+                    div London
+                    div W1T 1JR
+                    div T: 
+                        a(href='tel:+44444237070', itemprop='telephone') 01444 23 70 70
+                    div E: 
+                        a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
+                    iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')      
+            hr
+                    
+
+            include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

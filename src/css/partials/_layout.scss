@@ -10,29 +10,34 @@
     color: $black;
     line-height: 1.5;
     text-align: center;
-}
-
-.pc-mainWrapper {
     .pc-wrapper {
         display: flex;
-        margin: 1rem 0.5rem;
     }
     .pc-row {
         flex-flow: row wrap;
         justify-content: center;
+    }
+    .pc-rowNoWrap {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    @include media($media-tablet) {
+        .pc-rowNoWrap {
+            flex-flow: row wrap;
+        }
     }
     .pc-column {
         flex-flow: column wrap;
     }
     @for $col from 1 through 8 {
         .pc-col#{$col} {
-            margin: 0 0.5rem;
+            margin: 1rem;
             flex: 1;
             flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
         }
     }
     // Horizontal Rule
-     hr {
+    hr {
         opacity: 0.25;
         margin: 0 0 2rem;
     }
@@ -44,6 +49,26 @@
         article {
             border-bottom: 25px solid rgba(0, 0, 0, 0);
             padding: 1rem 0;
+        }
+        .pc-pluginLayoutNoInfo {
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            article {
+                padding: 0;
+                border-bottom: 0;
+            }
+        }
+        .promoIcon {
+            display: none;
+        }
+        .prodName {
+            margin-top: 12px;
+        }
+        .testfreaks-items {
+            display: none;
+        }
+        .prodOffer {
+            display: none;
         }
     }
 }

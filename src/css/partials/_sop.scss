@@ -4,7 +4,7 @@
         .pc-colSop#{$col} {
             flex: 0;
             flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
-            margin: 1rem 0.5rem;
+            margin: 1rem;
             img:hover {
                 opacity: 0.75;
             }
@@ -28,6 +28,22 @@
             .pc-btn-sop {
                 display: inline;
             }
+        }
+    }
+    .pc-sopCalendar {
+        position: fixed;
+        top: 6.5rem;
+        right: -1.5rem;
+        iframe {
+            width: 250px;
+            height: 700px;
+            border: 0;
+        }
+    }
+    @media screen and (max-width: 1700px) {
+        .pc-sopCalendar {
+            position: relative;
+            top: 1rem;
         }
     }
 }

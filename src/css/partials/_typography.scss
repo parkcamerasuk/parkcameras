@@ -60,6 +60,9 @@
         text-align: center;
         font-size: 0.9rem;
         margin: 1rem;
+        &:before {
+            content: "\00a9";
+        }
     }
     h4,
     p,
@@ -128,6 +131,9 @@
             padding: 0.3rem 0.6rem;
             border: 1px solid $park-lightGrey;
         }
+    }
+    iframe {
+        margin: 2rem;
     }
     .pc-footerNote {
         font-size: 0.9rem;
