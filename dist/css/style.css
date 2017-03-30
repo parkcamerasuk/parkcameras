@@ -366,7 +366,7 @@
   .pc-mainWrapper .pc-social a img {
     width: auto;
     height: 2.5rem;
-    margin: 0 0.5rem; }
+    margin: 1rem 0; }
 
 .pc-mainWrapper .pc-colSop1 {
   -webkit-box-flex: 0;
