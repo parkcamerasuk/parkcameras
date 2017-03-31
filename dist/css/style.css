@@ -361,12 +361,12 @@
       -ms-flex-align: center;
           align-items: center; }
   .pc-mainWrapper .pc-social h4 {
-    margin: 1rem 0;
+    margin: 0.5rem;
     font-weight: 400; }
   .pc-mainWrapper .pc-social a img {
     width: auto;
-    height: 2.5rem;
-    margin: 1rem; }
+    height: 2rem;
+    margin: 0.5rem; }
 
 .pc-mainWrapper .pc-colSop1 {
   -webkit-box-flex: 0;
