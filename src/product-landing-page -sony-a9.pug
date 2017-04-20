@@ -1,0 +1,63 @@
+- var title = 'Sony Alpha a9'
+- var mainImageURL = '62417-Sony-a9-Mirrorless-Camera-1.jpg';
+- var subImageURL = ['62418-Sony-a9-Mirrorless-Camera-2.jpg', '62419-Sony-a9-Mirrorless-Camera-3.jpg', '62420-Sony-a9-Mirrorless-Camera-4.jpg', '62421-Sony-a9-Mirrorless-Camera-5.jpg', '62422-Sony-a9-Mirrorless-Camera-6.jpg'];
+- var description = ['Behold the incredible new flagship camera to join the excellent range of Full-Frame Mirrorless Cameras from Sony.', 'Building on the success of the hugely popular Sony a7 range of cameras, the Sony a9 includes a whole host of professional-grade features to make this an ideal camera choice for professional photographers.', 'The 24.2MP CMOS 35mm Sensor is capable of not only the highest quality imagery, but now thanks to in-built RAM can handle a phenomenal 20fps in continuous shooting mode with AF/AE lock – meaning this is now a viable camera for those looking to shoot wildlife or sports photography.', 'Dual SD card slots, 4K video capture without pixel binning and an ethernet connection alongside compatibility with the incredible range of Sony E-mount lenses, the a9 is a worthy contender for anybody looking to join the mirrorless revolution.']
+- var features = ['24.2 Megapixel Full-frame Exmor RS CMOS Sensor', '20fps in continuous mode with AF/AE tracking at shutter speeds of greater than 1/125 sec', 'Up to 241 RAW frames/362 JPEGs in continuous mode', 'Phase-detection AF with 693 points', 'Focus joystick on rear', '5-axis Image Stabilisation for exposure compensation of 5 stops', 'ISO 100-51,200 with expanded mode up to 204,800', '4K Video capture minus pixel binning for highest quality 4K', 'Impressive battery life of 480 shots using EVF, 650 using LCD screen', '3,686K Quad-VGA OLED Electronic Viewfinder', 'Dual SD card slots - 1 x UHS-II compatible', 'Ethernet connection for FTP/FTPS image transfer', 'Compatible with Sony E-mount lenses'];
+- var productSKU = '7014843K';
+
+// Body and Kits
+
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:7014843b}]', '@@plugin[IndividualProduct{stockcode:7014843c}]', '@@plugin[IndividualProduct{stockcode:7014843a}]', '@@plugin[IndividualProduct{stockcode:7014843d}]'];
+
+// Accessories
+
+- var accessories = ['@@plugin[IndividualProduct{stockcode:7152043E}]', '@@plugin[IndividualProduct{stockcode:7152044E}]', '@@plugin[IndividualProduct{stockcode:7090068W}]', '@@plugin[IndividualProduct{stockcode:7152045E}]', '@@plugin[IndividualProduct{stockcode:7150248E}]', '@@plugin[IndividualProduct{stockcode:7153235H}]'];
+
+//
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+          .pc-wrapper.pc-column.pc-col1
+            h1 #{title}
+          hr
+          .pc-wrapper.pc-rowNoWrap
+            .pc-column.pc-col2
+              a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL)
+                img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt='#{title}')
+              
+              .pc-itemGallery
+                each URL in subImageURL   
+                    a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + URL, alt='#{title}')
+                      img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt='#{title}')
+
+            .pc-column.pc-col2
+              each desc in description
+                p= desc
+              ul.pc-itemFeat 
+                  p Features
+                  each feats in features
+                    li= feats
+              br
+              a.pc-btn-standard(href='https://www.parkcameras.com/p/' + productSKU) Pre-Order Now
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Trade-In Bonus
+          include includes/tradeIn-a9.pug
+        
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
