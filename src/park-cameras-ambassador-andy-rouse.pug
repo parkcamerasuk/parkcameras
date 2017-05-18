@@ -1,11 +1,12 @@
-- var title = 'Park Cameras Ambassadors'
-- var photographer = 'Insert Photographer Name Here'
+- var title = 'Park Cameras Ambassador'
+- var photographer = 'Andy Rouse'
 - var biography = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis facilisis leo, nec rutrum nisi euismod et. Donec sit amet nisi pellentesque, interdum urna non, viverra lacus. Pellentesque euismod sit amet mi non condimentum. In pretium dui leo, non malesuada arcu iaculis ut. Morbi maximus nisi sem, nec tristique massa ultricies quis. Morbi consequat ullamcorper magna sit amet facilisis. Sed mi ex, porttitor at convallis in, suscipit non nulla. Vestibulum auctor bibendum magna nec volutpat. Nullam et dictum neque. Aliquam eu malesuada arcu. Maecenas fringilla, nisi vel dapibus semper, est dui dictum nibh, ac pulvinar libero nisi ac elit. Nunc dui enim, mattis vitae mauris sit amet, dignissim dapibus tortor. Mauris semper velit diam, nec mattis quam auctor eu.']
-- var accolades = ['Insert Awards Here', 'Insert Another Award Here'];
-- var biographyImageURL = 'https://placehold.it/600x400'
-- var galleryImageURL =['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400']
-- var gearCamera = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
-- var gearLens = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]']
+- var accolades = ['Insert Awards Here', 'Insert Another Award Here']
+- var biographyImageURL = 'https://www.naturalworldsafaris.com/~/media/images/photographers-and-guides/andy-rouse/andy-rouse-madagascar.ashx'
+- var galleryImageURL =['https://content.parkcameras.com/5/1/images/landing_pages/ar1.jpg', 'https://content.parkcameras.com/5/1/images/landing_pages/ar2.jpg', 'https://content.parkcameras.com/5/1/images/landing_pages/ar3.jpg', 'https://content.parkcameras.com/5/1/images/landing_pages/ar4.jpg', 'https://content.parkcameras.com/5/1/images/landing_pages/ar5.jpg', 'https://content.parkcameras.com/5/1/images/landing_pages/ar6.jpg']
+- var gearCamera = ['@@plugin[IndividualProduct{stockcode:1010029H}]', '@@plugin[IndividualProduct{stockcode:1010055C}]', '@@plugin[IndividualProduct{stockcode:1013125T}]', '@@plugin[IndividualProduct{stockcode:1638118K}]']
+- var gearLens = ['@@plugin[IndividualProduct{stockcode:1240614E}]', '@@plugin[IndividualProduct{stockcode:1240623D}]', '@@plugin[IndividualProduct{stockcode:1240435C}]']
+- var gearAccessories = ['@@plugin[IndividualProduct{stockcode:M1720075T}]', '@@plugin[IndividualProduct{stockcode:9637006G}]', '@@plugin[IndividualProduct{stockcode:L334505T}]']
 - var video = ['Video Link Here']
 
 doctype html
@@ -27,12 +28,14 @@ html(lang="en")
               img(src=biographyImageURL, alt='')
               .pc-wrapper.pc-rowNoWrap.pc-social.pc-col1
                 h4 Follow #{photographer}
-                a(href='' title='')
+                a(href='http://www.facebook.com/andyrousephoto' target='_blank' title='Facebook')
                   img(src='https://content.parkcameras.com/5/1/images/Icon_Facebook.png' alt='')
-                a(href='' title='')
+                a(href='https://twitter.com/wildmanrouse' target='_blank' title='Twitter')
                   img(src='https://content.parkcameras.com/5/1/images/Icon_Twitter.png' alt='')
-                a(href='' title='')
+                a(href='https://www.instagram.com/wildmanrouse/' target='_blank' title='Instagram')
                   img(src='https://content.parkcameras.com/5/1/images/Icon_Instagram.png' alt='')
+                a(href='https://www.andyrouse.co.uk/index.php?b=1' target='_blank' title='Blog')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Blog.png' alt='')
             .pc-column.pc-col2
                 each paragraph in biography
                     p=paragraph
@@ -59,8 +62,17 @@ html(lang="en")
           .pc-wrapper.pc-column.pc-col1
           .pc-wrapper.pc-pluginLayout
             each SKU in gearLens
-              .pc-col3
+              .pc-col4
                 span=SKU
+          .pc-wrapper.pc-column.pc-col1
+          .pc-wrapper.pc-pluginLayout
+            each SKU in gearAccessories
+              .pc-col4
+                span=SKU
+          hr
+          .pc-wrapper.pc-column.pc-col1
+            a(href='https://www.foto-buzz.com/index.php?script=signup' target='_blank' title='Foto Buzz')
+              img(src='https://content.parkcameras.com/5/1/images/landing_pages/FOTO-BUZZ.jpg' alt='Foto Buzz')
               
           include includes/foot.pug
         

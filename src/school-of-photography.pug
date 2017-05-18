@@ -13,7 +13,7 @@ html(lang="en")
           hr
 
           .pc-wrapper.pc-column.pc-col1
-            img.pc-pageBanner(alt='Park Cameras School of Photography Logo', src='http://content.parkcameras.com/5/1/images/landing_pages/SOP-Logo-LG.jpg')
+            img(alt='Park Cameras School of Photography Logo', src='http://content.parkcameras.com/5/1/images/landing_pages/SOP-Logo-LG.jpg')
           br
           .pc-wrapper.pc-column.pc-col1
               p Since 2008 Park Cameras has been providing photo enthusiasts across the country with unrivalled training options across a broad and diverse range of photographic genres and disciplines. Throughout this time our aim has been to provide interactive, intuitive and aspirational courses, workshops and seminars, beneficial to the demanding requirements of all photographers, regardless of ability or interest.
@@ -21,13 +21,11 @@ html(lang="en")
               p As the world of digital photography continues to expand, so does our course offering, providing an unprecedented number of courses across key imaging and software brands in our state of the art Education Suite in Sussex. Consisting of classroom, seminar and studio learning facilities, we are confident that we are able to provide the ideal environment within which photo enthusiasts can embrace their passion for photography in order to take it to the next level. Courses are now run in our London store. Today, we offer something to suit all tastes, with courses built around five key learning styles:
 
               p Day-long classroom-based learning - Professionally-led studio workshops - On location workshops - 1-2-1 training - Corporate training
-
-              p Competitively priced and with the opportunity to save up to &pound;125 on associated products across many of our courses, we are confident that The Park Cameras School of Photography provides all photographers with the ideal opportunity to further their photographic horizons.
           br
           hr
           h2 Our Courses
           .pc-wrapper.pc-row
-            ul
+            ul.pc-ul2
               li
                 a(href='#1') Technical Photography Courses
               li
@@ -38,6 +36,8 @@ html(lang="en")
                 a(href='#4') Photography Software Techniques
               li
                 a(href='#5') One to One Photography Workshops
+              li
+                a(href='#6') Photography Experience Days and Events
                 
           .pc-wrapper.pc-row
             .pc-sopCalendar
@@ -182,7 +182,7 @@ html(lang="en")
           .pc-wrapper.pc-row
 
             .pc-column.pc-colSop3
-                a(href='https://www.parkcameras.com/p/',  target='_blank')
+                a(href='https://www.parkcameras.com/p/SOP-121',  target='_blank')
                     img(alt='', src='https://content.parkcameras.com/5/1/images/landing_pages/1-2-1-Basic.jpg')
                     h3 1-2-1 Basic Training
                 p
@@ -191,13 +191,24 @@ html(lang="en")
                 a.pc-btn-sop(href='https://www.parkcameras.com/p/',  target='_blank') Book Now
 
             .pc-column.pc-colSop3
-                a(href='https://www.parkcameras.com/p/',  target='_blank')
+                a(href='https://www.parkcameras.com/p/SOP-121A',  target='_blank')
                     img(alt='', src='https://content.parkcameras.com/5/1/images/landing_pages/1-2-1-Advanced.jpg')
                     h3 1-2-1 Advanced Training
                 p   
                     b 2-hour Course
                 p Benefit from our dedicated training environment and the 1-2-1 tutelage of our resident Training Manager, Anthony Sinfield, who brings with him a wealth of photographic knowledge across a broad range of subjects ensuring that you will gain the most out of your 1-2-1 training session.
                 a.pc-btn-sop(href='https://www.parkcameras.com/p/',  target='_blank') Book Now
+                
+          hr#6
+          h2 Photography Experience Days and Events
+          .pc-wrapper.pc-row
+
+            .pc-column.pc-colSop3
+                a(href='https://www.parkcameras.com/p/SOP-WALKS/photography-experience-days-and-events/school-of-photography/london-photo-walks',  target='_blank')
+                    img(alt='', src='https://content.parkcameras.com/5/1/images/landing_pages/London-Photo-Walk.jpg')
+                    h3 London Photo Walks
+                p Our London Photo Walks are ideal for those photographers looking to travel the streets of London and hone their photographic skills and capturing some great shots with advice from our experienced trainer who will lead the walk.
+                a.pc-btn-sop(href='https://www.parkcameras.com/p/SOP-WALKS/photography-experience-days-and-events/school-of-photography/london-photo-walks',  target='_blank') Book Now
          
           include includes/foot.pug
         
