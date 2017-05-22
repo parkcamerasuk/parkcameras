@@ -281,7 +281,7 @@
         flex-basis: 0.90625rem; }
   .pc-mainWrapper hr {
     opacity: 0.25;
-    margin: 0 0 2rem; }
+    margin: 2rem 0; }
   .pc-mainWrapper .pc-pluginLayout {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -312,6 +312,22 @@
       display: none; }
     .pc-mainWrapper .pc-pluginLayout .prodOffer {
       display: none; }
+
+.pc-banner {
+  background-color: #2D4C9C;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 2.5rem; }
+  .pc-banner h3, .pc-banner p {
+    text-align: left;
+    color: #FFF; }
+  .pc-banner h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0 0 1rem; }
+  .pc-banner p {
+    font-size: 1.25rem; }
 
 .pc-mainWrapper img {
   width: 100%;

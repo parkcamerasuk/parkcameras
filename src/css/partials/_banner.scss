@@ -1,0 +1,22 @@
+.pc-banner {
+  background-color: $park-blue;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+    h3, p {
+        text-align: left;
+        color: $white;
+    }
+    
+    h3 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: $margin-medium;
+    }
+    
+    p {
+        font-size: 1.25rem;
+    }
+}
+
