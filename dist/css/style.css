@@ -312,6 +312,12 @@
       display: none; }
     .pc-mainWrapper .pc-pluginLayout .prodOffer {
       display: none; }
+  .pc-mainWrapper .pc-spacer-s {
+    height: 1rem; }
+  .pc-mainWrapper .pc-spacer-m {
+    height: 2rem; }
+  .pc-mainWrapper .pc-spacer-l {
+    height: 3rem; }
 
 .pc-banner {
   background-color: #2D4C9C;
