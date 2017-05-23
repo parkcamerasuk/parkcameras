@@ -14,7 +14,8 @@
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
 .pc-mainWrapper h3 {
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.25; }
 
 .pc-mainWrapper h4 {
   font-weight: 700; }
@@ -331,7 +332,6 @@
     color: #FFF; }
   .pc-banner h3 {
     font-size: 2em;
-    line-height: 1.25;
     font-weight: 700;
     margin: 0 0 1rem; }
   .pc-banner p {
