@@ -3,13 +3,12 @@
   margin: 0 0 0.5rem; }
 
 .pc-mainWrapper h2,
+.pc-mainWrapper h3,
 .pc-mainWrapper p,
 .pc-mainWrapper ul {
   margin: 0 0 1rem; }
 
-.pc-mainWrapper h1,
-.pc-mainWrapper h2,
-.pc-mainWrapper h3 {
+.pc-mainWrapper h1 {
   margin: 0 0 2rem; }
 
 .pc-mainWrapper h1,
@@ -313,11 +312,11 @@
     .pc-mainWrapper .pc-pluginLayout .prodOffer {
       display: none; }
   .pc-mainWrapper .pc-spacer-s {
-    height: 1rem; }
+    margin: 0 0 0.5rem; }
   .pc-mainWrapper .pc-spacer-m {
-    height: 2rem; }
+    margin: 0 0 1rem; }
   .pc-mainWrapper .pc-spacer-l {
-    height: 3rem; }
+    margin: 0 0 2rem; }
 
 .pc-banner {
   background-color: #2D4C9C;

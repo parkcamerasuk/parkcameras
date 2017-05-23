@@ -72,12 +72,12 @@
         }
     }
     .pc-spacer-s {
-        height: 1rem;
+        margin: $margin-small;
     }
     .pc-spacer-m {
-        height: 2rem;
+        margin: $margin-medium;
     }
     .pc-spacer-l {
-        height: 3rem;
+        margin: $margin-large;
     }
 }
