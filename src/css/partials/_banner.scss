@@ -1,27 +1,58 @@
 .pc-banner {
-  background-color: $park-blue;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 2.5rem;
-    h3, p {
+    background-color: $park-blue;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5rem;
+    h3,
+    p {
         text-align: left;
+    }
+    h3,
+    p,
+    li {
         color: $white;
     }
-    
-    h3 {
-        font-size: 2em;
+    h3,
+    ul li {
         font-weight: 700;
+    }
+    h3 {
+        font-size: 2rem;
         margin: $margin-medium;
     }
-    
-    p {
-        font-size: 1.25rem;
+    p,
+    ul li {
+        font-size: 1.15rem;
+    }
+    ul {
+        margin: 0;
+    }
+}
+
+@include media($media-tablet) {
+    .pc-banner {
+        padding: 1.5rem;
+        ul li,
+        p {
+            font-size: 1rem;
+        }
     }
 }
 
 .pc-banner-overlay {
-  background-color: rgba(0,0,0,0.5);
-  background-blend-mode: overlay; 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
 }
 
+.pc-banner-noPadding {
+    padding: 0.5rem 2.5rem;
+    
+    ul {
+        margin: 0;
+    }
+    
+    ul li {
+        margin: 0.25rem 0;
+    }
+}

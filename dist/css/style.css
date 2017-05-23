@@ -327,19 +327,42 @@
   background-position: center center;
   background-repeat: no-repeat;
   padding: 2.5rem; }
-  .pc-banner h3, .pc-banner p {
-    text-align: left;
-    color: #FFF; }
-  .pc-banner h3 {
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0 0 1rem; }
+  .pc-banner h3,
   .pc-banner p {
-    font-size: 1.25rem; }
+    text-align: left; }
+  .pc-banner h3,
+  .pc-banner p,
+  .pc-banner li {
+    color: #FFF; }
+  .pc-banner h3,
+  .pc-banner ul li {
+    font-weight: 700; }
+  .pc-banner h3 {
+    font-size: 2rem;
+    margin: 0 0 1rem; }
+  .pc-banner p,
+  .pc-banner ul li {
+    font-size: 1.15rem; }
+  .pc-banner ul {
+    margin: 0; }
+
+@media screen and (max-width: 768px) {
+  .pc-banner {
+    padding: 1.5rem; }
+    .pc-banner ul li,
+    .pc-banner p {
+      font-size: 1rem; } }
 
 .pc-banner-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay; }
+
+.pc-banner-noPadding {
+  padding: 0.5rem 2.5rem; }
+  .pc-banner-noPadding ul {
+    margin: 0; }
+  .pc-banner-noPadding ul li {
+    margin: 0.25rem 0; }
 
 .pc-mainWrapper img {
   width: 100%;
@@ -549,6 +572,16 @@
 
 .pc-mainWrapper button.accordion.inactive:after, .pc-mainWrapper .inactive.pc-headline:after {
   content: '+'; }
+
+.pc-mainWrapper .scrollToTop {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  background: url("https://content.parkcameras.com/5/1/images/landing_pages/BackToTop.png") no-repeat 0 0; }
 
 .pc-mainWrapper .scrollToTop {
   width: 50px;
