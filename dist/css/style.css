@@ -2,13 +2,13 @@
 .pc-mainWrapper h4 {
   margin: 0 0 0.5rem; }
 
-.pc-mainWrapper h2,
 .pc-mainWrapper h3,
 .pc-mainWrapper p,
 .pc-mainWrapper ul {
   margin: 0 0 1rem; }
 
-.pc-mainWrapper h1 {
+.pc-mainWrapper h1,
+.pc-mainWrapper h2 {
   margin: 0 0 2rem; }
 
 .pc-mainWrapper h1,
