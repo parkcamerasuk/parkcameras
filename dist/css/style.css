@@ -331,6 +331,7 @@
     color: #FFF; }
   .pc-banner h3 {
     font-size: 2em;
+    line-height: 1.25;
     font-weight: 700;
     margin: 0 0 1rem; }
   .pc-banner p {
