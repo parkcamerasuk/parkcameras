@@ -16,11 +16,11 @@
     }
     h3 {
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: $font-bold;
         margin: $margin-medium;
     }
     ul li {
-        font-weight: 400;
+        font-weight: $font-regular;
     }
     p,
     ul li {
@@ -28,6 +28,11 @@
     }
     ul {
         margin: 0;
+    }
+    .pc-btn-inverse {
+        color: $white;
+        font-weight: $font-regular;
+        background: rgba(255,255,255,0.15);
     }
 }
 
