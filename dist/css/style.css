@@ -327,25 +327,35 @@
   background-position: center center;
   background-repeat: no-repeat;
   padding: 2.5rem; }
+  .pc-banner h2,
   .pc-banner h3,
   .pc-banner p {
     text-align: left; }
+  .pc-banner h2,
   .pc-banner h3,
   .pc-banner h4,
   .pc-banner p,
   .pc-banner li {
     color: #FFF; }
-  .pc-banner h3 {
-    font-size: 2rem;
+  .pc-banner h2, .pc-banner h3 {
+    margin: 0 0 1rem;
+    letter-spacing: 1px; }
+  .pc-banner h2 {
     font-weight: 700;
-    margin: 0 0 1rem; }
-  .pc-banner ul li {
+    font-size: 2rem; }
+  .pc-banner h3 {
+    font-size: 1.5rem; }
+  .pc-banner ul li,
+  .pc-banner h3 {
     font-weight: 400; }
   .pc-banner p,
   .pc-banner ul li {
     font-size: 1rem; }
   .pc-banner ul {
     margin: 0; }
+  .pc-banner .pc-logo {
+    max-width: 150px;
+    min-width: 150px; }
   .pc-banner .pc-btn-inverse {
     color: #FFF;
     font-weight: 400;
