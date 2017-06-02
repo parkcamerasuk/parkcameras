@@ -1,0 +1,36 @@
+- var title = 'Testimonials'
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        .pc-mainWrapper
+            .pc-wrapper.pc-column.pc-col1
+                h1 #{title}
+            hr
+            
+            p Here at Park Cameras, we are very proud of our reputation, built up of 40 years excellent service to both the Sussex area and the whole of the UK.
+            
+            p But please don't just take our word for it, please read just a small selection of the comments and feedback we receive daily by e-mails, letters, phone calls and customers returning to our showrooms just to thank us. Many of our customers travel far and wide to our showroom because of the superb service and low prices they receive. Many customers have visited from various places around the world specifically to visit our stores for products and services and then return home within a few days (in Burgess Hill we are located around 20 minutes from London Gatwick by car or by direct trains, and in London are just off Oxford Street near Tottenham Court Road Tube).
+            
+            p We are very proud of our staff and their excellent customer service skills and should you wish to send us your comments - positive or negative - then we will be very happy to hear from you. Of course, we do not claim to be perfect (although we do try our best!) but when things do go wrong in or out of our control then please contact us and we will do our best to rectify the situation as quickly as possible.
+            
+            p At Park Cameras we value customer feedback very highly. Should you wish to express your views regarding our service, please e-mail us at 
+              a(href='mailto:sales@parkcameras.com') sales@parkcameras.com 
+              | and we shall post it here.
+              
+            hr 
+
+            // TrustBox widget - List
+            .trustpilot-widget(data-businessunit-id='477447a300006400050209bb', data-locale='en-GB', data-stars='4,5', data-style-height='800px', data-style-width='100%', data-template-id='539ad60defb9600b94d7df2c')
+              a(href='https://uk.trustpilot.com/review/www.parkcameras.com', target='_blank') Trustpilot
+            // End TrustBox widget            
+
+            include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

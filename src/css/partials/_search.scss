@@ -1,0 +1,43 @@
+.pc-search {
+    form {
+        position: relative;
+        input,
+        button {
+            font-size: 1.5rem;
+        }
+        input {
+            position: inital;
+            width: 100%;
+            font-family: inherit;
+            color: $park-darkGrey;
+            transition: all 0.5s ease-in;
+            box-sizing: border-box;
+            border: 1px solid $park-lightGrey;
+            outline: none;
+            background-color: $park-lightGrey;
+            padding: 1rem;
+            &:focus {
+                background-color: $white;
+            }
+        }
+        button {
+            position: absolute;
+            top: 1.1rem;
+            right: 1.25rem;
+            background: none;
+            speak: none;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            font-family: 'ultimateHB';
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            color: $park-blue;
+            height: 1.5rem;
+            &:before {
+                content: "\e04c";
+            }
+        }
+    }
+}

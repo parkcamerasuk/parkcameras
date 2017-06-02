@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+    <script src="js/lity.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="css/lity.css">
+  </head>
+  <body>
+    <!-- START-->
+    <div class="pc-mainWrapper">
+      <div class="pc-wrapper pc-column pc-col1 pc-spacer-xl pc-search">
+        <h2>Unfortunately, the page you're looking for doesn't exist.</h2>
+        <form action="//www.parkcameras.com/search/go" method="GET">
+          <input autocomplete="off" name="w" placeholder="Search Park Cameras" type="text" value="">
+          <button onclick="searchSubmit();"></button>
+        </form>
+      </div><br><a class="scrollToTop" href="#"></a>
+    </div>
+    <!-- FINISH-->
+    <script src="js/w3cAccordion.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $(document).swipebox({
+      selector: '.swipebox'
+      });
+      });
+    </script>
+  </body>
+</html>

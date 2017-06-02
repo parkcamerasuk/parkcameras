@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+
+        // START
+        .pc-mainWrapper
+            .pc-wrapper.pc-column.pc-col1.pc-spacer-xl.pc-search
+
+              h2 Unfortunately, the page you're looking for doesn't exist.
+
+              form(action='//www.parkcameras.com/search/go', method='GET')
+                  input(autocomplete='off', name='w', placeholder='Search Park Cameras', type='text', value='')
+                  button(onclick='searchSubmit();')
+       
+
+            include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
