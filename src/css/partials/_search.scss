@@ -48,6 +48,17 @@
     .pc-search {
         form {
             width: 100%;
+            input,
+            button {
+                font-size: 1rem;
+            }
+            input {
+                padding: 1.5rem 0;
+            }
+            button {
+                top: 0.75rem;
+                right: 0.25rem;
+            }
         }
     }
 }

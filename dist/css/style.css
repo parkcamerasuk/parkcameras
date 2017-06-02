@@ -470,7 +470,15 @@
 
 @media screen and (max-width: 375px) {
   .pc-search form {
-    width: 100%; } }
+    width: 100%; }
+    .pc-search form input,
+    .pc-search form button {
+      font-size: 1rem; }
+    .pc-search form input {
+      padding: 1.5rem 0; }
+    .pc-search form button {
+      top: 0.75rem;
+      right: 0.25rem; } }
 
 .pc-mainWrapper .pc-colSop1 {
   -webkit-box-flex: 0;
