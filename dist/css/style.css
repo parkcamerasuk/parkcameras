@@ -60,6 +60,9 @@
   .pc-mainWrapper .pc-trademark:before {
     content: "\00a9"; }
 
+.pc-mainWrapper .pc-largeText {
+  font-size: 3rem; }
+
 .pc-mainWrapper h4,
 .pc-mainWrapper p,
 .pc-mainWrapper ul,
