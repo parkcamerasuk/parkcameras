@@ -114,6 +114,7 @@
         @for $col from 1 through 4 {
             .pc-ul#{$col} {
                 columns: 1;
+                margin: 0 auto;
             }
         }
     }

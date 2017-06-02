@@ -5,13 +5,43 @@ html(lang="en")
 
         // START
         .pc-mainWrapper
-            .pc-wrapper.pc-column.pc-col1.pc-spacer-xl.pc-search
+            .pc-spacer-xl
+            .pc-wrapper.pc-column.pc-col1
 
-              h2 Unfortunately, the page you're looking for doesn't exist.
+              h1 Oops!
+              h2 We Tried. We Really Tried. We Looked Everywhere.
+              
+              hr
+              
+              h3 Unfortunately, we just couldn't find the page you were looking for.
+              h3.pc-spacer-l If you're still lost, try searching for something below:
 
-              form(action='//www.parkcameras.com/search/go', method='GET')
+              .pc-search
+                form(action='//www.parkcameras.com/search/go', method='GET')
                   input(autocomplete='off', name='w', placeholder='Search Park Cameras', type='text', value='')
                   button(onclick='searchSubmit();')
+                  
+              hr
+              
+              h3.pc-spacer-xl Or try some of these helpful links instead:
+              
+              ul.pc-ul4
+                li
+                  a(href='https://www.parkcameras.com/', title='Home') Home
+                li
+                  a(href='https://www.parkcameras.com/c/2528/digital-cameras', title='Cameras') Cameras
+                li
+                  a(href='https://www.parkcameras.com/c/24/lenses', title='Lenses') Lenses
+                li
+                  a(href='https://www.parkcameras.com/c/37/tripods', title='Tripods') Tripods
+                li
+                  a(href='https://www.parkcameras.com/c/36/camera-bags-and-cases', title='Bags') Bags
+                li
+                  a(href='https://www.parkcameras.com/c/61/camcorders', title='Video') Video
+                li
+                  a(href='https://www.parkcameras.com/photography-courses', title='Training') Training
+                li
+                  a(href='https://www.parkcameras.com/c/2503/used', title='Used') Used
        
 
             include includes/foot.pug
