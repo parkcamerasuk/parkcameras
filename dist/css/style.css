@@ -298,8 +298,8 @@
         justify-content: space-around;
     text-align: center; }
     .pc-mainWrapper .pc-pluginLayout article {
-      border-bottom: 25px solid transparent;
-      padding: 1rem 0; }
+      border-bottom: 0;
+      padding: 0; }
     .pc-mainWrapper .pc-pluginLayout .pc-pluginLayoutNoInfo {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -423,8 +423,9 @@
       max-width: 7rem; } }
 
 .pc-mainWrapper .pc-social {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
