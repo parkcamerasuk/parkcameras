@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+.pc-mainWrapper h1 {
+  font-size: 2rem; }
+
+.pc-mainWrapper h2 {
+  font-size: 1.5rem; }
+
+.pc-mainWrapper h3 {
+  font-size: 1.17rem; }
+
+.pc-mainWrapper h4 {
+  font-size: 1rem; }
+
 .pc-mainWrapper ul {
   margin: 0 0 1rem; }
 
@@ -94,6 +106,8 @@
   .pc-mainWrapper .pc-list li:before {
     content: "";
     padding: 0; }
+  .pc-mainWrapper .pc-list li:first-child h4 {
+    margin-top: 0; }
 
 .pc-mainWrapper .pc-ul1 {
   -webkit-columns: 1;
