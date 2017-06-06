@@ -1,21 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
-.pc-mainWrapper h4 {
-  margin: 0 0 0.5rem; }
-
-.pc-mainWrapper h3,
-.pc-mainWrapper p,
 .pc-mainWrapper ul {
   margin: 0 0 1rem; }
 
 .pc-mainWrapper h1,
-.pc-mainWrapper h2 {
-  margin: 0 0 2rem; }
+.pc-mainWrapper h2,
+.pc-mainWrapper h3,
+.pc-mainWrapper h4,
+.pc-mainWrapper p,
+.pc-mainWrapper ul li,
+.pc-mainWrapper pc-trademarkm,
+.pc-mainWrapper pc-footerNote,
+.pc-mainWrapper pc-largeText {
+  line-height: 1.5; }
+
+.pc-mainWrapper p,
+.pc-mainWrapper ul li,
+.pc-mainWrapper pc-trademark,
+.pc-mainWrapper pc-footerNote {
+  font-size: 0.9rem; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
 .pc-mainWrapper h3 {
-  font-weight: 400;
-  line-height: 1.25; }
+  font-weight: 400; }
 
 .pc-mainWrapper h4 {
   font-weight: 700; }
@@ -55,7 +62,6 @@
 
 .pc-mainWrapper .pc-trademark {
   text-align: center;
-  font-size: 0.9rem;
   margin: 1rem; }
   .pc-mainWrapper .pc-trademark:before {
     content: "\00a9"; }
@@ -71,8 +77,7 @@
 
 .pc-mainWrapper ul li {
   margin: 0 0 1rem;
-  list-style-type: none;
-  font-size: 0.9rem; }
+  list-style-type: none; }
   .pc-mainWrapper ul li:before {
     content: "\2023";
     padding-right: 0.5rem; }
@@ -167,7 +172,6 @@
   margin: 2rem; }
 
 .pc-mainWrapper .pc-footerNote {
-  font-size: 0.9rem;
   text-align: center; }
 
 .pc-mainWrapper .pc-btn-standard, .pc-mainWrapper .pc-btn-sop, .pc-mainWrapper .pc-btn-inverse {
@@ -287,8 +291,8 @@
     -ms-flex-preferred-size: 0.90625rem;
         flex-basis: 0.90625rem; }
   .pc-mainWrapper hr {
-    opacity: 0.25;
-    margin: 2rem 0; }
+    opacity: 0.15;
+    margin: 1rem 0; }
   .pc-mainWrapper .pc-pluginLayout {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -398,7 +402,8 @@
           flex-flow: row nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 2rem 0 0; }
   .pc-mainWrapper .pc-itemGallery a.swipebox {
     margin: 1rem; }
 
@@ -411,16 +416,7 @@
     .pc-mainWrapper .pc-itemGallery a.swipebox {
       margin: 0.5rem; }
       .pc-mainWrapper .pc-itemGallery a.swipebox img {
-        max-width: 10rem; } }
-
-@media screen and (max-width: 375px) {
-  .pc-mainWrapper .pc-itemGallery {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; }
-    .pc-mainWrapper .pc-itemGallery a.swipebox img {
-      max-width: 7rem; } }
+        max-width: 5rem; } }
 
 .pc-mainWrapper .pc-social {
   -webkit-box-pack: center;

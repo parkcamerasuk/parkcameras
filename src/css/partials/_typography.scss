@@ -1,22 +1,29 @@
 .pc-mainWrapper {
-    h4 {
-        margin: $margin-small;
-    }
-    h3,
-    p,
     ul {
         margin: $margin-medium;
     }
     h1,
-    h2 {
-        margin: $margin-large;
+    h2,
+    h3,
+    h4,
+    p,
+    ul li,
+    pc-trademarkm,
+    pc-footerNote,
+    pc-largeText {
+        line-height: 1.5;
+    }
+    p,
+    ul li,
+    pc-trademark,
+    pc-footerNote {
+        font-size: 0.9rem;
     }
     h1,
     h2,
     h3,
     {
         font-weight: $font-regular;
-        line-height: 1.25;
     }
     h4 {
         font-weight: $font-bold;
@@ -58,7 +65,6 @@
     }
     .pc-trademark {
         text-align: center;
-        font-size: 0.9rem;
         margin: 1rem;
         &:before {
             content: "\00a9";
@@ -77,7 +83,6 @@
         li {
             margin: $margin-medium;
             list-style-type: none;
-            font-size: 0.9rem;
             &:before {
                 content: "\2023";
                 padding-right: 0.5rem;
@@ -140,7 +145,6 @@
         margin: 2rem;
     }
     .pc-footerNote {
-        font-size: 0.9rem;
         text-align: center;
     }
     // Buttons

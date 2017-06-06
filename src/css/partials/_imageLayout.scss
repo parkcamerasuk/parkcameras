@@ -11,6 +11,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
+        margin: 2rem 0 0;
         a.swipebox {
             margin: 1rem;
         }
@@ -21,17 +22,7 @@
             a.swipebox {
                 margin: 0.5rem;
                 img {
-                    max-width: 10rem;
-                }
-            }
-        }
-    }
-    @include media($media-phone) {
-        .pc-itemGallery {
-            flex-flow: row wrap;
-            a.swipebox {
-                img {
-                    max-width: 7rem;
+                    max-width: 5rem;
                 }
             }
         }
