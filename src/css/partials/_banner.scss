@@ -1,3 +1,5 @@
+// Banner Layout
+.pc-mainWrapper {
 .pc-banner {
     background-color: $park-blue;
     background-size: cover;
@@ -62,4 +64,5 @@
 .pc-banner-overlay {
     background-color: rgba(0, 0, 0, 0.35);
     background-blend-mode: overlay;
+}
 }

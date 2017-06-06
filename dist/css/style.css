@@ -334,54 +334,54 @@
   .pc-mainWrapper .pc-spacer-xxl {
     margin: 0 0 4rem; }
 
-.pc-banner {
+.pc-mainWrapper .pc-banner {
   background-color: #2D4C9C;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 2.5rem; }
-  .pc-banner h2,
-  .pc-banner h3,
-  .pc-banner p {
+  .pc-mainWrapper .pc-banner h2,
+  .pc-mainWrapper .pc-banner h3,
+  .pc-mainWrapper .pc-banner p {
     text-align: left; }
-  .pc-banner h2,
-  .pc-banner h3,
-  .pc-banner h4,
-  .pc-banner p,
-  .pc-banner li {
+  .pc-mainWrapper .pc-banner h2,
+  .pc-mainWrapper .pc-banner h3,
+  .pc-mainWrapper .pc-banner h4,
+  .pc-mainWrapper .pc-banner p,
+  .pc-mainWrapper .pc-banner li {
     color: #FFF; }
-  .pc-banner h2, .pc-banner h3 {
+  .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-banner h3 {
     margin: 0 0 1rem;
     letter-spacing: 1px; }
-  .pc-banner h2 {
+  .pc-mainWrapper .pc-banner h2 {
     font-weight: 700;
     font-size: 2rem; }
-  .pc-banner h3 {
+  .pc-mainWrapper .pc-banner h3 {
     font-size: 1.5rem; }
-  .pc-banner ul li,
-  .pc-banner h3 {
+  .pc-mainWrapper .pc-banner ul li,
+  .pc-mainWrapper .pc-banner h3 {
     font-weight: 400; }
-  .pc-banner p,
-  .pc-banner ul li {
+  .pc-mainWrapper .pc-banner p,
+  .pc-mainWrapper .pc-banner ul li {
     font-size: 1rem; }
-  .pc-banner ul {
+  .pc-mainWrapper .pc-banner ul {
     margin: 0; }
-  .pc-banner .pc-logo {
+  .pc-mainWrapper .pc-banner .pc-logo {
     max-width: 150px;
     min-width: 150px; }
-  .pc-banner .pc-btn-inverse {
+  .pc-mainWrapper .pc-banner .pc-btn-inverse {
     color: #FFF;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.15); }
 
 @media screen and (max-width: 768px) {
-  .pc-banner {
+  .pc-mainWrapper .pc-banner {
     padding: 1.5rem; }
-    .pc-banner ul li,
-    .pc-banner p {
+    .pc-mainWrapper .pc-banner ul li,
+    .pc-mainWrapper .pc-banner p {
       font-size: 1rem; } }
 
-.pc-banner-overlay {
+.pc-mainWrapper .pc-banner-overlay {
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay; }
 
@@ -433,14 +433,14 @@
     height: 2rem;
     margin: 0.5rem; }
 
-.pc-search form {
+.pc-mainWrapper .pc-search form {
   position: relative;
   margin: auto;
   width: 500px; }
-  .pc-search form input,
-  .pc-search form button {
+  .pc-mainWrapper .pc-search form input,
+  .pc-mainWrapper .pc-search form button {
     font-size: 1.5rem; }
-  .pc-search form input {
+  .pc-mainWrapper .pc-search form input {
     position: relative;
     width: 100%;
     font-family: inherit;
@@ -452,9 +452,9 @@
     outline: none;
     background-color: #EEE;
     padding: 2rem; }
-    .pc-search form input:focus {
+    .pc-mainWrapper .pc-search form input:focus {
       background-color: #FFF; }
-  .pc-search form button {
+  .pc-mainWrapper .pc-search form button {
     position: absolute;
     top: 1.25rem;
     right: 1.75rem;
@@ -469,18 +469,18 @@
     font-variant: normal;
     color: #2D4C9C;
     height: 1.5rem; }
-    .pc-search form button:before {
+    .pc-mainWrapper .pc-search form button:before {
       content: "\e04c"; }
 
 @media screen and (max-width: 375px) {
-  .pc-search form {
+  .pc-mainWrapper .pc-search form {
     width: 100%; }
-    .pc-search form input,
-    .pc-search form button {
+    .pc-mainWrapper .pc-search form input,
+    .pc-mainWrapper .pc-search form button {
       font-size: 1rem; }
-    .pc-search form input {
+    .pc-mainWrapper .pc-search form input {
       padding: 1.5rem 0; }
-    .pc-search form button {
+    .pc-mainWrapper .pc-search form button {
       top: 0.75rem;
       right: 0.25rem; } }
 
