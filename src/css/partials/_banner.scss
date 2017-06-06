@@ -49,6 +49,10 @@
         font-weight: $font-regular;
         background: rgba(255,255,255,0.15);
     }
+    .pc-charLength66 {
+        max-width: 66ch;
+        overflow: hidden;
+    }
 }
 
 @include media($media-tablet) {
