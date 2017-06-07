@@ -218,7 +218,8 @@
   width: 18.75rem; }
   .pc-mainWrapper .pc-btn-switch:hover {
     background-color: #2D4C9C;
-    color: #FFF; }
+    color: #FFF;
+    opacity: 1; }
     .pc-mainWrapper .pc-btn-switch:hover .pc-telephoneIcon {
       color: #FFF; }
 
