@@ -1,4 +1,4 @@
-- var title = 'Store Locator'
+- var title = 'How to Contact Park Cameras'
 
 doctype html
 html(lang="en")
@@ -11,11 +11,62 @@ html(lang="en")
             .pc-wrapper.pc-column.pc-col1
                 h1 #{title}
             hr
+            
             .pc-wrapper.pc-row.pc-storeLocator
             
-                .pc-column.pc-col2
+              .pc-column.pc-col2.pc-spacer-xl
+              
+                h3 Call Us
+                p Call our UK Customer Service Team on:
+                p.pc-contactLinks
+                    a.pc-btn-inverse(href='tel:+44444237070', itemprop='telephone')
+                      span.pc-telephoneIcon
+                      | 01444 23 70 70               
+              
+              .pc-column.pc-col2.pc-spacer-xl
+            
+                h3 Email Us
+                p Write to us for help and support at:
+                p.pc-contactLinks
+                    a.pc-btn-inverse(href='mailto:sales@parkcameras.com', target='_blank') sales@parkcameras.com 
                 
-                        h2
+            .pc-wrapper.pc-row.pc-storeLocator
+            
+              .pc-column.pc-col2.pc-spacer-xl
+              
+                h3 Tweet Us
+                p Direct Message us on Twitter at:
+                p.pc-contactLinks
+                    a.pc-btn-inverse(href='https://twitter.com/messages/compose?recipient_id=35701499', target='_blank') @ParkTweets 
+                
+              
+              .pc-column.pc-col2.pc-spacer-xl
+            
+                h3 Facebook Messenger
+                p Message us on Facebook at:
+                p.pc-contactLinks
+                    a.pc-btn-inverse(href='https://m.me/parkcameras', target='_blank') @ParkCameras
+                    
+            .pc-wrapper.pc-row.pc-storeLocator
+            
+              .pc-column.pc-col2.pc-spacer-xl
+              
+                h3 Live Chat
+                p Chat with our Customer Service Team now:
+                p.pc-contactLinks
+                    a.pc-btn-inverse(href='') LiveChat
+            
+            hr
+            
+            .pc-wrapper.pc-column.pc-col1
+            
+              h2 Store Locator
+            
+            .pc-wrapper.pc-row.pc-storeLocator
+              
+                .pc-column.pc-col2.pc-spacer-xl
+                
+                        h3
                           a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill
                             span(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
                         p
@@ -24,17 +75,13 @@ html(lang="en")
                             span(itemprop='addressLocality') Burgess Hill
                         p
                             span(itemprop='addressRegion') West Sussex
-                        p
+                        p.pc-spacer-l
                             span(itemprop='postalCode') RH15 9TT
-                        p
-                            a(href='tel:+44444237070', itemprop='telephone')
-                              span.pc-telephoneIcon
-                              | 01444 23 70 70
-                        p.pc-spacer-xl 
-                            a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
-                        iframe.pc-spacer-xl(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
+
+                        iframe.pc-spacer-m(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
                         
-                        h3 Opening Times
+                        h3
+                          small Opening Times
                         p 
                           strong Monday-Wednesday: 
                           | 9.00am - 5.30pm
@@ -52,23 +99,19 @@ html(lang="en")
                           | 10.00am - 4.00pm
                           
                         
-                .pc-column.pc-col2
+                .pc-column.pc-col2.pc-spacer-xl
 
-                        h2 
+                        h3 
                             a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London') London
                         p 53-54 Rathbone Place
                         p London
                         p Fitzrovia
-                        p W1T 1JR
-                        p
-                            a(href='tel:+44444237070', itemprop='telephone')
-                              span.pc-telephoneIcon
-                              | 01444 23 70 70
-                        p.pc-spacer-xl
-                            a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
-                        iframe.pc-spacer-xl(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9931.251051174107!2d-0.133374!3d51.516651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a48947e6f61d718!2sPark+Cameras+-+London!5e0!3m2!1sen!2suk!4v1496823789141', width='auto')
+                        p.pc-spacer-l W1T 1JR
 
-                        h3 Opening Times
+                        iframe.pc-spacer-m(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9931.251051174107!2d-0.133374!3d51.516651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a48947e6f61d718!2sPark+Cameras+-+London!5e0!3m2!1sen!2suk!4v1496823789141', width='auto')
+
+                        h3 
+                          small Opening Times
                         p 
                           strong Monday-Wednesday: 
                           | 10.00am - 6.30pm

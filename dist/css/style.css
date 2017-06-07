@@ -190,7 +190,7 @@
   text-align: center; }
 
 .pc-mainWrapper .pc-btn-standard, .pc-mainWrapper .pc-btn-sop, .pc-mainWrapper .pc-btn-inverse {
-  padding: 0.5rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   margin: 0 auto;
   font-weight: 400;
   text-decoration: none;
@@ -200,15 +200,28 @@
     opacity: 0.75;
     text-decoration: none; }
 
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper .pc-btn-standard, .pc-mainWrapper .pc-btn-sop, .pc-mainWrapper .pc-btn-inverse {
+    padding: 0.75rem 1rem; } }
+
 .pc-mainWrapper .pc-btn-standard, .pc-mainWrapper .pc-btn-sop {
   color: #FFF;
   background-color: #2D4C9C; }
 
 .pc-mainWrapper .pc-btn-inverse {
-  background-color: #FFF; }
+  background-color: #FFF;
+  border: 1px solid #2D4C9C; }
 
 .pc-mainWrapper .pc-storeLocator p {
   text-align: center; }
+
+.pc-mainWrapper .pc-storeLocator .pc-contactLinks {
+  font-size: 1.15rem;
+  margin: 2rem 0; }
+
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper .pc-storeLocator .pc-contactLinks {
+    font-size: 1rem; } }
 
 .pc-mainWrapper .pc-telephoneIcon {
   display: inline-block;
