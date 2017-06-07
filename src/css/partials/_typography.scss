@@ -197,18 +197,18 @@
         p {
             text-align: center;
         }
-        .pc-contactLinks {
-            font-size: 1.15rem;
-            margin: 2rem 0;
-        }
-    }
-    @include media($media-phone) {
-        .pc-storeLocator {
-            .pc-contactLinks {
-                font-size: 1rem;
+        h3 {
+            margin: 2.5rem 0 0;
+            &:first-child {
+                margin: 1rem 0 0;
             }
         }
+        .pc-contactLinks {
+            font-size: 1rem;
+            margin: 1.2rem 0;
+        }
     }
+    
     .pc-telephoneIcon {
         display: inline-block;
         font-family: 'ultimateHB';

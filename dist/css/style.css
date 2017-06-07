@@ -215,13 +215,14 @@
 .pc-mainWrapper .pc-storeLocator p {
   text-align: center; }
 
-.pc-mainWrapper .pc-storeLocator .pc-contactLinks {
-  font-size: 1.15rem;
-  margin: 2rem 0; }
+.pc-mainWrapper .pc-storeLocator h3 {
+  margin: 2.5rem 0 0; }
+  .pc-mainWrapper .pc-storeLocator h3:first-child {
+    margin: 1rem 0 0; }
 
-@media screen and (max-width: 375px) {
-  .pc-mainWrapper .pc-storeLocator .pc-contactLinks {
-    font-size: 1rem; } }
+.pc-mainWrapper .pc-storeLocator .pc-contactLinks {
+  font-size: 1rem;
+  margin: 1.2rem 0; }
 
 .pc-mainWrapper .pc-telephoneIcon {
   display: inline-block;
