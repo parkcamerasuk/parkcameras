@@ -230,11 +230,16 @@
   font-size: 1rem;
   margin: 1.2rem 0; }
 
+.pc-mainWrapper .pc-storeLocator p.pc-footerNote {
+  color: green;
+  margin: 0.5rem 0 0;
+  font-weight: 400; }
+
 .pc-mainWrapper .pc-storeLocator .pc-storeLocator-marginFix p {
   margin: 0.25rem 0 0; }
 
 .pc-mainWrapper .pc-storeLocator .pc-storeLocator-marginFix h3 {
-  margin: 2rem 0 0; }
+  margin: 2.7rem 0 0; }
 
 .pc-mainWrapper .pc-storeLocator .pc-storeLocator-lineHeightFix p {
   line-height: 1; }
