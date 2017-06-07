@@ -193,11 +193,18 @@
         }
     }
     .pc-telephoneIcon {
+        font-family: 'ultimateHB';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        transform: rotateZ(200deg);
+        font-size: 1.5rem;
+        color: $park-blue;
         &:before {
             content: "\e606";
-            transform: rotateZ(200deg);
-            font-size: 1.5rem;
-            color: $park-blue;
         }
     }
 }
