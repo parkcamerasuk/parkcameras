@@ -184,7 +184,7 @@
     border: 1px solid #EEE; }
 
 .pc-mainWrapper iframe {
-  margin: 2rem; }
+  margin: 1rem; }
 
 .pc-mainWrapper .pc-footerNote {
   text-align: center; }
@@ -226,14 +226,18 @@
 .pc-mainWrapper .pc-storeLocator p {
   text-align: center; }
 
-.pc-mainWrapper .pc-storeLocator h3 {
-  margin: 2.5rem 0 0; }
-  .pc-mainWrapper .pc-storeLocator h3:first-child {
-    margin: 0.61rem 0 0; }
-
 .pc-mainWrapper .pc-storeLocator .pc-contactLinks {
   font-size: 1rem;
   margin: 1.2rem 0; }
+
+.pc-mainWrapper .pc-storeLocator .pc-storeLocator-marginFix p {
+  margin: 0.25rem 0 0; }
+
+.pc-mainWrapper .pc-storeLocator .pc-storeLocator-marginFix h3 {
+  margin: 2rem 0 0; }
+
+.pc-mainWrapper .pc-storeLocator .pc-storeLocator-lineHeightFix p {
+  line-height: 1; }
 
 .pc-mainWrapper .pc-telephoneIcon {
   display: inline-block;
