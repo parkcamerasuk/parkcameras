@@ -219,6 +219,8 @@
   .pc-mainWrapper .pc-btn-switch:hover {
     background-color: #2D4C9C;
     color: #FFF; }
+    .pc-mainWrapper .pc-btn-switch:hover .pc-telephoneIcon {
+      color: #FFF; }
 
 .pc-mainWrapper .pc-storeLocator p {
   text-align: center; }
@@ -247,8 +249,6 @@
   color: #2D4C9C; }
   .pc-mainWrapper .pc-telephoneIcon:before {
     content: "\e606"; }
-  .pc-mainWrapper .pc-telephoneIcon:hover {
-    color: #FFF; }
 
 .pc-mainWrapper {
   width: 100%;

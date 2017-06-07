@@ -201,6 +201,9 @@
         &:hover {
             background-color: $park-blue;
             color: $white;
+            .pc-telephoneIcon {
+                color: $white;
+            }
         }
     }
     .pc-storeLocator {
@@ -233,9 +236,6 @@
         color: $park-blue;
         &:before {
             content: "\e606";
-        }
-        &:hover {
-            color: $white;
         }
     }
 }
