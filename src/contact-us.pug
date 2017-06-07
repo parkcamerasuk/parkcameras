@@ -11,39 +11,72 @@ html(lang="en")
             .pc-wrapper.pc-column.pc-col1
                 h1 #{title}
             hr
-            .pc-wrapper.pc-row
+            .pc-wrapper.pc-row.pc-storeLocator
             
                 .pc-column.pc-col2
                 
-                    h2
-                        a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill
-                    span(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
-                        div
+                        h2
+                          a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill
+                            span(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+                        p
                             span(itemprop='streetAddress') York Road
-                        div
+                        p
                             span(itemprop='addressLocality') Burgess Hill
-                        div
+                        p
                             span(itemprop='addressRegion') West Sussex
-                        div
+                        p
                             span(itemprop='postalCode') RH15 9TT
-                        div T: 
+                        p.pc-telephoneIcon 
                             a(href='tel:+44444237070', itemprop='telephone') 01444 23 70 70
-                        div E: 
+                        p.pc-spacer-xl 
                             a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
-                        iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
+                        iframe.pc-spacer-xl(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
+                        
+                        h3 Opening Times
+                        p 
+                          strong Monday-Wednesday: 
+                          | 9.00am - 5.30pm
+                        p
+                          strong Thursday: 
+                          | 9.00am - 7.30pm
+                        p
+                          strong Friday: 
+                          | 9.00am - 5.30pm
+                        p
+                          strong Saturday: 
+                          | 9.00am - 5.30pm
+                        p
+                          strong Sunday: 
+                          | 10.00am - 4.00pm
+                          
+                        
                 .pc-column.pc-col2
 
-                    h2 
-                        a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London') London
-                    div 53-54 Rathbone Place
-                    div London
-                    div W1T 1JR
-                    div T: 
-                        a(href='tel:+44444237070', itemprop='telephone') 01444 23 70 70
-                    div E: 
-                        a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
-                    iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')      
-            hr
+                        h2 
+                            a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London') London
+                        p 53-54 Rathbone Place
+                        p London
+                        p Fitzrovia
+                        p W1T 1JR
+                        p.pc-telephoneIcon
+                            a(href='tel:+44444237070', itemprop='telephone') 01444 23 70 70
+                        p.pc-spacer-xl
+                            a(href='mailto:sales@parkcameras.com') sales@parkcameras.com
+                        iframe.pc-spacer-xl(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9931.251051174107!2d-0.133374!3d51.516651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a48947e6f61d718!2sPark+Cameras+-+London!5e0!3m2!1sen!2suk!4v1496823789141', width='auto')
+
+                        h3 Opening Times
+                        p 
+                          strong Monday-Wednesday: 
+                          | 10.00am - 6.30pm
+                        p
+                          strong Thursday-Friday: 
+                          | 10.00am - 7.30pm
+                        p
+                          strong Saturday: 
+                          | 10.00am - 6.30pm
+                        p
+                          strong Sunday: 
+                          | 10.30am - 4.30pm
                     
 
             include includes/foot.pug

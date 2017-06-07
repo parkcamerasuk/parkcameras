@@ -187,4 +187,17 @@
         @extend %pc-btn;
         background-color: $white;
     }
+    .pc-storeLocator {
+        p {
+            text-align: center;
+        }
+    }
+    .pc-telephoneIcon {
+        &:before {
+            content: "\e606";
+            transform: rotateZ(200deg);
+            font-size: 1.5rem;
+            color: $park-blue;
+        }
+    }
 }

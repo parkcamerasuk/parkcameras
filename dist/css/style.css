@@ -207,6 +207,16 @@
 .pc-mainWrapper .pc-btn-inverse {
   background-color: #FFF; }
 
+.pc-mainWrapper .pc-storeLocator p {
+  text-align: center; }
+
+.pc-mainWrapper .pc-telephoneIcon:before {
+  content: "\e606";
+  -webkit-transform: rotateZ(200deg);
+          transform: rotateZ(200deg);
+  font-size: 1.5rem;
+  color: #2D4C9C; }
+
 .pc-mainWrapper {
   width: 100%;
   max-width: 1140px;
