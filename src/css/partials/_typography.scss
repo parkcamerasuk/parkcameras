@@ -191,7 +191,17 @@
     .pc-btn-inverse {
         @extend %pc-btn;
         background-color: $white;
+    }
+    .pc-btn-switch {
+        @extend %pc-btn;
+        background-color: $white;
         border: 1px solid $park-blue;
+        display: block;
+        width: 18.75rem;
+        &:hover {
+            background-color: $park-blue;
+            color: $white;
+        }
     }
     .pc-storeLocator {
         p {
@@ -223,6 +233,9 @@
         color: $park-blue;
         &:before {
             content: "\e606";
+        }
+        &:hover {
+            color: $white;
         }
     }
 }
