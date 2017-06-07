@@ -211,6 +211,7 @@
   text-align: center; }
 
 .pc-mainWrapper .pc-telephoneIcon {
+  display: inline-block;
   font-family: 'ultimateHB';
   speak: none;
   font-style: normal;
