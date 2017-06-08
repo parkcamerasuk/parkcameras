@@ -20,6 +20,7 @@
 .pc-mainWrapper h4,
 .pc-mainWrapper p,
 .pc-mainWrapper ul li,
+.pc-mainWrapper ol li,
 .pc-mainWrapper pc-trademarkm,
 .pc-mainWrapper pc-footerNote,
 .pc-mainWrapper pc-largeText {
@@ -27,6 +28,7 @@
 
 .pc-mainWrapper p,
 .pc-mainWrapper ul li,
+.pc-mainWrapper ol li,
 .pc-mainWrapper button,
 .pc-mainWrapper pc-trademark,
 .pc-mainWrapper pc-footerNote {
@@ -62,6 +64,7 @@
 .pc-mainWrapper p,
 .pc-mainWrapper ul,
 .pc-mainWrapper li,
+.pc-mainWrapper ol,
 .pc-mainWrapper table,
 .pc-mainWrapper .pc-footerNote {
   padding: 0; }
@@ -85,6 +88,7 @@
 .pc-mainWrapper h4,
 .pc-mainWrapper p,
 .pc-mainWrapper ul,
+.pc-mainWrapper ol,
 .pc-mainWrapper li {
   text-align: left; }
 
@@ -94,6 +98,9 @@
   .pc-mainWrapper ul li:before {
     content: "\2023";
     padding-right: 0.5rem; }
+
+.pc-mainWrapper ol li {
+  margin: 0 0 1rem; }
 
 .pc-mainWrapper .pc-itemFeat {
   background: #EEE;
@@ -259,6 +266,12 @@
   color: #2D4C9C; }
   .pc-mainWrapper .pc-telephoneIcon:before {
     content: "\e606"; }
+
+.pc-mainWrapper .pc-competition h2,
+.pc-mainWrapper .pc-competition h3,
+.pc-mainWrapper .pc-competition h4,
+.pc-mainWrapper .pc-competition p {
+  text-align: left; }
 
 .pc-mainWrapper {
   width: 100%;
@@ -708,16 +721,6 @@
 
 .pc-mainWrapper button.accordion.inactive:after, .pc-mainWrapper .inactive.pc-headline:after {
   content: '+'; }
-
-.pc-mainWrapper .scrollToTop {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  display: none;
-  background: url("https://content.parkcameras.com/5/1/images/landing_pages/BackToTop.png") no-repeat 0 0; }
 
 .pc-mainWrapper .scrollToTop {
   width: 50px;
