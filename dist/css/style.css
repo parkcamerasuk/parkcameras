@@ -232,11 +232,11 @@
 
 .pc-mainWrapper .pc-btn-switchAlt {
   background-color: #2D4C9C;
+  border: 1px solid #2D4C9C;
   color: #FFF; }
   .pc-mainWrapper .pc-btn-switchAlt:hover {
     background-color: #FFF;
     color: #2D4C9C;
-    border: 1px solid #2D4C9C;
     opacity: 1; }
 
 .pc-mainWrapper .pc-storeLocator p {
