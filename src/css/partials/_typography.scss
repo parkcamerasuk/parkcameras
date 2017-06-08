@@ -216,6 +216,17 @@
                 }
             }
         }
+        .pc-btn-switchAlt {
+            @extend %pc-btn;
+            background-color: $park-blue;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                color: $park-blue;
+                border: 1px solid $park-blue;
+                opacity: 1;
+            }
+        }
         .pc-storeLocator {
             p {
                 text-align: center;
