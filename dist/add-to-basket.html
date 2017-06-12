@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add To Basket</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+    <script src="js/lity.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="css/lity.css">
+  </head>
+  <body>
+    <div>
+      <section class="container" id="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="home" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="home" href="/" itemprop="url"><span itemprop="title">Home</span></a></li>
+          <li class="here" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">Add To Basket</span></a></li>
+        </ul>
+      </section>
+    </div>
+    <!-- START-->
+    <div class="pc-mainWrapper">
+      <div class="pc-wrapper pc-column pc-col1">
+        <h1>Add To Basket</h1>
+      </div>
+      <hr>
+      <script>
+        var skuAry = ["1010055C", "1240156L"]
+        function addtoBasketWrapper(skuAry) {
+        skuAry.forEach(
+        function(el) {
+        addtoBasket(el, 'false', el, false)
+        }
+        )
+        }
+      </script><a class="pc-btn-standard" href="javascript:;" onclick="addtoBasketWrapper(skuAry);return false;">Canon EOS 5D Mark IV Kit
+        <input id="Qty1010055C" action="add" name="Qty1010055C" type="hidden" value="1">
+        <input id="stockcode_1010055C" name="stockcode1010055C" type="hidden" value="1010055C">
+        <input id="Qty1240156L" action="add" name="Qty1240156L" type="hidden" value="1">
+        <input id="stockcode_1240156L" name="stockcode1240156L" type="hidden" value="1240156L"></a><br><a class="scrollToTop" href="#"></a>
+    </div>
+    <!-- FINISH-->
+    <script src="js/w3cAccordion.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $(document).swipebox({
+      selector: '.swipebox'
+      });
+      });
+    </script>
+  </body>
+</html>

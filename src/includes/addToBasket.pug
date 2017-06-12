@@ -1,0 +1,13 @@
+script.
+  var skuAry = ["", ""]
+  function addtoBasketWrapper(skuAry) {
+  skuAry.forEach(
+  function(el) {
+  addtoBasket(el, 'false', el, false)
+  }
+  )
+  }
+a.pc-btn-standard(href='javascript:;', onclick='addtoBasketWrapper(skuAry);return false;') Link
+  each SKU in skuAry
+    input(id='Qty' + SKU, action='add', name='Qty' + SKU, type='hidden', value='1')
+    input(id='stockcode_' + SKU, name='stockcode' + SKU, type='hidden', value= SKU)  

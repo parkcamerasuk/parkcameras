@@ -1,0 +1,20 @@
+- var title = 'Template'
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        .pc-mainWrapper
+            .pc-wrapper.pc-column.pc-col1
+                h1 #{title}
+            hr
+
+
+            include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

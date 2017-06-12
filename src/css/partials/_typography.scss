@@ -1,281 +1,280 @@
-    .pc-mainWrapper {
-        h1 {
-            font-size: 2rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-        }
-        h3 {
-            font-size: 1.17rem;
-        }
-        h4 {
-            font-size: 1rem;
-        }
-        ul {
-            margin: $margin-medium;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        p,
-        ul li,
-        ol li,
-        pc-trademarkm,
-        pc-footerNote,
-        pc-largeText {
-            line-height: 1.5;
-        }
-        p,
-        ul li,
-        ol li,
-        button,
-        pc-trademark,
-        pc-footerNote {
-            font-size: 0.9rem;
-        }
-        h1,
-        h2,
-        h3,
-        {
-            font-weight: $font-regular;
-        }
-        h4 {
-            font-weight: $font-bold;
-        }
-        h1,
-        h2,
-        h3,
-        table {
-            text-align: center;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        a,
-        .pc-footerNote,
-        .pc-btn-inverse {
-            color: $park-blue;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        p,
-        ul,
-        li,
-        ol,
-        table,
-        .pc-footerNote {
-            padding: 0;
-        }
-        .pc-footerNote,
-        .pc-wrapper {
-            margin: 0;
-        }
-        .pc-indentLink {
-            a {
-                padding-left: 0.75rem;
+        .pc-mainWrapper {
+            h1 {
+                font-size: 2rem;
             }
-        }
-        .pc-trademark {
-            text-align: center;
-            margin: 1rem;
-            &:before {
-                content: "\00a9";
+            h2 {
+                font-size: 1.5rem;
             }
-        }
-        .pc-largeText {
-            font-size: 6rem;
-        }
-        h4,
-        p,
-        ul,
-        ol,
-        li {
-            text-align: left;
-        }
-        ul {
-            li {
-                margin: $margin-medium;
-                list-style-type: none;
-                &:before {
-                    content: "\2023";
-                    padding-right: 0.5rem;
-                }
+            h3 {
+                font-size: 1.17rem;
             }
-        }
-        ol {
-            li {
-                margin: $margin-medium;
-            }
-        }
-        .pc-itemFeat {
-            background: $park-lightGrey;
-            margin-top: 1.5rem;
-            padding: 1rem;
-            li {
-                margin: $margin-small;
-            }
-        }
-        .pc-list {
-            li {
-                font-size: $base-size;
-                &:before {
-                    content: "";
-                    padding: 0;
-                }
-                &:first-child {
-                    h4 {
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-        @for $col from 1 through 4 {
-            .pc-ul#{$col} {
-                columns: $col;
-            }
-        }
-        @include media($media-tablet) {
-            @for $col from 1 through 4 {
-                .pc-ul#{$col} {
-                    columns: 2;
-                }
-            }
-        }
-        @include media($media-phone) {
-            @for $col from 1 through 4 {
-                .pc-ul#{$col} {
-                    columns: 1;
-                    margin: 0 auto;
-                }
-            }
-        }
-        a {
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-        table {
-            background: $white;
-            margin: 0 auto;
-            td {
-                background: $park-lightGrey;
-                padding: 0.3rem 0.6rem;
-                border: 1px solid $park-lightGrey;
-            }
-        }
-        iframe {
-            margin: 1rem;
-        }
-        .pc-footerNote {
-            text-align: center;
-        }
-        // Buttons
-        %pc-btn {
-            padding: 0.75rem 2.5rem;
-            margin: 0 auto;
-            font-weight: $font-regular;
-            text-decoration: none;
-            cursor: pointer;
-            opacity: 1;
-            &:hover {
-                opacity: 0.75;
-                text-decoration: none;
-            }
-        }
-        @include media($media-phone) {
-            %pc-btn {
-                padding: 0.75rem 1rem;
-            }
-        }
-        .pc-btn-standard {
-            @extend %pc-btn;
-            color: $white;
-            background-color: $park-blue;
-        }
-        .pc-btn-inverse {
-            @extend %pc-btn;
-            background-color: $white;
-        }
-        .pc-btn-switch {
-            @extend %pc-btn;
-            background-color: $white;
-            border: 1px solid $park-blue;
-            display: block;
-            width: 18.75rem;
-            &:hover {
-                background-color: $park-blue;
-                color: $white;
-                opacity: 1;
-                .pc-telephoneIcon {
-                    color: $white;
-                }
-            }
-        }
-        .pc-btn-switchAlt {
-            @extend %pc-btn;
-            background-color: $park-blue;
-            border: 1px solid $park-blue;
-            color: $white;
-            &:hover {
-                background-color: $white;
-                color: $park-blue;
-                opacity: 1;
-            }
-        }
-        .pc-storeLocator {
-            p {
-                text-align: center;
-            }
-            .pc-contactLinks {
+            h4 {
                 font-size: 1rem;
-                margin: 1.2rem 0;
             }
-            p.pc-footerNote {
-                color: green;
-                margin: 0.5rem 0 0;
-                font-weight: 400;
+            ul {
+                margin: $margin-medium;
             }
-            .pc-storeLocator-marginFix {
-                p {
-                    margin: 0.25rem 0 0;
-                }
-                h3 {
-                    margin: 2.7rem 0 0;
-                }
-            }
-            .pc-storeLocator-lineHeightFix {
-                p {
-                    line-height: 1;
-                }
-            }
-        }
-        .pc-telephoneIcon {
-            display: inline-block;
-            font-family: 'ultimateHB';
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            transform: rotateZ(200deg);
-            font-size: 1.5rem;
-            color: $park-blue;
-            &:before {
-                content: "\e606";
-            }
-        }
-        .pc-competition {
+            h1,
             h2,
             h3,
             h4,
-            p {
+            p,
+            ul li,
+            ol li,
+            pc-trademarkm,
+            pc-footerNote,
+            pc-largeText {
+                line-height: 1.5;
+            }
+            p,
+            ul li,
+            ol li,
+            button,
+            pc-trademark,
+            pc-footerNote {
+                font-size: 0.9rem;
+            }
+            h1,
+            h2,
+            h3,
+            {
+                font-weight: $font-regular;
+            }
+            h4 {
+                font-weight: $font-bold;
+            }
+            h1,
+            h2,
+            h3,
+            table {
+                text-align: center;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            a,
+            .pc-footerNote,
+            .pc-btn-inverse {
+                color: $park-blue;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            p,
+            ul,
+            li,
+            ol,
+            table,
+            .pc-footerNote {
+                padding: 0;
+            }
+            .pc-footerNote,
+            .pc-wrapper {
+                margin: 0;
+            }
+            .pc-indentLink {
+                a {
+                    padding-left: 0.75rem;
+                }
+            }
+            .pc-trademark {
+                text-align: center;
+                margin: 1rem;
+                &:before {
+                    content: "\00a9";
+                }
+            }
+            .pc-largeText {
+                font-size: 6rem;
+            }
+            h4,
+            p,
+            ul,
+            ol,
+            li {
                 text-align: left;
             }
+            ul {
+                li {
+                    margin: $margin-medium;
+                    list-style-type: none;
+                    &:before {
+                        content: "\2023";
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+            ol {
+                li {
+                    margin: $margin-medium;
+                }
+            }
+            .pc-itemFeat {
+                background: $park-lightGrey;
+                margin-top: 1.5rem;
+                padding: 1rem;
+                li {
+                    margin: $margin-small;
+                }
+            }
+            .pc-list {
+                li {
+                    font-size: $base-size;
+                    &:before {
+                        content: "";
+                        padding: 0;
+                    }
+                    &:first-child {
+                        h4 {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            @for $col from 1 through 4 {
+                .pc-ul#{$col} {
+                    columns: $col;
+                }
+            }
+            @include media($media-tablet) {
+                @for $col from 1 through 4 {
+                    .pc-ul#{$col} {
+                        columns: 2;
+                    }
+                }
+            }
+            @include media($media-phone) {
+                @for $col from 1 through 4 {
+                    .pc-ul#{$col} {
+                        columns: 1;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            table {
+                background: $white;
+                margin: 0 auto;
+                td {
+                    background: $park-lightGrey;
+                    padding: 0.3rem 0.6rem;
+                    border: 1px solid $park-lightGrey;
+                }
+            }
+            iframe {
+                margin: 1rem;
+            }
+            .pc-footerNote {
+                text-align: center;
+            }
+            // Buttons
+            %pc-btn {
+                padding: 0.75rem 2.5rem;
+                margin: 0 auto;
+                font-weight: $font-regular;
+                text-decoration: none;
+                cursor: pointer;
+                opacity: 1;
+                &:hover {
+                    opacity: 0.75;
+                    text-decoration: none;
+                }
+            }
+            @include media($media-phone) {
+                %pc-btn {
+                    padding: 0.75rem 1rem;
+                }
+            }
+            .pc-btn-standard {
+                @extend %pc-btn;
+                color: $white;
+                background-color: $park-blue;
+            }
+            .pc-btn-inverse {
+                @extend %pc-btn;
+                background-color: $white;
+            }
+            .pc-btn-switch {
+                @extend %pc-btn;
+                background-color: $white;
+                border: 1px solid $park-blue;
+                display: block;
+                width: 18.75rem;
+                &:hover {
+                    background-color: $park-blue;
+                    color: $white;
+                    opacity: 1;
+                    .pc-telephoneIcon {
+                        color: $white;
+                    }
+                }
+            }
+            .pc-btn-switchAlt {
+                @extend %pc-btn;
+                background-color: $park-blue;
+                border: 1px solid $park-blue;
+                color: $white;
+                &:hover {
+                    background-color: $white;
+                    color: $park-blue;
+                    opacity: 1;
+                }
+            }
+            .pc-storeLocator {
+                p {
+                    text-align: center;
+                }
+                .pc-contactLinks {
+                    font-size: 1rem;
+                    margin: 1.2rem 0;
+                }
+                p.pc-footerNote {
+                    color: green;
+                    margin: 0.5rem 0 0;
+                    font-weight: 400;
+                }
+                .pc-storeLocator-marginFix {
+                    p {
+                        margin: 0.25rem 0 0;
+                    }
+                    h3 {
+                        margin: 2.7rem 0 0;
+                    }
+                }
+                .pc-storeLocator-lineHeightFix {
+                    p {
+                        line-height: 1;
+                    }
+                }
+            }
+            .pc-telephoneIcon {
+                display: inline-block;
+                font-family: 'ultimateHB';
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                transform: rotateZ(200deg);
+                font-size: 1.5rem;
+                color: $park-blue;
+                &:before {
+                    content: "\e606";
+                }
+            }
+            .pc-competition {
+                h2,
+                h3,
+                h4 {
+                    text-align: left;
+                }
+            }
         }
-    }
