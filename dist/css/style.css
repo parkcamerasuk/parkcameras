@@ -260,6 +260,12 @@
 .pc-mainWrapper .pc-storeLocator .pc-storeLocator-lineHeightFix p {
   line-height: 1; }
 
+.pc-mainWrapper .pc-storeLocator #phone-status {
+  font-weight: bold; }
+
+.pc-mainWrapper .pc-storeLocator #phone-times {
+  color: #000000; }
+
 .pc-mainWrapper .pc-telephoneIcon {
   display: inline-block;
   font-family: 'ultimateHB';
