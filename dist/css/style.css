@@ -445,7 +445,8 @@
   .pc-mainWrapper .pc-banner p,
   .pc-mainWrapper .pc-banner li {
     color: #FFF; }
-  .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-banner h3 {
+  .pc-mainWrapper .pc-banner h2,
+  .pc-mainWrapper .pc-banner h3 {
     margin: 0 0 1rem;
     letter-spacing: 1px; }
   .pc-mainWrapper .pc-banner h2 {
@@ -468,6 +469,9 @@
     color: #FFF;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.15); }
+  .pc-mainWrapper .pc-banner .pc-charLength44 {
+    max-width: 44ch;
+    overflow: hidden; }
   .pc-mainWrapper .pc-banner .pc-charLength66 {
     max-width: 66ch;
     overflow: hidden; }

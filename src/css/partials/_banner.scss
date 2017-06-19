@@ -1,6 +1,6 @@
 // Banner Layout
 .pc-mainWrapper {
-.pc-banner {
+  .pc-banner {
     background-color: $park-blue;
     background-size: cover;
     background-position: center center;
@@ -9,64 +9,67 @@
     h2,
     h3,
     p {
-        text-align: left;
+      text-align: left;
     }
     h2,
     h3,
     h4,
     p,
     li {
-        color: $white;
+      color: $white;
     }
-    h2, h3 {
-        margin: $margin-medium;
-        letter-spacing: 1px;
+    h2,
+    h3 {
+      margin: $margin-medium;
+      letter-spacing: 1px;
     }
     h2 {
-        font-weight: $font-bold;
-        font-size: 2rem;
+      font-weight: $font-bold;
+      font-size: 2rem;
     }
     h3 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
     ul li,
     h3 {
-        font-weight: $font-regular;
+      font-weight: $font-regular;
     }
     p,
     ul li {
-        font-size: 1rem;
+      font-size: 1rem;
     }
     ul {
-        margin: 0;
+      margin: 0;
     }
     .pc-logo {
-        max-width: 150px;
-        min-width: 150px;
+      max-width: 150px;
+      min-width: 150px;
     }
     .pc-btn-inverse {
-        color: $white;
-        font-weight: $font-regular;
-        background: rgba(255,255,255,0.15);
+      color: $white;
+      font-weight: $font-regular;
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .pc-charLength44 {
+      max-width: 44ch;
+      overflow: hidden;
     }
     .pc-charLength66 {
-        max-width: 66ch;
-        overflow: hidden;
+      max-width: 66ch;
+      overflow: hidden;
     }
-}
-
-@include media($media-tablet) {
+  }
+  @include media($media-tablet) {
     .pc-banner {
-        padding: 1.5rem;
-        ul li,
-        p {
-            font-size: 1rem;
-        }
+      padding: 1.5rem;
+      ul li,
+      p {
+        font-size: 1rem;
+      }
     }
-}
-
-.pc-banner-overlay {
+  }
+  .pc-banner-overlay {
     background-color: rgba(0, 0, 0, 0.35);
     background-blend-mode: overlay;
-}
+  }
 }
