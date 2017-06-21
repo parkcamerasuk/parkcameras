@@ -1,14 +1,14 @@
-- var title = 'Insert Title Here'
-- var mainImageURL = 'https://placehold.it/600x400';
-- var subImageURL = ['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400'];
+- var title = 'Canon EOS 6D Mark II'
+- var mainImageURL = '67295-FRT.jpg';
+- var subImageURL = ['67296-LCD-BCK.jpg', '67298-LCD-Open-BCK.jpg', '67294-Down-TOP.jpg', '67299-LEFT-SIDE.jpg', '67302-RIGHT-SIDE.jpg'];
 - var description = 'Insert Description Here'
 - var features = ['Insert Feature Here', 'Insert Another Feature Here'];
-- var productSKU = 'Insert Product SKU Here';
+- var productSKU = '1010062T';
 - var tradeInItems= [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
 
 // Body and Kits
 
-- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:1010062T}]', '@@plugin[IndividualProduct{stockcode:1010063D}]'];
 
 //
 
@@ -26,13 +26,13 @@ html(lang="en")
           hr
           .pc-wrapper.pc-rowNoWrap
             .pc-column.pc-col2
-              a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL)
-                img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt='#{title}')
+              a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, title=title)
+                img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt=title)
             
               .pc-itemGallery
                 each URL in subImageURL   
-                    a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + URL, alt='#{title}')
-                      img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt='#{title}')
+                    a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + URL, title=title)
+                      img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt=title)
 
             .pc-column.pc-col2
               p #{description}
