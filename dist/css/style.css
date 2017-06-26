@@ -287,6 +287,9 @@
 .pc-mainWrapper .pc-competition h4 {
   text-align: left; }
 
+.pc-mainWrapper .pc-articleTitle {
+  margin-top: 0; }
+
 .pc-mainWrapper {
   width: 100%;
   max-width: 1140px;

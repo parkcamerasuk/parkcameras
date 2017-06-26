@@ -1,14 +1,22 @@
 - var title = 'Canon EOS 6D Mark II'
 - var mainImageURL = '67295-FRT.jpg';
 - var subImageURL = ['67296-LCD-BCK.jpg', '67298-LCD-Open-BCK.jpg', '67294-Down-TOP.jpg', '67299-LEFT-SIDE.jpg', '67302-RIGHT-SIDE.jpg'];
-- var description = 'Insert Description Here'
-- var features = ['Insert Feature Here', 'Insert Another Feature Here'];
+- var description = ['Break through new creative boundaries with advanced performance, innovative features, and the full-frame advantage with the new Canon EOS 6D Mark II, giving you more control over depth of field, and superb low-light performance.', 'Packing a 26.2 megapixel full-frame CMOS sensor into a chunkier body, along with Canon’s famed Dual Pixel CMOS AF for accurate and confident focussing in Live View mode, and 6.5fps continuous shooting ability, the follow-up to Canon’s entry-level full frame DSLR is a step up for anyone looking to make the move into the world of full frame DSLR photography.']
+- var features = ['Full Frame 26.2 megapixel CMOS Sensor', 'DIGIC 7 image processor', 'Canon full-frame EF Lens mount', 'ISO range up to 40,000 (expandable up to ISO 102,400)', 'Dual Pixel CMOS AF', '45 cross-type AF points', '6.5fps continuous shooting', 'In-camera 4K timelapse', 'Familiar Canon DSLR design', 'Vari-angle touchscreen', 'Large optical viewfinder', 'Full 1080p HD video shooting', 'Constant Bluetooth connection with smartphone or tablet', 'Easy Wi-Fi activation', 'Shoot remotely using smartphone/tablet as the screen', 'Built-in GPS to geotag images as you shoot'];
 - var productSKU = '1010062T';
-- var tradeInItems= [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
+- var tradeInItems= [{model: 'Canon EOS 6D', value: '650', final: '1,349'}, {model: 'Canon EOS 5D Mark II', value: '400', final: '1,599'}, {model: 'Canon EOS 750D', value: '260', final: '1,739'}];
 
 // Body and Kits
 
 - var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:1010062T}]', '@@plugin[IndividualProduct{stockcode:1010063D}]'];
+
+// Accessories
+
+- var accessories = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:1090107M}]'];
+
+// Recommended Lenses
+
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:1240439N}]', '@@plugin[IndividualProduct{stockcode:1240435C}]', '@@plugin[IndividualProduct{stockcode:1240161}]']
 
 //
 
@@ -35,7 +43,8 @@ html(lang="en")
                       img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt=title)
 
             .pc-column.pc-col2
-              p #{description}
+              each paragraph in description
+                p=paragraph
               ul.pc-itemFeat 
                   p Features
                   each feats in features
@@ -46,6 +55,9 @@ html(lang="en")
           // Body and Kits
           include includes/bodyAndKits.pug
           
+          // Accessories
+          include includes/accessories.pug
+          
           // Trade-In Bonus
           .pc-wrapper.pc-column
             h3 Trade-In
@@ -55,21 +67,24 @@ html(lang="en")
                   b Trade-In Model
                 td(style='background-color: #e4e4e4;')
                   b Trade-In Value
-                td(style='background-color: #e4e4e4;')
-                  b Enhanced Trade-In
                 td(style='color: #FFF; background-color: #2d4d9c;')
                   b You Could Pay
               each item in tradeInItems
                 tr
                   td= item.model
                   td &pound;#{item.value}
-                  td &pound;#{item.enhanced}
                   td(style='color: #2d4d9c;') &pound;#{item.final}
 
             p.pc-footerNote 
               | *Trade-in value dependent on condition of used camera, prices shown are maximum paid for each model.
               br
               | Trade-in only applicable when trading in the above models against the #{title}.
+              
+          .pc-spacer-xl
+              
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
         
           include includes/foot.pug
         
