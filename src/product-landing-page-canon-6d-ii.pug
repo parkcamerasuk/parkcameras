@@ -32,7 +32,7 @@ html(lang="en")
           .pc-wrapper.pc-column.pc-col1
             h1 #{title}
           hr
-          .pc-wrapper.pc-rowNoWrap
+          .pc-wrapper.pc-rowNoWrap.pc-spacer-xl
             .pc-column.pc-col2
               a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, title=title)
                 img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt=title)
@@ -75,12 +75,12 @@ html(lang="en")
                   td &pound;#{item.value}
                   td(style='color: #2d4d9c;') &pound;#{item.final}
 
-            p.pc-footerNote 
+            p.pc-footerNote.pc-spacer-xl 
               | *Trade-in value dependent on condition of used camera, prices shown are maximum paid for each model.
               br
               | Trade-in only applicable when trading in the above models against the #{title}.
               
-          .pc-spacer-xl
+          hr.pc-spacer-xl
               
           // Recommended Lenses
           include includes/recommendedLenses.pug

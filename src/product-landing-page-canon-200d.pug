@@ -1,14 +1,18 @@
 - var title = 'Canon EOS 200D'
-- var mainImageURL = 'https://placehold.it/600x400';
-- var subImageURL = ['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400'];
-- var description = 'Insert Description Here'
-- var features = ['Insert Feature Here', 'Insert Another Feature Here'];
+- var mainImageURL = '67693-FRT.jpg';
+- var subImageURL = ['67695-LCD-BCK.jpg', '67696-LCD-Out-BCK.jpg', '67699-TOP.jpg', '67697-LEFT-SIDE.jpg', '67698-RIGHT-SIDE.jpg'];
+- var description = ['Visual storytelling is made easy with the Canon EOS 200D – a feature-packed digital SLR camera that combines familiar touchscreen controls with superb image quality & offers you access to Canon’s legendary range of interchangeable lenses.', 'You can use the EOS 200D how you want to; it gives you the freedom to shoot cinematic Full HD movies & simply share videos and images online by easily transferring them to your smart device.']
+- var features = ['Next-generation 24.2 megapixel CMOS Sensor', 'World’s lightest DSLR', 'Bright optical viewfinder', 'Vari-angle touchscreen', 'World’s fastest Live View Autofocus system', 'Wirelessly transfer images to smartphone or tablet', 'Bluetooth, NFC, and Wi-Fi connectivity', 'Control the camera from your smart device', 'Full 1080p HD movie recording', 'Dual Pixel CMOS AF focusing system', 'Time-lapse movie function', 'Access to Canon lenses & accessories', 'DIGIC 7 processor for fast handling images quickly'];
 - var productSKU = '1011093E';
-- var tradeInItems= [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
+- var tradeInItems= [{model: 'Canon EOS 100D', value: '140', final: '439'}, {model: 'Canon EOS 1300D', value: '145', final: '434'}, {model: 'Canon EOS 1200D', value: '100', final: '479'}];
 
 // Body and Kits
 
 - var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:1011093E}]', '@@plugin[IndividualProduct{stockcode:1011095E}]', '@@plugin[IndividualProduct{stockcode:1011095S}]', '@@plugin[IndividualProduct{stockcode:1011095W}]'];
+
+// Body and Kits
+
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:1240424C}]', '@@plugin[IndividualProduct{stockcode:1240427C}]', '@@plugin[IndividualProduct{stockcode:1240174}]'];
 
 //
 
@@ -24,7 +28,7 @@ html(lang="en")
           .pc-wrapper.pc-column.pc-col1
             h1 #{title}
           hr
-          .pc-wrapper.pc-rowNoWrap
+          .pc-wrapper.pc-rowNoWrap.pc-spacer-xl
             .pc-column.pc-col2
               a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, title=title)
                 img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt=title)
@@ -35,7 +39,8 @@ html(lang="en")
                       img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt=title)
 
             .pc-column.pc-col2
-              p #{description}
+              each paragraph in description
+                p= paragraph
               ul.pc-itemFeat 
                   p Features
                   each feats in features
@@ -55,21 +60,23 @@ html(lang="en")
                   b Trade-In Model
                 td(style='background-color: #e4e4e4;')
                   b Trade-In Value
-                td(style='background-color: #e4e4e4;')
-                  b Enhanced Trade-In
                 td(style='color: #FFF; background-color: #2d4d9c;')
                   b You Could Pay
               each item in tradeInItems
                 tr
                   td= item.model
                   td &pound;#{item.value}
-                  td &pound;#{item.enhanced}
                   td(style='color: #2d4d9c;') &pound;#{item.final}
 
-            p.pc-footerNote 
+            p.pc-footerNote.pc-spacer-xl
               | *Trade-in value dependent on condition of used camera, prices shown are maximum paid for each model.
               br
               | Trade-in only applicable when trading in the above models against the #{title}.
+              
+          hr.pc-spacer-xl
+              
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
         
           include includes/foot.pug
         
