@@ -420,8 +420,8 @@
       margin-top: 12px; }
     .pc-mainWrapper .pc-pluginLayout .testfreaks-items {
       display: none; }
-    .pc-mainWrapper .pc-pluginLayout .prodOffer {
-      display: none; }
+  .pc-mainWrapper .pc-pluginLayoutHidePrice .prodOffer {
+    display: none; }
   .pc-mainWrapper .pc-spacer-s {
     margin: 0 0 0.5rem; }
   .pc-mainWrapper .pc-spacer-m {

@@ -1,91 +1,92 @@
 // Main Wrapper
 .pc-mainWrapper {
-    width: 100%;
-    max-width: $wrapper-size;
-    margin: 0 auto;
-    padding: 0;
-    font-family: $font-stack;
-    font-size: $base-size;
-    font-weight: $font-light;
-    color: $black;
-    line-height: 1.5;
-    text-align: center;
-    .pc-wrapper {
-        display: flex;
-    }
-    .pc-row {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
+  width: 100%;
+  max-width: $wrapper-size;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $font-stack;
+  font-size: $base-size;
+  font-weight: $font-light;
+  color: $black;
+  line-height: 1.5;
+  text-align: center;
+  .pc-wrapper {
+    display: flex;
+  }
+  .pc-row {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .pc-rowNoWrap {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  @include media($media-tablet) {
     .pc-rowNoWrap {
-        flex-flow: row nowrap;
-        justify-content: center;
+      flex-flow: row wrap;
     }
-    @include media($media-tablet) {
-        .pc-rowNoWrap {
-            flex-flow: row wrap;
-        }
+  }
+  .pc-column {
+    flex-flow: column wrap;
+  }
+  @for $col from 1 through 8 {
+    .pc-col#{$col} {
+      margin: 1rem;
+      flex: 1;
+      flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
     }
-    .pc-column {
-        flex-flow: column wrap;
+  }
+  // Horizontal Rule
+  hr {
+    opacity: 0.15;
+    margin: 1rem 0;
+  }
+  // Plugin
+  .pc-pluginLayout {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    article {
+      border-bottom: 0;
+      padding: 0;
     }
-    @for $col from 1 through 8 {
-        .pc-col#{$col} {
-            margin: 1rem;
-            flex: 1;
-            flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
-        }
+    .pc-pluginLayoutNoInfo {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      article {
+        padding: 0;
+        border-bottom: 0;
+      }
     }
-    // Horizontal Rule
-    hr {
-        opacity: 0.15;
-        margin: 1rem 0;
+    .promoIcon {
+      display: none;
     }
-    // Plugin
-    .pc-pluginLayout {
-        flex-flow: row wrap;
-        justify-content: space-around;
-        text-align: center;
-        article {
-            border-bottom: 0;
-            padding: 0;
-        }
-        .pc-pluginLayoutNoInfo {
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            article {
-                padding: 0;
-                border-bottom: 0;
-            }
-        }
-        .promoIcon {
-            display: none;
-        }
-        .prodName {
-            margin-top: 12px;
-        }
-        .testfreaks-items {
-            display: none;
-        }
-        .prodOffer {
-            display: none;
-        }
+    .prodName {
+      margin-top: 12px;
     }
-    .pc-spacer-s {
-        margin: $margin-small;
+    .testfreaks-items {
+      display: none;
     }
-    .pc-spacer-m {
-        margin: $margin-medium;
-    }
-    .pc-spacer-l {
-        margin: $margin-large;
-    }
+  }
+  .pc-pluginLayoutHidePrice {
     
-    .pc-spacer-xl {
-        margin: $margin-xlarge;
+    .prodOffer {
+      display: none;
     }
-    
-    .pc-spacer-xxl {
-        margin: $margin-xxlarge;
-    }
+  }
+  .pc-spacer-s {
+    margin: $margin-small;
+  }
+  .pc-spacer-m {
+    margin: $margin-medium;
+  }
+  .pc-spacer-l {
+    margin: $margin-large;
+  }
+  .pc-spacer-xl {
+    margin: $margin-xlarge;
+  }
+  .pc-spacer-xxl {
+    margin: $margin-xxlarge;
+  }
 }
