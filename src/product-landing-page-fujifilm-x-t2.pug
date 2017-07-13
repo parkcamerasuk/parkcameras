@@ -1,0 +1,61 @@
+- var title = 'Fujifilm X-T2'
+- var mainImageURL = '45601-xt2-front.jpg';
+- var subImageURL = ['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400'];
+- var description = 'Insert Description Here'
+- var features = ['Insert Feature Here', 'Insert Another Feature Here'];
+- var productSKU = 'Insert Product SKU Here';
+- var tradeInItems = [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
+
+mixin emptyMixin()
+  if false
+    p nothing
+
+
+// Body and Kits
+
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+
+//
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+          .pc-wrapper.pc-column.pc-col1
+            h1 #{title}
+          hr
+          .pc-wrapper.pc-rowNoWrap
+            .pc-column.pc-col2
+              a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, title=title)
+                img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt=title)
+            
+              .pc-itemGallery
+                each URL in subImageURL   
+                    a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + URL, title=title)
+                      img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt=title)
+
+            .pc-column.pc-col2
+              p #{description}
+              ul.pc-itemFeat 
+                  p Features
+                  each feats in features
+                    li= feats
+              br
+              a.pc-btn-standard(href='https://www.parkcameras.com/p/' + productSKU) Pre-Order Now
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Trade-In Bonus
+          include includes/tradeIn.pug
+        
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
