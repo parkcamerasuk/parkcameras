@@ -1,0 +1,73 @@
+.pc-quotationForm {
+  * {
+    box-sizing: content-box;
+  }
+  h3, p, .form-row, hr {
+      clear: both;
+  }
+  
+  hr {
+      height: 1px;
+      margin: 1.5rem auto;
+      opacity: 0;
+  }
+  form {
+      max-width: 43.75rem;
+      margin: 0 auto;
+      border: solid 2px #2D4C9C;
+      padding: 2rem;
+    @include media($media-phone) {
+      border: 0;
+    }
+  }
+  button {
+      padding: 0.5rem 1rem;
+      border: none;
+      color: $white;
+      background: $park-blue;
+      margin-top: 1.5rem;
+  }
+  label {
+      font-size: 0.8rem;
+      clear: both;
+      float: left;
+      width: 25%;
+      text-align: left;
+    + input, + select, + textarea {
+      display: block;
+      margin-bottom: 0.5rem;
+      @include media($media-phone) {
+        clear: left;
+        width: 100%;
+      }
+    }
+    @include media($media-phone) {
+      width: 100%;
+    }
+  }
+  input, textarea, select, .additionalItemSection {
+      float: left;
+      width: 70%;
+  }
+  input, textarea, select {
+      max-width: 100%;
+  }
+  .accessoryContainer {
+      float: left;
+  }
+  label.additionalItemLabel {
+      clear: none;
+      float: none;
+      display: inline-block;
+      width: auto;
+  }
+  input.additionalItem {
+      float: none;
+      width: auto;
+      display: inline;
+  }
+  textarea {
+    height: 8rem;
+  }
+}
+

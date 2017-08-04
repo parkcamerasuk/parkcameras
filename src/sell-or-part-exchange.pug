@@ -1,0 +1,81 @@
+- var title = 'Sell or Part Exchange'
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    head
+      script(src='https://tools.parkcameras.com/js/used.js?v=3')
+
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        .pc-mainWrapper
+            .pc-wrapper.pc-column.pc-col1
+                h1 #{title}
+            hr
+            
+            .pc-wrapper.pc-row
+            
+              .pc-column.pc-col3
+                .pc-banner
+                  h2 Step 1: Get a quote
+                  p Simply complete the form below or pop into our showroom and talk to our friendly staff.
+                    
+              .pc-column.pc-col3
+                .pc-banner
+                  h2 Step 2: Post us your camera
+                  p Having accepted the quotation, simply send your equipment to our 
+                    a(href='https://www.parkcameras.com/contact-us' target='_blank') Burgess Hill store
+                    | .
+                    
+              .pc-column.pc-col3
+                .pc-banner
+                  h2 Step 3: Receive your payment
+                  p Once the equipment has been received, the payment shall be sent to you.    
+            
+            hr
+            
+            .pc-wrapper.pc-column.pc-col1.pc-quotationForm
+              h2 Quotation Form
+              
+              form#part-ex-quote(action='used-form.php', method='post')
+                h3 Transaction Details
+                .form-row
+                  label(for='type') Enquiry Type*
+                  select#type(name='type', required='')
+                    option(value='Part Exchange') Part Exchange
+                    option(value='Sale Only') Sale Only
+                h3 Item Details
+                // Populated with JS
+                .items
+                // Adds an item with JS
+                p
+                  a.new-item(href='#') [ + ] Add another item
+                h3 Your Details
+                .form-row
+                  label(for='customer-name') Name*
+                  input#customer-name(type='text', name='customer-name', required='')
+                .form-row
+                  label(for='telephone') Telephone*
+                  input#telephone(type='text', name='telephone', required='')
+                .form-row
+                  label(for='email') Email*
+                  input#email(type='email', name='email', required='')
+                .form-row
+                  label(for='house') House Name / Number*
+                  input#house(type='text', name='house', required='')
+                .form-row
+                  label(for='postcode') Postcode*
+                  input#postcode(type='text', name='postcode', required='')
+                .form-row
+                  button(type='submit', value='Send enquiry') Submit
+                p
+                  small
+                    em *Required
+
+            include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

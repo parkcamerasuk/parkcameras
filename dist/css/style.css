@@ -467,6 +467,9 @@
     font-size: 1rem; }
   .pc-mainWrapper .pc-banner ul {
     margin: 0; }
+  .pc-mainWrapper .pc-banner a {
+    color: #ffffff;
+    text-decoration: underline; }
   .pc-mainWrapper .pc-banner .pc-logo {
     max-width: 150px;
     min-width: 150px; }
@@ -681,6 +684,74 @@
   .pc-mainWrapper .pc-sopCalendar {
     position: relative;
     top: 1rem; } }
+
+.pc-quotationForm * {
+  box-sizing: content-box; }
+
+.pc-quotationForm h3, .pc-quotationForm p, .pc-quotationForm .form-row, .pc-quotationForm hr {
+  clear: both; }
+
+.pc-quotationForm hr {
+  height: 1px;
+  margin: 1.5rem auto;
+  opacity: 0; }
+
+.pc-quotationForm form {
+  max-width: 43.75rem;
+  margin: 0 auto;
+  border: solid 2px #2D4C9C;
+  padding: 2rem; }
+  @media screen and (max-width: 375px) {
+    .pc-quotationForm form {
+      border: 0; } }
+
+.pc-quotationForm button {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #FFF;
+  background: #2D4C9C;
+  margin-top: 1.5rem; }
+
+.pc-quotationForm label {
+  font-size: 0.8rem;
+  clear: both;
+  float: left;
+  width: 25%;
+  text-align: left; }
+  .pc-quotationForm label + input, .pc-quotationForm label + select, .pc-quotationForm label + textarea {
+    display: block;
+    margin-bottom: 0.5rem; }
+    @media screen and (max-width: 375px) {
+      .pc-quotationForm label + input, .pc-quotationForm label + select, .pc-quotationForm label + textarea {
+        clear: left;
+        width: 100%; } }
+  @media screen and (max-width: 375px) {
+    .pc-quotationForm label {
+      width: 100%; } }
+
+.pc-quotationForm input, .pc-quotationForm textarea, .pc-quotationForm select, .pc-quotationForm .additionalItemSection {
+  float: left;
+  width: 70%; }
+
+.pc-quotationForm input, .pc-quotationForm textarea, .pc-quotationForm select {
+  max-width: 100%; }
+
+.pc-quotationForm .accessoryContainer {
+  float: left; }
+
+.pc-quotationForm label.additionalItemLabel {
+  clear: none;
+  float: none;
+  display: inline-block;
+  width: auto; }
+
+.pc-quotationForm input.additionalItem {
+  float: none;
+  width: auto;
+  display: inline; }
+
+.pc-quotationForm textarea {
+  height: 8rem; }
 
 .pc-mainWrapper button.accordion, .pc-mainWrapper .pc-headline {
   cursor: pointer;

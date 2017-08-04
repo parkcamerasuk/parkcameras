@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sell or Part Exchange</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+    <script src="js/lity.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="css/lity.css">
+  </head>
+  <head>
+    <script src="https://tools.parkcameras.com/js/used.js?v=3"></script>
+  </head>
+  <body>
+    <div>
+      <section class="container" id="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="home" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="home" href="/" itemprop="url"><span itemprop="title">Home</span></a></li>
+          <li class="here" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">Sell or Part Exchange</span></a></li>
+        </ul>
+      </section>
+    </div>
+    <!-- START-->
+    <div class="pc-mainWrapper">
+      <div class="pc-wrapper pc-column pc-col1">
+        <h1>Sell or Part Exchange</h1>
+      </div>
+      <hr>
+      <div class="pc-wrapper pc-row">
+        <div class="pc-column pc-col3">
+          <div class="pc-banner">
+            <h2>Step 1: Get a quote</h2>
+            <p>Simply complete the form below or pop into our showroom and talk to our friendly staff.</p>
+          </div>
+        </div>
+        <div class="pc-column pc-col3">
+          <div class="pc-banner">
+            <h2>Step 2: Post us your camera</h2>
+            <p>Having accepted the quotation, simply send your equipment to our <a href="https://www.parkcameras.com/contact-us" target="_blank">Burgess Hill store</a>.</p>
+          </div>
+        </div>
+        <div class="pc-column pc-col3">
+          <div class="pc-banner">
+            <h2>Step 3: Receive your payment</h2>
+            <p>Once the equipment has been received, the payment shall be sent to you.    </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="pc-wrapper pc-column pc-col1 pc-quotationForm">
+        <h2>Quotation Form</h2>
+        <form id="part-ex-quote" action="used-form.php" method="post">
+          <h3>Transaction Details</h3>
+          <div class="form-row">
+            <label for="type">Enquiry Type*</label>
+            <select id="type" name="type" required="">
+              <option value="Part Exchange">Part Exchange</option>
+              <option value="Sale Only">Sale Only</option>
+            </select>
+          </div>
+          <h3>Item Details</h3>
+          <!-- Populated with JS-->
+          <div class="items"></div>
+          <!-- Adds an item with JS-->
+          <p><a class="new-item" href="#">[ + ] Add another item</a></p>
+          <h3>Your Details</h3>
+          <div class="form-row">
+            <label for="customer-name">Name*</label>
+            <input id="customer-name" type="text" name="customer-name" required="">
+          </div>
+          <div class="form-row">
+            <label for="telephone">Telephone*</label>
+            <input id="telephone" type="text" name="telephone" required="">
+          </div>
+          <div class="form-row">
+            <label for="email">Email*</label>
+            <input id="email" type="email" name="email" required="">
+          </div>
+          <div class="form-row">
+            <label for="house">House Name / Number*</label>
+            <input id="house" type="text" name="house" required="">
+          </div>
+          <div class="form-row">
+            <label for="postcode">Postcode*</label>
+            <input id="postcode" type="text" name="postcode" required="">
+          </div>
+          <div class="form-row">
+            <button type="submit" value="Send enquiry">Submit</button>
+          </div>
+          <p><small><em>*Required</em></small></p>
+        </form>
+      </div><br><a class="scrollToTop" href="#"></a>
+    </div>
+    <!-- FINISH-->
+    <script src="js/w3cAccordion.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $(document).swipebox({
+      selector: '.swipebox'
+      });
+      });
+    </script>
+  </body>
+</html>
