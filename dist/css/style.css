@@ -710,7 +710,8 @@
   border: none;
   color: #FFF;
   background: #2D4C9C;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  margin: 4rem auto 0; }
 
 .pc-quotationForm label {
   font-size: 0.8rem;
@@ -718,6 +719,10 @@
   float: left;
   width: 25%;
   text-align: left; }
+  .pc-quotationForm label .additionalItemLabel {
+    margin: 0 0.75rem 0 0.25rem; }
+  .pc-quotationForm label .additionalItem {
+    margin: 0; }
   .pc-quotationForm label + input, .pc-quotationForm label + select, .pc-quotationForm label + textarea {
     display: block;
     margin-bottom: 0.5rem; }
