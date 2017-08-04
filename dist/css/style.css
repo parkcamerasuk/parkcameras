@@ -719,10 +719,6 @@
   float: left;
   width: 25%;
   text-align: left; }
-  .pc-quotationForm label .additionalItemLabel {
-    margin: 0 0.75rem 0 0.25rem; }
-  .pc-quotationForm label .additionalItem {
-    margin: 0; }
   .pc-quotationForm label + input, .pc-quotationForm label + select, .pc-quotationForm label + textarea {
     display: block;
     margin-bottom: 0.5rem; }
@@ -733,6 +729,9 @@
   @media screen and (max-width: 375px) {
     .pc-quotationForm label {
       width: 100%; } }
+
+.pc-quotationForm .accessoryContainer {
+  margin: 0.5rem; }
 
 .pc-quotationForm input, .pc-quotationForm textarea, .pc-quotationForm select, .pc-quotationForm .additionalItemSection {
   float: left;

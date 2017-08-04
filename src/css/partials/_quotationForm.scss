@@ -34,12 +34,6 @@
       float: left;
       width: 25%;
       text-align: left;
-    .additionalItemLabel {
-      margin: 0 0.75rem 0 0.25rem;
-    }
-    .additionalItem {
-      margin: 0;
-    }
     + input, + select, + textarea {
       display: block;
       margin-bottom: 0.5rem;
@@ -51,6 +45,9 @@
     @include media($media-phone) {
       width: 100%;
     }
+  }
+  .accessoryContainer {
+    margin: 0.5rem;
   }
   input, textarea, select, .additionalItemSection {
       float: left;
