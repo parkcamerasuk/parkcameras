@@ -731,7 +731,7 @@
       width: 100%; } }
 
 .pc-quotationForm .accessoryContainer {
-  margin: 0.5rem; }
+  margin: 0 0.5rem; }
 
 .pc-quotationForm input, .pc-quotationForm textarea, .pc-quotationForm select, .pc-quotationForm .additionalItemSection {
   float: left;
