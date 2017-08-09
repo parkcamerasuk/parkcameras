@@ -26,7 +26,7 @@
       color: $white;
       background: $park-blue;
       margin-top: 1.5rem;
-      margin: 4rem auto 0;
+      margin: 1rem auto;
   }
   label {
       font-size: 0.8rem;
@@ -47,7 +47,8 @@
     }
   }
   .accessoryContainer {
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
+    float: left;
   }
   input, textarea, select, .additionalItemSection {
       float: left;
@@ -55,9 +56,6 @@
   }
   input, textarea, select {
       max-width: 100%;
-  }
-  .accessoryContainer {
-      float: left;
   }
   label.additionalItemLabel {
       clear: none;
@@ -69,9 +67,10 @@
       float: none;
       width: auto;
       display: inline;
+      margin: 0 0.25rem;
   }
   textarea {
-    height: 8rem;
+    height: 5rem;
   }
 }
 

@@ -711,7 +711,7 @@
   color: #FFF;
   background: #2D4C9C;
   margin-top: 1.5rem;
-  margin: 4rem auto 0; }
+  margin: 1rem auto; }
 
 .pc-quotationForm label {
   font-size: 0.8rem;
@@ -731,7 +731,8 @@
       width: 100%; } }
 
 .pc-quotationForm .accessoryContainer {
-  margin: 0 0.5rem; }
+  margin: 0 0.25rem;
+  float: left; }
 
 .pc-quotationForm input, .pc-quotationForm textarea, .pc-quotationForm select, .pc-quotationForm .additionalItemSection {
   float: left;
@@ -739,9 +740,6 @@
 
 .pc-quotationForm input, .pc-quotationForm textarea, .pc-quotationForm select {
   max-width: 100%; }
-
-.pc-quotationForm .accessoryContainer {
-  float: left; }
 
 .pc-quotationForm label.additionalItemLabel {
   clear: none;
@@ -752,10 +750,11 @@
 .pc-quotationForm input.additionalItem {
   float: none;
   width: auto;
-  display: inline; }
+  display: inline;
+  margin: 0 0.25rem; }
 
 .pc-quotationForm textarea {
-  height: 8rem; }
+  height: 5rem; }
 
 .pc-mainWrapper button.accordion, .pc-mainWrapper .pc-headline {
   cursor: pointer;
