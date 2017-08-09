@@ -39,17 +39,13 @@ html(lang="en")
             .pc-wrapper.pc-column.pc-col1.pc-quotationForm
               h2 Quotation Form
               
-              form#part-ex-quote(action='used-form.php', method='post')
+              form#part-ex-quote(action='https://tools.parkcameras.com/used-form.php', method='post')
                 h3 Transaction Details
                 .form-row
                   label(for='type') Enquiry Type*
                   select#type(name='type', required='')
                     option(value='Part Exchange') Part Exchange
                     option(value='Sale Only') Sale Only
-                    
-                .form-row
-                  label(for='purchase-info') What are you looking to buy?
-                  input#purchase-info(name='purchase-info')
                     
                 h3 Item Details
                 // Populated with JS
