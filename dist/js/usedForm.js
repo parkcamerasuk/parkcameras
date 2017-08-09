@@ -1,5 +1,5 @@
-var additionalItems = ['Battery', 'Charger', 'Manual', 'Body Cap', 'Strap', 'Lens Hood', 'Lens Cap (front)', 'Lens Cap (back)', 'Box (original)', 'Cables (USB/ other)'];
-var conditions = ['Pristine', 'Very good', 'Moderate wear', 'Heavy signs of use'];
+var additionalItems = ['Battery', 'Charger', 'Body Cap', 'Strap', 'Lens Hood', 'Lens Cap (Front)', 'Lens Cap (Rear)', 'Manual', 'Box (Original)', 'Cables (USB/ other)'];
+var conditions = ['Like New', 'Excellent', 'Very Good', 'Good', 'Well Used'];
 var itemCount = 0;
 
 $(function() { // jQuery ready
@@ -38,7 +38,7 @@ function addItem() {
     // we can just ignore any subsequent ones that are not filled in
 
     var nameId = 'item_' + itemCount + '_name';
-    makeLabel('Make & Model *', nameId).appendTo(newItem);
+    makeLabel('Make & Model*', nameId).appendTo(newItem);
     var newName = $('<input>').attr({
         'type': 'text',
         'id': nameId,
@@ -50,7 +50,7 @@ function addItem() {
     newName.appendTo(newItem);
 
     var conditionId = 'item_' + itemCount + '_condition';
-    makeLabel('Condition *', conditionId).appendTo(newItem);
+    makeLabel('Condition*', conditionId).appendTo(newItem);
     var newCondition = $('<select>').attr({
         'id': conditionId,
         'name': 'items[' + itemCount + '][condition]'
