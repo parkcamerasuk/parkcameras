@@ -457,8 +457,11 @@
   .pc-mainWrapper .pc-banner h2 {
     font-weight: 700;
     font-size: 2rem; }
+  @media screen and (max-width: 375px) {
+    .pc-mainWrapper .pc-banner h2 {
+      font-size: 1.5rem; } }
   .pc-mainWrapper .pc-banner h3 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .pc-mainWrapper .pc-banner ul li,
   .pc-mainWrapper .pc-banner h3 {
     font-weight: 400; }
@@ -691,6 +694,9 @@
 .pc-quotationForm h3, .pc-quotationForm p, .pc-quotationForm .form-row, .pc-quotationForm hr {
   clear: both; }
 
+.pc-quotationForm h4 {
+  font-weight: 400; }
+
 .pc-quotationForm hr {
   height: 1px;
   margin: 1.5rem auto;
@@ -706,6 +712,7 @@
       border: 0; } }
 
 .pc-quotationForm button {
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   color: #FFF;

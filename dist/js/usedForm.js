@@ -1,4 +1,4 @@
-var additionalItems = ['Battery', 'Charger', 'Body Cap', 'Strap', 'Lens Hood', 'Lens Cap (Front)', 'Lens Cap (Rear)', 'Manual', 'Box (Original)', 'Cables (USB/ other)'];
+var additionalItems = ['Battery', 'Charger', 'Body Cap', 'Strap', 'Lens Hood', 'Lens Cap (Front)', 'Lens Cap (Rear)', 'Manual', 'Box (Original)', 'Cables (USB/etc)'];
 var conditions = ['Like New', 'Excellent', 'Very Good', 'Good', 'Well Used'];
 var itemCount = 0;
 

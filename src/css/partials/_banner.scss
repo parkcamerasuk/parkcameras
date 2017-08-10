@@ -27,8 +27,13 @@
       font-weight: $font-bold;
       font-size: 2rem;
     }
-    h3 {
+    @include media($media-phone) {
+      h2 {
       font-size: 1.5rem;
+      }
+    }
+    h3 {
+      font-size: 1.25rem;
     }
     ul li,
     h3 {

@@ -5,6 +5,9 @@
   h3, p, .form-row, hr {
       clear: both;
   }
+  h4 {
+    font-weight: 400;
+  }
   
   hr {
       height: 1px;
@@ -21,6 +24,7 @@
     }
   }
   button {
+      font-size: 1rem;
       padding: 0.5rem 1rem;
       border: none;
       color: $white;

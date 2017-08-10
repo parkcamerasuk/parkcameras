@@ -4,7 +4,7 @@ doctype html
 html(lang="en")
     include includes/head.pug
     head
-      script(src='https://cdn.rawgit.com/parkcamerasuk/parkcameras/master/dist/js/usedForm.js')
+      script(src='js/usedForm.js')
 
     body
         include includes/breadcrumbs.pug
@@ -15,7 +15,7 @@ html(lang="en")
                 h1 #{title}
             hr
             
-            .pc-wrapper.pc-row
+            .pc-wrapper.pc-rowNoWrap
             
               .pc-column.pc-col3
                 .pc-banner
