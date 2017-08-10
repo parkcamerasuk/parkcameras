@@ -12,18 +12,28 @@ html(lang="en")
         // START
         .pc-mainWrapper
             .pc-wrapper.pc-column.pc-col1
-                h1 #{title}
+              h1 #{title}
+              
             hr
             
+            .pc-wrapper.pc-column.pc-col1
+            
+              h2 Sell your camera equipment in just 3 easy steps
+              
             .pc-wrapper.pc-rowNoWrap
             
               .pc-column.pc-col3
                 .pc-banner
+                  img(src='http://cinemaflight.com/wp-content/uploads/2015/09/photo-icon-300x300.png' alt='alt text' style='max-width: 100px;')
                   h2 Step 1: Get a quote
-                  p Simply complete the form below or pop into our showroom and talk to our friendly staff.
+                  p Simply complete the 
+                    a(href='#quote' title='Quotation Form') form
+                    | 
+                    | below or pop into our showroom and talk to our friendly staff.
                     
               .pc-column.pc-col3
                 .pc-banner
+                  img(src='http://cinemaflight.com/wp-content/uploads/2015/09/photo-icon-300x300.png' alt='alt text' style='max-width: 100px;')
                   h2 Step 2: Post us your camera
                   p Having accepted the quotation, simply send your equipment to our 
                     a(href='https://www.parkcameras.com/contact-us' target='_blank') Burgess Hill store
@@ -31,13 +41,14 @@ html(lang="en")
                     
               .pc-column.pc-col3
                 .pc-banner
+                  img(src='http://cinemaflight.com/wp-content/uploads/2015/09/photo-icon-300x300.png' alt='alt text' style='max-width: 100px;')
                   h2 Step 3: Receive your payment
                   p Once the equipment has been received, the payment shall be sent to you.    
             
             hr
             
-            .pc-wrapper.pc-column.pc-col1.pc-quotationForm
-              h2 Quotation Form
+            .pc-wrapper.pc-column.pc-col1.pc-quotationForm.pc-spacer-xl
+              h2#quote Quotation Form
               
               form#part-ex-quote(action='https://tools.parkcameras.com/used-form.php', method='post')
                 h3 Transaction Details
@@ -74,6 +85,39 @@ html(lang="en")
                 p
                   small
                     em *Required
+                    
+            hr
+            
+            .pc-wrapper.pc-column.pc-col1
+              h2 Frequently Asked Questions
+              h4 Question 1
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis sapien a nisl tincidunt dictum. In volutpat sem in leo aliquet, sit amet sagittis turpis pharetra. Mauris malesuada non mauris in tincidunt. Duis eget rutrum felis. Pellentesque pulvinar ullamcorper diam, vestibulum semper mi ornare sit amet.
+              h4 Question 2
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis sapien a nisl tincidunt dictum. In volutpat sem in leo aliquet, sit amet sagittis turpis pharetra. Mauris malesuada non mauris in tincidunt. Duis eget rutrum felis. Pellentesque pulvinar ullamcorper diam, vestibulum semper mi ornare sit amet.
+              h4 Question 3
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis sapien a nisl tincidunt dictum. In volutpat sem in leo aliquet, sit amet sagittis turpis pharetra. Mauris malesuada non mauris in tincidunt. Duis eget rutrum felis. Pellentesque pulvinar ullamcorper diam, vestibulum semper mi ornare sit amet.
+              h4 Question 4
+              ul
+                li 
+                  b Like New
+                  | 
+                  |- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                li 
+                  b Excellent
+                  | 
+                  |- Morbi quis sapien a nisl tincidunt dictum.
+                li 
+                  b Very Good
+                  | 
+                  |- In volutpat sem in leo aliquet, sit amet sagittis turpis pharetra.
+                li 
+                  b Good
+                  | 
+                  |- Mauris malesuada non mauris in tincidunt. Duis eget rutrum felis.
+                li 
+                  b Well Used
+                  | 
+                  |- Pellentesque pulvinar ullamcorper diam, vestibulum semper mi ornare sit amet.
 
             include includes/foot.pug
         
