@@ -1,10 +1,9 @@
 - var title = 'Fujifilm X-T2'
-- var mainImageURL = '45601-xt2-front.jpg';
-- var subImageURL = ['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400'];
-- var description = 'Insert Description Here'
-- var features = ['Insert Feature Here', 'Insert Another Feature Here'];
-- var productSKU = 'Insert Product SKU Here';
-- var tradeInItems = [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
+- var mainImageURL = '70777-X-T2_BK_front_White.jpg';
+- var subImageURL = ['70775-X-T2_BK_Back_White.jpg', '70778-X-T2_BK_Left_White.jpg', '70778-X-T2_BK_Left_White.jpg', '70772-X-T2_BK_Right_White.jpg', '70774-X-T2_BK_Top_White.jpg', '70773-X-T2_BK_Tilt_Vertical_White.jpg'];
+- var description = ['The Fujifilm X-T2 compact system camera is the latest to join the fantastic range of Fujifilm X Series cameras. Building upon the popularity of the Fujifilm X-T1, this camera hosts a huge range of improvements and features to make it a fantastic choice for those wishing to upgrade.', 'A 24.3MP sensor combined with X-Processor Pro image processor is the same as found in the Fujifilm X Pro2 however has the additional capability of 4K video capture, the first Fujifilm camera to boast this trait.', "Fujifilm's foundation in photography is pre-digital camera, and film camera fans can be sated by the inclusion of Fuji's exception film simulation modes - including the 'ACROS' simulation as introduced in the spectacular X-Pro2."];
+- var features = ['24.4MP CMOS III APS-C Sensor', "Film simulation effects for still and video capture to emulate Fujifilm's famous film styles", '14 frames per second continuous shooting', '4k video capture with F-log', 'Electronic viewfinder', 'Mechanical dials', 'Wireless connectivity', 'Weather sealed, magnesium alloy body', 'Available either as a body only, or as a kit comprising the Fujifilm X-T2 and 18-55mm lens'];
+- var productSKU = '2011565K';
 
 mixin emptyMixin()
   if false
@@ -13,7 +12,15 @@ mixin emptyMixin()
 
 // Body and Kits
 
-- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:2011565K}]', '@@plugin[IndividualProduct{stockcode:2011566K}]', '@@plugin[IndividualProduct{stockcode:2011565P}]'];
+
+// Accessories
+
+- var accessories = ['@@plugin[IndividualProduct{stockcode:2153190K}]', '@@plugin[IndividualProduct{stockcode:2090144T}]', '@@plugin[IndividualProduct{stockcode:2110144W}]', '@@plugin[IndividualProduct{stockcode:2153084K}]', '@@plugin[IndividualProduct{stockcode:2151427R}]', '@@plugin[IndividualProduct{stockcode:2142021K}]'];
+
+// Recommended Lenses
+
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:2242106K}]', '@@plugin[IndividualProduct{stockcode:2242109C}]', '@@plugin[IndividualProduct{stockcode:2242124E}]', '@@plugin[IndividualProduct{stockcode:2242125K}]', '@@plugin[IndividualProduct{stockcode:2242125R}]', '@@plugin[IndividualProduct{stockcode:2242142K}]', '@@plugin[IndividualProduct{stockcode:2242146K}]', '@@plugin[IndividualProduct{stockcode:2242146S}]', '@@plugin[IndividualProduct{stockcode:2242160K}]', '@@plugin[IndividualProduct{stockcode:2242160Q}]', '@@plugin[IndividualProduct{stockcode:2242185K}]', '@@plugin[IndividualProduct{stockcode:2242162K}]', '@@plugin[IndividualProduct{stockcode:2242318K}]', '@@plugin[IndividualProduct{stockcode:2242325K}]', '@@plugin[IndividualProduct{stockcode:2242366E}]', '@@plugin[IndividualProduct{stockcode:2242366T}]', '@@plugin[IndividualProduct{stockcode:2242102F}]', '@@plugin[IndividualProduct{stockcode:224103}]'];
 
 //
 
@@ -40,19 +47,23 @@ html(lang="en")
                       img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt=title)
 
             .pc-column.pc-col2
-              p #{description}
+              each desc in description
+                p= desc
               ul.pc-itemFeat 
                   p Features
                   each feats in features
                     li= feats
               br
-              a.pc-btn-standard(href='https://www.parkcameras.com/p/' + productSKU) Pre-Order Now
+              a.pc-btn-standard(href='https://www.parkcameras.com/p/' + productSKU) Show Now
         
           // Body and Kits
           include includes/bodyAndKits.pug
           
-          // Trade-In Bonus
-          include includes/tradeIn.pug
+          // Accessories
+          include includes/accessories.pug
+          
+          //Recommended Lenses
+          include includes/recommendedLenses.pug
         
           include includes/foot.pug
         
