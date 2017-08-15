@@ -16,12 +16,14 @@ $(function() { // jQuery ready
     })
 });
 
-function makeLabel(label, inputId, cssClass) {
+function makeLabel(label, inputId, cssClass, appendedHtml) {
     var theLabel = $('<label>').attr('for', inputId).text(label);
     if(cssClass) {
         theLabel.attr('class', cssClass);
     }
-
+    if(appendedHtml) {
+      theLabel.append(appendedHtml)
+    }
     return theLabel;
 }
 
@@ -50,7 +52,7 @@ function addItem() {
     newName.appendTo(newItem);
 
     var conditionId = 'item_' + itemCount + '_condition';
-    makeLabel('Condition*', conditionId).appendTo(newItem);
+    makeLabel('Condition*', conditionId, false, '<a style="display: block" href="#condition">Need help?</a>').appendTo(newItem);
     var newCondition = $('<select>').attr({
         'id': conditionId,
         'name': 'items[' + itemCount + '][condition]'
