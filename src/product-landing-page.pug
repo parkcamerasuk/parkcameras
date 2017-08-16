@@ -1,21 +1,37 @@
 - var title = 'Insert Title Here'
-- var mainImageURL = 'https://placehold.it/600x400';
-- var subImageURL = ['https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400', 'https://placehold.it/600x400'];
+- var mainImageURL = '';
+- var subImageURL = ['', '', '', '', ''];
 - var description = 'Insert Description Here'
 - var features = ['Insert Feature Here', 'Insert Another Feature Here'];
 - var productSKU = 'Insert Product SKU Here';
-- var tradeInItems = [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
 
 mixin emptyMixin()
   if false
-    p nothing
+    p >_<
 
 
 // Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
 
-- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
 
-//
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
+
+
+// Trade-In Items
+- var tradeInItems = [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
+
+
+// Blogs
+- var blogs = [{title: 'Blog Title', img: 'https://placehold.it/600x400', url: 'http://blog.parkcameras.com/', desc: 'Insert Description Here'}];
+
+// Videos
+- var videos = [{title: 'Video Title', img: 'https://placehold.it/600x400', url: 'https://www.youtube.com/user/parkcameras', desc: 'Insert Description Here'}];
+
 
 doctype html
 html(lang="en")
@@ -51,9 +67,19 @@ html(lang="en")
           // Body and Kits
           include includes/bodyAndKits.pug
           
+          // Accessories
+          include includes/accessories.pug
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
           // Trade-In Bonus
           include includes/tradeIn.pug
-        
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
           include includes/foot.pug
         
         // FINISH

@@ -1,0 +1,30 @@
+hr
+.pc-wrapper.pc-row
+
+  .pc-column.pc-col2
+    h2 Blog Posts
+    
+    each blog in blogs
+      .pc-wrapper.pc-row
+        .pc-column.pc-col4
+          a(href= blog.url, target='_blank', title= blog.title)
+            img(src= blog.img, alt='Read' + blog.title)
+        .pc-column.pc-col4
+          h4.pc-articleTitle
+            a(href= blog.url, target='_blank', title=blog.title) #{blog.title}
+          p= blog.desc 
+            | 
+            a(href= blog.url, target='_blank', title=blog.title) Read More
+
+  .pc-column.pc-col2
+    h2 Video Reviews
+    
+    each video in videos
+      .pc-wrapper.pc-row
+        .pc-column.pc-col4
+          a(data-lity, href= video.url, target='_blank', title='Watch' + video.title) 
+            img(src= video.img, alt='Watch' + video.title)
+        .pc-column.pc-col4
+          h4.pc-articleTitle
+            a(data-lity, href= video.url, target='_blank', title='Watch' + video.title) #{video.title}
+          p= video.desc
