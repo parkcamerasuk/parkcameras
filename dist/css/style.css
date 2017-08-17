@@ -436,84 +436,89 @@
   .pc-mainWrapper .pc-spacer-xxl {
     margin: 0 0 4rem; }
 
-.pc-mainWrapper .pc-banner {
+.pc-mainWrapper .pc-banner, .pc-mainWrapper .pc-quotationBanner {
   background-color: #2D4C9C;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 4rem;
   position: relative; }
-  .pc-mainWrapper .pc-banner h2,
-  .pc-mainWrapper .pc-banner p {
+  .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-quotationBanner h2,
+  .pc-mainWrapper .pc-banner p, .pc-mainWrapper .pc-quotationBanner p {
     text-align: left; }
-  .pc-mainWrapper .pc-banner h2,
-  .pc-mainWrapper .pc-banner p,
-  .pc-mainWrapper .pc-banner i,
-  .pc-mainWrapper .pc-banner li {
+  .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-quotationBanner h2,
+  .pc-mainWrapper .pc-banner p, .pc-mainWrapper .pc-quotationBanner p,
+  .pc-mainWrapper .pc-banner i, .pc-mainWrapper .pc-quotationBanner i,
+  .pc-mainWrapper .pc-banner li, .pc-mainWrapper .pc-quotationBanner li {
     color: #FFF; }
-  .pc-mainWrapper .pc-banner h2 {
+  .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-quotationBanner h2 {
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 1.25;
     margin: 0 0 2rem; }
   @media screen and (max-width: 375px) {
-    .pc-mainWrapper .pc-banner h2 {
+    .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-quotationBanner h2 {
       font-size: 1.5rem;
       margin: 0 0 1rem; } }
-  .pc-mainWrapper .pc-banner ul li,
-  .pc-mainWrapper .pc-banner h2 {
+  .pc-mainWrapper .pc-banner ul li, .pc-mainWrapper .pc-quotationBanner ul li,
+  .pc-mainWrapper .pc-banner h2, .pc-mainWrapper .pc-quotationBanner h2 {
     font-weight: 400; }
-  .pc-mainWrapper .pc-banner p,
-  .pc-mainWrapper .pc-banner ul li {
+  .pc-mainWrapper .pc-banner p, .pc-mainWrapper .pc-quotationBanner p,
+  .pc-mainWrapper .pc-banner ul li, .pc-mainWrapper .pc-quotationBanner ul li {
     font-size: 1rem; }
-  .pc-mainWrapper .pc-banner ul {
+  .pc-mainWrapper .pc-banner ul, .pc-mainWrapper .pc-quotationBanner ul {
     margin: 0; }
-  .pc-mainWrapper .pc-banner a {
+  .pc-mainWrapper .pc-banner a, .pc-mainWrapper .pc-quotationBanner a {
     color: #ffffff;
     text-decoration: underline; }
-  .pc-mainWrapper .pc-banner .pc-logo {
+  .pc-mainWrapper .pc-banner .pc-logo, .pc-mainWrapper .pc-quotationBanner .pc-logo {
     max-width: 150px;
     min-width: 150px; }
-  .pc-mainWrapper .pc-banner .pc-btn-inverse {
+  .pc-mainWrapper .pc-banner .pc-btn-inverse, .pc-mainWrapper .pc-quotationBanner .pc-btn-inverse {
     color: #FFF;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.15); }
-  .pc-mainWrapper .pc-banner .pc-charLength44 {
+  .pc-mainWrapper .pc-banner .pc-charLength44, .pc-mainWrapper .pc-quotationBanner .pc-charLength44 {
     max-width: 44ch;
     overflow: hidden; }
-  .pc-mainWrapper .pc-banner .pc-charLength66 {
+  .pc-mainWrapper .pc-banner .pc-charLength66, .pc-mainWrapper .pc-quotationBanner .pc-charLength66 {
     max-width: 66ch;
     overflow: hidden; }
-  .pc-mainWrapper .pc-banner a.pc-btn-standard, .pc-mainWrapper .pc-banner a.pc-btn-sop,
-  .pc-mainWrapper .pc-banner a.pc-btn-inverse {
+  .pc-mainWrapper .pc-banner a.pc-btn-standard, .pc-mainWrapper .pc-quotationBanner a.pc-btn-standard, .pc-mainWrapper .pc-banner a.pc-btn-sop, .pc-mainWrapper .pc-quotationBanner a.pc-btn-sop,
+  .pc-mainWrapper .pc-banner a.pc-btn-inverse, .pc-mainWrapper .pc-quotationBanner a.pc-btn-inverse {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin: 2rem 0 0;
     text-decoration: none; }
-  .pc-mainWrapper .pc-banner img.pc-bannerImg {
+  .pc-mainWrapper .pc-banner img.pc-bannerImg, .pc-mainWrapper .pc-quotationBanner img.pc-bannerImg {
     width: 6rem;
     position: absolute;
     left: 4rem; }
   @media screen and (max-width: 768px) {
-    .pc-mainWrapper .pc-banner img.pc-bannerImg {
+    .pc-mainWrapper .pc-banner img.pc-bannerImg, .pc-mainWrapper .pc-quotationBanner img.pc-bannerImg {
       display: block;
       position: static;
       margin: 1rem 0; } }
   @media screen and (max-width: 375px) {
-    .pc-mainWrapper .pc-banner img.pc-bannerImg {
+    .pc-mainWrapper .pc-banner img.pc-bannerImg, .pc-mainWrapper .pc-quotationBanner img.pc-bannerImg {
       margin: 1rem auto; } }
 
 @media screen and (max-width: 768px) {
-  .pc-mainWrapper .pc-banner {
+  .pc-mainWrapper .pc-banner, .pc-mainWrapper .pc-quotationBanner {
     padding: 1.5rem; }
-    .pc-mainWrapper .pc-banner ul li,
-    .pc-mainWrapper .pc-banner p {
+    .pc-mainWrapper .pc-banner ul li, .pc-mainWrapper .pc-quotationBanner ul li,
+    .pc-mainWrapper .pc-banner p, .pc-mainWrapper .pc-quotationBanner p {
       font-size: 1rem; } }
 
 .pc-mainWrapper .pc-banner-overlay {
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay; }
+
+.pc-mainWrapper .pc-quotationBanner {
+  padding: 2rem; }
+  .pc-mainWrapper .pc-quotationBanner h2 {
+    margin: 0 0 1rem; }
 
 .pc-mainWrapper img {
   width: 100%;
