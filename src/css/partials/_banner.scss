@@ -5,38 +5,32 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 2.5rem;
+    padding: 4rem;
+    margin: 2rem auto;
+    position: relative;
     h2,
-    h3,
     p {
       text-align: left;
     }
     h2,
-    h3,
-    h4,
     p,
     li {
       color: $white;
     }
-    h2,
-    h3 {
-      margin: $margin-medium;
-      letter-spacing: 1px;
-    }
     h2 {
-      font-weight: $font-bold;
       font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 1.25;
+      margin: $margin-large;
     }
     @include media($media-phone) {
       h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
+        margin: $margin-medium;
       }
     }
-    h3 {
-      font-size: 1.25rem;
-    }
     ul li,
-    h3 {
+    h2 {
       font-weight: $font-regular;
     }
     p,
@@ -66,6 +60,29 @@
     .pc-charLength66 {
       max-width: 66ch;
       overflow: hidden;
+    }
+    a.pc-btn-standard,
+    a.pc-btn-inverse {
+      display: inline-flex;
+      margin: 2rem 0 0;
+      text-decoration: none;
+    }
+    img.pc-bannerImg {
+      width: 6rem;
+      position: absolute;
+      left: 4rem;
+    }
+    @include media($media-tablet) {
+      img.pc-bannerImg {
+        display: block;
+        position: static;
+        margin: 1rem 0;
+      }
+    }
+    @include media($media-phone) {
+      img.pc-bannerImg {
+        margin: 1rem auto;
+      }
     }
   }
   @include media($media-tablet) {

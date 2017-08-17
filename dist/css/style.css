@@ -290,7 +290,9 @@
 .pc-mainWrapper .pc-articleTitle {
   margin-top: 0;
   margin-bottom: 0;
-  text-transform: uppercase; }
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1rem; }
 
 .pc-mainWrapper {
   width: 100%;
@@ -439,31 +441,27 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 2.5rem; }
+  padding: 4rem;
+  margin: 2rem auto;
+  position: relative; }
   .pc-mainWrapper .pc-banner h2,
-  .pc-mainWrapper .pc-banner h3,
   .pc-mainWrapper .pc-banner p {
     text-align: left; }
   .pc-mainWrapper .pc-banner h2,
-  .pc-mainWrapper .pc-banner h3,
-  .pc-mainWrapper .pc-banner h4,
   .pc-mainWrapper .pc-banner p,
   .pc-mainWrapper .pc-banner li {
     color: #FFF; }
-  .pc-mainWrapper .pc-banner h2,
-  .pc-mainWrapper .pc-banner h3 {
-    margin: 0 0 1rem;
-    letter-spacing: 1px; }
   .pc-mainWrapper .pc-banner h2 {
-    font-weight: 700;
-    font-size: 2rem; }
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    margin: 0 0 2rem; }
   @media screen and (max-width: 375px) {
     .pc-mainWrapper .pc-banner h2 {
-      font-size: 1.5rem; } }
-  .pc-mainWrapper .pc-banner h3 {
-    font-size: 1.25rem; }
+      font-size: 1.5rem;
+      margin: 0 0 1rem; } }
   .pc-mainWrapper .pc-banner ul li,
-  .pc-mainWrapper .pc-banner h3 {
+  .pc-mainWrapper .pc-banner h2 {
     font-weight: 400; }
   .pc-mainWrapper .pc-banner p,
   .pc-mainWrapper .pc-banner ul li {
@@ -486,6 +484,25 @@
   .pc-mainWrapper .pc-banner .pc-charLength66 {
     max-width: 66ch;
     overflow: hidden; }
+  .pc-mainWrapper .pc-banner a.pc-btn-standard, .pc-mainWrapper .pc-banner a.pc-btn-sop,
+  .pc-mainWrapper .pc-banner a.pc-btn-inverse {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 2rem 0 0;
+    text-decoration: none; }
+  .pc-mainWrapper .pc-banner img.pc-bannerImg {
+    width: 6rem;
+    position: absolute;
+    left: 4rem; }
+  @media screen and (max-width: 768px) {
+    .pc-mainWrapper .pc-banner img.pc-bannerImg {
+      display: block;
+      position: static;
+      margin: 1rem 0; } }
+  @media screen and (max-width: 375px) {
+    .pc-mainWrapper .pc-banner img.pc-bannerImg {
+      margin: 1rem auto; } }
 
 @media screen and (max-width: 768px) {
   .pc-mainWrapper .pc-banner {

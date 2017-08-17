@@ -10,7 +10,7 @@ hr
           a(href= blog.url, target='_blank', title= blog.title)
             img(src= blog.img, alt='Read' + blog.title)
         .pc-column.pc-col4
-          h4.pc-articleTitle
+          h3.pc-articleTitle
             a(href= blog.url, target='_blank', title=blog.title) #{blog.title}
           p= blog.desc 
             | 
@@ -25,6 +25,6 @@ hr
           a(data-lity, href= video.url, target='_blank', title='Watch' + video.title) 
             img(src= video.img, alt='Watch' + video.title)
         .pc-column.pc-col4
-          h4.pc-articleTitle
+          h3.pc-articleTitle
             a(data-lity, href= video.url, target='_blank', title='Watch' + video.title) #{video.title}
           p= video.desc

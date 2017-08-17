@@ -1,0 +1,27 @@
+- var title = 'Banner Template'
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        .pc-mainWrapper
+            .pc-wrapper.pc-column.pc-col1
+                h1 #{title}
+            hr
+
+            .pc-wrapper.pc-column
+              .pc-banner
+                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius ipsum quis magna fringilla cursus.
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius ipsum quis magna fringilla cursus. Sed ligula nulla, laoreet in ex quis, venenatis consectetur ipsum. Morbi diam felis, blandit non accumsan id, vehicula in arcu. Vestibulum semper eleifend metus, vitae mollis justo ultrices eu. Sed lobortis lacus vitae metus vehicula finibus.
+                p Nullam vestibulum dolor eros, vel convallis augue ultricies eu. Curabitur euismod dignissim est. Donec facilisis justo a tincidunt tincidunt. Nullam rutrum, est ultricies semper consequat, arcu velit suscipit quam, eget dictum mi nibh vitae tellus.
+                img.pc-bannerImg(src='https://www.placehold.it/100x100')
+                a.pc-btn-inverse(href='') Lorem Ipsum
+
+            include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
