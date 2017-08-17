@@ -7,7 +7,12 @@
 - var gearCamera = ['@@plugin[IndividualProduct{stockcode:1010029H}]', '@@plugin[IndividualProduct{stockcode:1010055C}]', '@@plugin[IndividualProduct{stockcode:1013125T}]', '@@plugin[IndividualProduct{stockcode:1638118K}]']
 - var gearLens = ['@@plugin[IndividualProduct{stockcode:1240614E}]', '@@plugin[IndividualProduct{stockcode:1240623D}]', '@@plugin[IndividualProduct{stockcode:1240435C}]']
 - var gearAccessories = ['@@plugin[IndividualProduct{stockcode:M1720075T}]', '@@plugin[IndividualProduct{stockcode:9637006G}]', '@@plugin[IndividualProduct{stockcode:L334505T}]']
-- var video = ['Video Link Here']
+
+// Blogs
+- var blogs = [{title: 'Andy Rouses Essential Lens - The Canon EF 100-400mm', img: 'https://4.bp.blogspot.com/-JGbbK9jAkl0/WTrCHRN1qGI/AAAAAAAACkA/iDZ2OM36ma4OI1I2TT0i1ub4ub14xkqOgCLcB/s640/other%2Bbird.jpg', url: 'http://blog.parkcameras.com/2017/06/andy-rouses-essential-lens-canon-ef-100.html', desc: 'Sometimes, tools-of-the-trade become more than mere objects to us photographers and we develop a..'}, {title: 'Andy Rouses Shooting Wildlife with the Canon 5D Mark IV', img: 'https://2.bp.blogspot.com/-Mgwm00hqo-E/WN5mJ9Du_jI/AAAAAAAABh0/1KuFTHdW7Yo0KQthiePC4h8YNCqC1iMjwCLcB/s640/Tiger1.jpg', url: 'http://blog.parkcameras.com/2017/03/shooting-wildlife-canon-eos-5d-iv.html', desc: 'Greetings Park Cameras readers, it’s been a while I know and I hope that you have missed me. As I type this I’m sitting in the BA lounge at Heathrow about to..'}];
+
+// Videos
+- var videos = [{title: 'Andy Rouse Exclusive: Hands-On with the Canon EOS-1DX Mark II', img: 'https://i.ytimg.com/vi/z3s-KQXuES0/hqdefault.jpg?sqp=-oaymwEWCMQBEG5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAhOZyA2JNcF-ZueQNoLY5l1KXCrg', url: 'https://www.youtube.com/watch?v=z3s-KQXuES0&t=341s', desc: 'Professional wildlife photographer - and Park Cameras ambassador - Andy Rouse goes hands on with the Canon EOS 1D X Mark II.'}];
 
 doctype html
 html(lang="en")
@@ -73,57 +78,21 @@ html(lang="en")
               .pc-col4
                 span=SKU
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, nisi sed sagittis fermentum, lacus neque iaculis sapien, vel vestibulum velit dolor nec elit.
+
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+
+
           hr
-          .pc-wrapper.pc-row
-            .pc-column.pc-col2
-              h3 Blog Posts
-              
-              
-              .pc-wrapper.pc-row
-                .pc-column.pc-col4
-                  a(href='http://blog.parkcameras.com/2017/06/andy-rouses-essential-lens-canon-ef-100.html' target='_blank' title='Read Andy Rouses Essential Lens - The Canon EF 100-400mm') 
-                    img(src="https://4.bp.blogspot.com/-JGbbK9jAkl0/WTrCHRN1qGI/AAAAAAAACkA/iDZ2OM36ma4OI1I2TT0i1ub4ub14xkqOgCLcB/s640/other%2Bbird.jpg", alt='Andy Rouses Essential Lens - The Canon EF 100-400mm')
-                .pc-column.pc-col4
-                  h4.pc-articleTitle
-                    a(href='http://blog.parkcameras.com/2017/06/andy-rouses-essential-lens-canon-ef-100.html' target='_blank' title='Read Andy Rouses Essential Lens - The Canon EF 100-400mm') Andy Rouse's Essential Lens - The Canon EF 100-400mm
-                  p Sometimes, tools-of-the-trade become more than mere objects to us photographers and we develop a.. 
-                    a(href='http://blog.parkcameras.com/2017/06/andy-rouses-essential-lens-canon-ef-100.html' target='_blank' title='Read Andy Rouses Essential Lens - The Canon EF 100-400mm') Read More
-                    
-                    
-              .pc-wrapper.pc-row
-                .pc-column.pc-col4
-                  a(href='http://blog.parkcameras.com/2017/03/shooting-wildlife-canon-eos-5d-iv.html' target='_blank' title='Read Andy Rouses Shooting Wildlife with the Canon 5D Mark IV') 
-                    img(src="https://2.bp.blogspot.com/-Mgwm00hqo-E/WN5mJ9Du_jI/AAAAAAAABh0/1KuFTHdW7Yo0KQthiePC4h8YNCqC1iMjwCLcB/s640/Tiger1.jpg", alt='Andy Rouses Shooting Wildlife with the Canon 5D Mark IV')
-                .pc-column.pc-col4
-                  h4.pc-articleTitle
-                    a(href='http://blog.parkcameras.com/2017/03/shooting-wildlife-canon-eos-5d-iv.html' target='_blank' title='Read Andy Rouse Shooting Wildlife with the Canon 5D Mark IV') Andy Rouse Shooting Wildlife with the Canon 5D Mark IV
-                  p Greetings Park Cameras readers, it’s been a while I know and I hope that you have missed me. As I type this I’m sitting in the BA lounge at Heathrow about to..
-                    a(href='http://blog.parkcameras.com/2017/03/shooting-wildlife-canon-eos-5d-iv.html' target='_blank' title='Read Andy Rouse Shooting Wildlife with the Canon 5D Mark IV') Read More
-                    
-                    
-              .pc-wrapper.pc-column
-                a.pc-btn-standard(href='http://blog.parkcameras.com/search?q=Andy+Rouse', target='_blank' title='View More Andy Rouse Blog Posts') View More
-            .pc-column.pc-col2
-              h3 Video Reviews
-              .pc-wrapper.pc-row
-                .pc-column.pc-col4
-                  a(data-lity, href='https://www.youtube.com/watch?v=z3s-KQXuES0&t=341s' target='_blank' title='Watch Andy Rouse Exclusive: Hands-On with the Canon EOS-1DX Mark II') 
-                    img(src="https://i.ytimg.com/vi/z3s-KQXuES0/hqdefault.jpg?sqp=-oaymwEWCMQBEG5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAhOZyA2JNcF-ZueQNoLY5l1KXCrg", alt='Andy Rouses Essential Lens - The Canon EF 100-400mm')
-                .pc-column.pc-col4
-                  h4.pc-articleTitle
-                    a(data-lity, href='https://www.youtube.com/watch?v=z3s-KQXuES0&t=341s' target='_blank' title='Watch Andy Rouse Exclusive: Hands-On with the Canon EOS-1DX Mark II') Andy Rouse Exclusive: Hands-On with the Canon EOS-1DX Mark II
-                  p Professional wildlife photographer - and Park Cameras ambassador - Andy Rouse goes hands on with the Canon EOS 1D X Mark II.
-                    
-          hr.pc-spacer-xl
           .pc-wrapper.pc-column
-            .pc-banner.pc-banner-overlay.pc-spacer-xl(style="background-image: url('https://www.foto-buzz.com/images/siteimages/Beach2e595iq.jpg');")
-              h2 START A FOTOBUZZ MEMBERSHIP TODAY
+            .pc-banner.pc-banner-overlay(style="background-image: url('https://www.foto-buzz.com/images/siteimages/Beach2e595iq.jpg');")
+              h2 Start A Fotobuzz Membership Today
               p.pc-spacer-l.pc-charLength66 What is FotoBuzz? It's an exclusive photography community hidden behind closed doors so members can enjoy expert articles, talk among themselves, ask for advice, upload images for critique and take part in competitions, all in a 100% safe environment. Membership is open to anyone who wants to learn about photography and have fun doing it!
-              h4
+              p
                 i Andy Rouse &amp; Andrew James
-              p.pc-spacer-xl(style='position: relative;')
+              p
                 i FotoBuzz HQ
-                img(src='http://content.parkcameras.com/5/1/images/landing_pages/foto-buzz.png', alt='FotoBuzz Logo' style="max-width: 90px; position: absolute; top: 0; left: 8.05rem")
+              img.pc-bannerImg(src='http://content.parkcameras.com/5/1/images/landing_pages/foto-buzz.png', alt='FotoBuzz Logo')
               a.pc-btn-inverse(href='https://www.foto-buzz.com/', target='_blank', title='FotoBuzz Website') Sign Up
               
           include includes/foot.pug

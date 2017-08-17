@@ -442,13 +442,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   padding: 4rem;
-  margin: 2rem auto;
+  margin: 2rem 0;
   position: relative; }
   .pc-mainWrapper .pc-banner h2,
   .pc-mainWrapper .pc-banner p {
     text-align: left; }
   .pc-mainWrapper .pc-banner h2,
   .pc-mainWrapper .pc-banner p,
+  .pc-mainWrapper .pc-banner i,
   .pc-mainWrapper .pc-banner li {
     color: #FFF; }
   .pc-mainWrapper .pc-banner h2 {
