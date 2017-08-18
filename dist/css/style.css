@@ -2,7 +2,17 @@
 .pc-mainWrapper h1 {
   font-size: 2rem; }
 
-.pc-mainWrapper h2 {
+.pc-mainWrapper h1,
+.pc-mainWrapper h2,
+.pc-mainWrapper p {
+  margin: 0 0 1rem; }
+
+.pc-mainWrapper h3,
+.pc-mainWrapper h4 {
+  margin: 0 0 0.5rem; }
+
+.pc-mainWrapper h2,
+.pc-mainWrapper blockquote {
   font-size: 1.5rem; }
 
 .pc-mainWrapper h3 {
@@ -12,7 +22,10 @@
   font-size: 1rem; }
 
 .pc-mainWrapper ul {
-  margin: 0 0 1rem; }
+  margin: 1rem; }
+
+.pc-mainWrapper p:last-child {
+  margin: 0; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
@@ -21,6 +34,7 @@
 .pc-mainWrapper p,
 .pc-mainWrapper ul li,
 .pc-mainWrapper ol li,
+.pc-mainWrapper blockquote,
 .pc-mainWrapper pc-trademarkm,
 .pc-mainWrapper pc-footerNote,
 .pc-mainWrapper pc-largeText {
@@ -47,6 +61,15 @@
 .pc-mainWrapper h3,
 .pc-mainWrapper table {
   text-align: center; }
+
+.pc-mainWrapper blockquote {
+  max-width: 60rem;
+  margin: 1.5rem auto;
+  font-style: italic; }
+  .pc-mainWrapper blockquote::before {
+    content: '" '; }
+  .pc-mainWrapper blockquote::after {
+    content: ' "'; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
