@@ -35,19 +35,21 @@
           ul li,
           ol li,
           blockquote,
-          pc-trademarkm,
+          pc-trademark,
           pc-footerNote,
           pc-largeText {
             line-height: 1.5;
           }
           p,
-          ul li,
-          ol li,
           button,
-          pc-trademark,
-          pc-footerNote {
+          ul,
+          ol,
+          li,
+          p.pc-trademark,
+          p.pc-footerNote {
             font-size: 0.9rem;
           }
+          
           h1,
           h2,
           h3,
@@ -138,7 +140,7 @@
           }
           .pc-itemFeat {
             background: $park-lightGrey;
-            margin-top: 1.5rem;
+            margin: 1rem 0;
             padding: 1rem;
             li {
               margin: $margin-small;

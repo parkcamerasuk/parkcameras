@@ -11,12 +11,16 @@ mixin emptyMixin()
     p nothing
 
 // Accessories
-
 - var accessories = ['@@plugin[IndividualProduct{stockcode:1150096R}]', '@@plugin[IndividualProduct{stockcode:1090107M}]', '@@plugin[IndividualProduct{stockcode:1100206J}]', '@@plugin[IndividualProduct{stockcode:1310356P}]'];
 
 // Recommended Lenses
-
 - var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:1240415V}]', '@@plugin[IndividualProduct{stockcode:1240432K}]', '@@plugin[IndividualProduct{stockcode:1240156L}]', '@@plugin[IndividualProduct{stockcode:1240534R}]']
+
+// Blogs
+- var blogs = [{title: 'Canon EOS 5D Mark IV: Over Ten Years in the Making', img: 'https://4.bp.blogspot.com/-BA5nz_vj3-w/V7saNA7G7mI/AAAAAAAAAKo/5H8huePaoAYD_FcAICjL-eCjd97I6dAIgCK4B/s400/website-5d.jpg', url: 'http://blog.parkcameras.com/2016/08/canon-eos-5d-mark-iv-over-ten-years-in.html', desc: 'Now the lid has been lifted on the superb Canon EOS 5D Mark IV we can get all doughy-eyed and take a nostalgic stroll through..'}, {title: 'Views Of The Canon EOS 5D Mark IV From Andy Rouse', img: 'https://1.bp.blogspot.com/-oOYA0APeLfc/V77LJuKaYDI/AAAAAAAABag/zkk75qT0u7U7VH0xq59TCsMx8XfEGq5GwCLcB/s400/English%2BCustom%2BTouch%2BAF%2Blife%2Bstyle.jpg', url: 'http://blog.parkcameras.com/2016/08/canon-5d-mark-iv-andy-rouse.html', desc: 'It’s been the worst kept secret ever, the new EOS 5D Mark IV has hit us today. It offers a wealth of.. '}];
+
+// Videos
+- var videos = [{title: 'Canon EOS 5D Mark IV Review: First Hands-On Look', img: 'https://i.ytimg.com/vi/BZx_bXlWdTU/hqdefault.jpg?sqp=-oaymwEWCMQBEG5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAGS1sDvFfcUFhazfppQesWfd5_7A', url: 'https://www.youtube.com/watch?v=BZx_bXlWdTU&t=38s', desc: 'Packing an all-new sensor with 30.4 Megapixels, a lot of internal upgrades including a lot of wireless technology and capable of capturing 4K video - this is a more than worthy successor to the fantastic Canon 5D Mark III.'}];
 
 //
 
@@ -54,7 +58,7 @@ html(lang="en")
           
           // Accessories
           .pc-wrapper.pc-column.pc-col1
-            h3 #{title} Accessories
+            h2 #{title} Accessories
             p Alongside the new Canon 5D Mark IV comes a couple of handy accessories - namely the newly designed battery grip, the Canon BG-E20 Battery Grip. Designed specifically to match the style of the 5D Mark IV it is the ideal grip accessory to give you that extra power boost and added controls to enhance vertical shooting. There is also a protective cloth, the Canon PC-E1 Protecting Cloth. Add to that a whole host of accessories that are conveniently compatible from past models of the Canon 5D - such as the Canon LP-E6N Battery and Canon 5D Mark IV compatible battery charger.
           .pc-wrapper.pc-pluginLayout
             each SKU in accessories
@@ -63,7 +67,7 @@ html(lang="en")
           
           // Trade-In Bonus
           .pc-wrapper.pc-column
-            h3 Trade-In
+            h2 Trade-In
             table
               tr
                 td(style='background-color: #e4e4e4;')
@@ -81,57 +85,19 @@ html(lang="en")
                   td &pound;#{item.enhanced}
                   td(style='color: #2d4d9c;') &pound;#{item.final}
 
-            p.pc-footerNote.pc-spacer-xl 
+            p.pc-footerNote
               | *Trade-in value dependent on condition of used camera, prices shown are maximum paid for each model.
               br
               | Trade-in only applicable when trading in the above models against the #{title}.
           
-          hr.pc-spacer-xl
+          hr
               
           // Recommended Lenses
           include includes/recommendedLenses.pug
           
-          hr.pc-spacer-xl
-          .pc-wrapper.pc-row
-            .pc-column.pc-col2
-              h3 Blog Posts
-              
-              
-              .pc-wrapper.pc-row
-                .pc-column.pc-col4
-                  a(href='http://blog.parkcameras.com/2016/08/canon-eos-5d-mark-iv-over-ten-years-in.html' target='_blank' title='Read Canon EOS 5D Mark IV: Over Ten Years in the Making')
-                    img(src='https://4.bp.blogspot.com/-BA5nz_vj3-w/V7saNA7G7mI/AAAAAAAAAKo/5H8huePaoAYD_FcAICjL-eCjd97I6dAIgCK4B/s400/website-5d.jpg', alt='Canon EOS 5D Mark IV: Over Ten Years in the Making')
-                .pc-column.pc-col4
-                  h4.pc-articleTitle
-                    a(href='http://blog.parkcameras.com/2016/08/canon-eos-5d-mark-iv-over-ten-years-in.html' target='_blank' title='Read Canon EOS 5D Mark IV: Over Ten Years in the Making') Canon EOS 5D Mark IV: Over Ten Years in the Making
-                  p Now the lid has been lifted on the superb Canon EOS 5D Mark IV we can get all doughy-eyed and take a nostalgic stroll through.. 
-                    a(href='http://blog.parkcameras.com/2016/08/canon-eos-5d-mark-iv-over-ten-years-in.html' target='_blank' title='Read Canon EOS 5D Mark IV: Over Ten Years in the Making') Read More
-                    
-                    
-              .pc-wrapper.pc-row
-                .pc-column.pc-col4
-                  a(href='http://blog.parkcameras.com/2016/08/canon-5d-mark-iv-andy-rouse.html' target='_blank' title='Read Views of the Canon EOS 5D Mark IV from Andy Rouse') 
-                    img(src='https://1.bp.blogspot.com/-oOYA0APeLfc/V77LJuKaYDI/AAAAAAAABag/zkk75qT0u7U7VH0xq59TCsMx8XfEGq5GwCLcB/s400/English%2BCustom%2BTouch%2BAF%2Blife%2Bstyle.jpg', alt='Views of the Canon EOS 5D Mark IV from Andy Rouse')
-                .pc-column.pc-col4
-                  h4.pc-articleTitle
-                    a(href='http://blog.parkcameras.com/2016/08/canon-5d-mark-iv-andy-rouse.html' target='_blank' title='Read Views of the Canon EOS 5D Mark IV from Andy Rouse') Views of the Canon EOS 5D Mark IV from Andy Rouse
-                  p It’s been the worst kept secret ever, the new EOS 5D Mark IV has hit us today. It offers a wealth of.. 
-                    a(href='http://blog.parkcameras.com/2016/08/canon-5d-mark-iv-andy-rouse.html' target='_blank' title='Read Views of the Canon EOS 5D Mark IV from Andy Rouse') Read More
-                    
-                .pc-column.pc-col4
-                  a.pc-btn-standard(href='http://blog.parkcameras.com/search?q=Canon+EOS+5D+Mark+IV', target='_blank', title='View More Blog Posts on the Canon EOS 5D Mark IV') View More
-                    
-                    
-            .pc-column.pc-col2
-              h3 Video Reviews
-              .pc-wrapper.pc-row
-                .pc-column.pc-col4
-                  a(data-lity, href='https://www.youtube.com/watch?v=BZx_bXlWdTU&t=38s' target='_blank' title='Watch Canon EOS 5D Mark IV Review: First Hands-On Look') 
-                    img(src='https://i.ytimg.com/vi/BZx_bXlWdTU/hqdefault.jpg?sqp=-oaymwEWCMQBEG5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAGS1sDvFfcUFhazfppQesWfd5_7A', alt='Canon EOS 5D Mark IV Review: First Hands-On Look')
-                .pc-column.pc-col4
-                  h4.pc-articleTitle
-                    a(data-lity, href='https://www.youtube.com/watch?v=BZx_bXlWdTU&t=38s' target='_blank' title='Watch Canon EOS 5D Mark IV Review: First Hands-On Look') Canon EOS 5D Mark IV Review: First Hands-On Look 
-                  p Packing an all-new sensor with 30.4 Megapixels, a lot of internal upgrades including a lot of wireless technology and capable of capturing 4K video - this is a more than worthy successor to the fantastic Canon 5D Mark III.
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
         
           include includes/foot.pug
         
