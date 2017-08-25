@@ -64,8 +64,12 @@ html(lang="en")
             each SKU in accessories
               .pc-col4
                 span=SKU
+                
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
           
           // Trade-In Bonus
+          hr
           .pc-wrapper.pc-column
             h2 Trade-In
             table
@@ -91,9 +95,6 @@ html(lang="en")
               | Trade-in only applicable when trading in the above models against the #{title}.
           
           hr
-              
-          // Recommended Lenses
-          include includes/recommendedLenses.pug
           
           // Blog and Videos
           include includes/blogAndVideos.pug

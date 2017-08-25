@@ -1,0 +1,24 @@
+// Product Lineup
+.pc-mainWrapper {
+  .pc-productLineup {
+    img {
+      max-width: 10rem;
+      position: relative;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: $margin-small;
+    }
+    em p {
+      text-align: center; 
+    }
+    ul.pc-itemFeat {
+      padding: 3rem;
+    }
+    a.pc-newProduct::before {
+      content: 'NEW: ';
+      color: red;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+each prod in products
+  .pc-wrapper.pc-column.pc-col1
+    h2(id=prod.link)=prod.camera
+  .pc-wrapper.pc-rowNoWrap
+    .pc-column.pc-col2
+      a.swipebox(rel=prod.link, href='https://content.parkcameras.com/5/1/images/catalog/i/' + prod.mainImageURL, title=prod.camera)
+        img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + prod.mainImageURL, alt=prod.camera)
+
+      .pc-itemGallery
+        each img in prod.subImageURL   
+            a.swipebox(rel=prod.link, href='https://content.parkcameras.com/5/1/images/catalog/i/' + img, title=prod.camera)
+              img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + img, alt=prod.camera)
+
+    .pc-column.pc-col2
+      each desc in prod.desc
+        p=desc
+      
+      ul.pc-itemFeat.pc-spacer-xl
+          p
+            b Key Features
+          each feats in prod.feats
+              li= feats
+      a.pc-btn-standard(href='https://www.parkcameras.com/p/' + prod.SKU) Shop Now
+    
+  br
+  h3 #{prod.camera} Body and Kits
+    .pc-wrapper.pc-pluginLayout
+      each item in prod.bodyAndKits
+        .pc-col4
+          span=item
+    
+  hr

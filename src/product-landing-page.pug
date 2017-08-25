@@ -1,14 +1,12 @@
+// Title
 - var title = 'Insert Title Here'
+
+// Product
 - var mainImageURL = '';
 - var subImageURL = ['', '', '', '', ''];
 - var description = 'Insert Description Here'
 - var features = ['Insert Feature Here', 'Insert Another Feature Here'];
 - var productSKU = 'Insert Product SKU Here';
-
-mixin emptyMixin()
-  if false
-    p >_<
-
 
 // Body and Kits
 - var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]', '@@plugin[IndividualProduct{stockcode:}]'];
@@ -25,6 +23,10 @@ mixin emptyMixin()
 // Trade-In Items
 - var tradeInItems = [{model: 'Model', value: 'Value', enhanced: 'Value', final: 'Value'}];
 
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
 
 // Blogs
 - var blogs = [{title: 'Blog Title', img: 'https://placehold.it/600x400', url: 'http://blog.parkcameras.com/', desc: 'Insert Description Here'}];
@@ -42,27 +44,9 @@ html(lang="en")
         // START
         
         .pc-mainWrapper
-          .pc-wrapper.pc-column.pc-col1
-            h1 #{title}
-          hr
-          .pc-wrapper.pc-rowNoWrap
-            .pc-column.pc-col2
-              a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, title=title)
-                img(src='https://content.parkcameras.com/5/1/images/catalog/i/' + mainImageURL, alt=title)
-            
-              .pc-itemGallery
-                each URL in subImageURL   
-                    a.swipebox(rel='1', href='https://content.parkcameras.com/5/1/images/catalog/i/' + URL, title=title)
-                      img(src='https://content.parkcameras.com/5/1/images/catalog/i/xl_' + URL, alt=title)
-
-            .pc-column.pc-col2
-              p #{description}
-              ul.pc-itemFeat 
-                  p Features
-                  each feats in features
-                    li= feats
-              br
-              a.pc-btn-standard(href='https://www.parkcameras.com/p/' + productSKU) Pre-Order Now
+        
+          // Product
+          include includes/product.pug
         
           // Body and Kits
           include includes/bodyAndKits.pug

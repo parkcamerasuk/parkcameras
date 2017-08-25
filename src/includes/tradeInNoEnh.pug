@@ -1,0 +1,22 @@
++emptyMixin()
+hr
+.pc-wrapper.pc-column.pc-spacer-xl
+  h2 #{title} Trade-In
+  table
+    tr
+      td(style='background-color: #e4e4e4;')
+        b Trade-In Model
+      td(style='background-color: #e4e4e4;')
+        b Trade-In Value
+      td(style='color: #FFF; background-color: #2d4d9c;')
+        b You Could Pay
+    each item in tradeInItems
+      tr
+        td= item.model
+        td &pound;#{item.value}
+        td(style='color: #2d4d9c;') &pound;#{item.final}
+
+  p.pc-footerNote
+    | *Trade-in value dependent on condition of used camera, prices shown are maximum paid for each model.
+    br
+    | Trade-in only applicable when trading in the above models against the #{title}.

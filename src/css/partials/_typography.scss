@@ -49,10 +49,10 @@
           p.pc-footerNote {
             font-size: 0.9rem;
           }
-          
           h1,
           h2,
           h3,
+          blockquote,
           {
             font-weight: $font-regular;
           }
@@ -70,10 +70,10 @@
             margin: 1.5rem auto;
             font-style: italic;
             &::before {
-              content: '" ';
+              content: '"';
             }
             &::after {
-              content: ' "';
+              content: '"';
             }
           }
           h1,

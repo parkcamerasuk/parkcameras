@@ -1,0 +1,80 @@
+// Title
+- var title = 'Nikon D850'
+
+// Product
+- var mainImageURL = '71702-D850_24_70E_front.jpg';
+- var subImageURL = ['71705-D850_BF1B_front.jpg', '71704-D850_back.jpg', '71703-D850_24_70E_tiltup_back34r.jpg'];
+- var description = ['The perfect combination of speed, resolution, and sensitivity to perform at the highest levels for professional photographers and videographers to produce masterful work, the Nikon D850 is the finest tool for any job.', 'With a truly ground-breaking collection of features on the spec sheet, the Nikon D850 outclasses its competitors and gives photographers they need to get the shot – whatever shot that may be.'];
+- var features = ['45.7 megapixel back-illuminated FX-format CMOS Sensor', '4K UHD video at 30p (No Cropping)', 'EXPEED 5 image processing engine', 'ISO range from ISO 64-25,600 (extendable to 32-102,400)', '153-point AF system (99 Cross-Type)', 'Pinpoint AF mode for ultra-precise macro focusing', 'Centre AF Point sensitive down to -4EV (all other points to -3EV)', 'Continuous shooting at 7fps (up to 9fps with MB-D18 battery grip)', 'Silent shooting up to 6fps with electronic shutter using Live View', '3.2” 2,360k-dot tilting LCD touchscreen monitor', 'Dual Card Slots with UHS-II compatible SD slot and an XQD card slot', 'MB-D18 with EN-EL18B gives up to 5,140 shots on single charge', 'In-camera 4K timelapse', 'True 8K timelapse using interval shooting', 'Image stacking using Focus Shift mode for up to 300 shots'];
+- var productSKU = '3010366';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:3010366}]', '@@plugin[IndividualProduct{stockcode:3010366E}]', '@@plugin[IndividualProduct{stockcode:3010366A}]', '@@plugin[IndividualProduct{stockcode:3010366B}]', '@@plugin[IndividualProduct{stockcode:3010366C}]', '@@plugin[IndividualProduct{stockcode:3010366D}]'];
+
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:3150046R}]', '@@plugin[IndividualProduct{stockcode:3090239K}]', '@@plugin[IndividualProduct{stockcode:3150150T}]', '@@plugin[IndividualProduct{stockcode:3130058}]'];
+
+
+// Trade-In Items
+- var tradeInItems = []
+
+- tradeInItems.push({model: 'Nikon D810', value: '1,150', enhanced: '200', final: '2,149.00'})
+- tradeInItems.push({model: 'Nikon D800', value: '700', enhanced: '150', final: '2,649.00'})
+- tradeInItems.push({model: 'Nikon D750', value: '750', enhanced: '150', final: '2,599.00'})
+- tradeInItems.push({model: 'Nikon D610', value: '500', enhanced: '100', final: '2,899.00'})
+- tradeInItems.push({model: 'Nikon D600', value: '350', enhanced: '100', final: '3,099.00'})
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Nikon D850 vs Nikon D810 Review', img: 'https://4.bp.blogspot.com/-h9R4dgSGFoE/WZr_Xjy14wI/AAAAAAAAAR4/Ffe5DNFPwNYyOWXZj6BHGSSBtYqP08_2QCK4BGAYYCw/s640/d810-image.jpg', url: 'http://blog.parkcameras.com/2017/08/nikon-d850-vs-nikon-d810-review.html', desc: "The wait is over, and the Nikon D850 - the latest pro-level full-frame digital SLR from Nikon has been officially unveiled! Here we're breaking down the.."}];
+
+// Videos
+- var videos = [{title: 'Nikon D850: Hands-On First Look', img: 'https://i.ytimg.com/vi/053x8ziBHjw/hqdefault.jpg?sqp=-oaymwEWCMQBEG5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLC2vPqB1ySPXcu8ohiKGl8lmMKHEQ', url: 'https://youtu.be/053x8ziBHjw', desc: "It's here. The Nikon D850. On Nikon's 100th Anniversary, they've given us a real treat."}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Trade-In Bonus
+          include includes/tradeIn.pug
+          
+          hr
+          .pc-wrapper.pc-column.pc-spacer-xl
+            h2 Nikon D850 Events
+            .pc-banner.pc-banner-overlay(style="background-image:  url('http://content.parkcameras.com/5/1/images/landing_pages/D850_ambience_4.jpg');")
+              h2 Meet the Brand New Nikon D850
+              p Come and see the brand new Nikon D850 for the first UK hands-on experience in London at the Park Cameras Store in Rathbone Place on Friday 25th August from 10am to 5pm!
+              p If you live outside London or you can't make it on Friday 25th August to our Rathbone Place store, you'll have another chance to see the new Nikon D850 only a week later.
+              p We'll have the brand new Nikon D850 on display for a hands-on experience at the Park Cameras store in Burgess Hill on Saturday 2nd September from 10am to 5pm where you'll be able to get to grips with this outstanding new DSLR and try it out for yourself!
+              img.pc-bannerImg(src='http://content.parkcameras.com/5/1/images/landing_pages/Nikon-Logo.JPG', alt='Nikon Logo')
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

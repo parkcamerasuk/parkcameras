@@ -52,7 +52,8 @@
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
-.pc-mainWrapper h3 {
+.pc-mainWrapper h3,
+.pc-mainWrapper blockquote {
   font-weight: 400; }
 
 .pc-mainWrapper h4 {
@@ -69,9 +70,9 @@
   margin: 1.5rem auto;
   font-style: italic; }
   .pc-mainWrapper blockquote::before {
-    content: '" '; }
+    content: '"'; }
   .pc-mainWrapper blockquote::after {
-    content: ' "'; }
+    content: '"'; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
@@ -809,6 +810,25 @@
 
 .pc-quotationForm textarea {
   height: 5rem; }
+
+.pc-mainWrapper .pc-productLineup img {
+  max-width: 10rem;
+  position: relative; }
+
+.pc-mainWrapper .pc-productLineup h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem; }
+
+.pc-mainWrapper .pc-productLineup em p {
+  text-align: center; }
+
+.pc-mainWrapper .pc-productLineup ul.pc-itemFeat {
+  padding: 3rem; }
+
+.pc-mainWrapper .pc-productLineup a.pc-newProduct::before {
+  content: 'NEW: ';
+  color: red;
+  font-weight: 700; }
 
 .pc-mainWrapper button.accordion, .pc-mainWrapper .pc-headline {
   cursor: pointer;
