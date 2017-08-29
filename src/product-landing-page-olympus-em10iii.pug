@@ -1,0 +1,69 @@
+// Title
+- var title = 'Olympus OM-D E-M10 Mark III'
+
+// Product
+- var mainImageURL = '72011-OM-D_E-M10_Mark_III_black__Product_000.jpg';
+- var subImageURL = ['72012-OM-D_E-M10_Mark_III_black__Product_010.jpg', '72013-OM-D_E-M10_Mark_III_black__Product_090.jpg', '72016-OM-D_E-M10_Mark_III_black__Product_270.jpg', '72014-OM-D_E-M10_Mark_III_black__Product_180.jpg', '72018-OM-D_E-M10_Mark_III_black__ProductTop_001.jpg'];
+- var description = ['The Olympus OM-D E-M10 Mark III is a huge step up from the Mark II, bringing 4K video recording, a faster processor, faster continuous shooting, slow motion video and an intuitive, easy to navigate menu layout to a stylish, well-built, and beautifully designed mirrorless camera body.', 'The E-M10 Mark III inherits 4K video recording at 30p from its bigger, pro brothers, and will shoot Full HD at 60p, all made easier by the Truepic VIII image processor to handle everything, and a 121-point Contrast AF system that locks on to subjects quickly and precisely.'];
+- var features = ['16.1 megapixel sensor', 'Truepic VIII image processing engine', 'ISO range from ISO 200 to 25,600', 'Built-in 5-axis sensor-shift image stabilisation', '121-point Contrast AF Sequential shooting at approx. 8.6fps', '4K video (3840 x 2160) at up to 30p', 'One-button Super Control Panel', 'Refined grip & larger control dials', 'Intuitive operation'];
+- var productSKU = '4010811BB';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:4010811BB}]', '@@plugin[IndividualProduct{stockcode:4010811BS}]', '@@plugin[IndividualProduct{stockcode:4010811L}]', '@@plugin[IndividualProduct{stockcode:4010811S}]', '@@plugin[IndividualProduct{stockcode:4010811LB}]',  '@@plugin[IndividualProduct{stockcode:4010811SS}]'];
+
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:4110780A}]', '@@plugin[IndividualProduct{stockcode:4110780B}]', '@@plugin[IndividualProduct{stockcode:4110287B}]'];
+
+
+// Trade-In Items
+- var tradeInItems = []
+
+- tradeInItems.push({model: 'Olympus OM-D E-M10', value: '160', final: '469'})
+- tradeInItems.push({model: 'Olympus OM-D E-M10 Mark II', value: '240', final: '389'})
+- tradeInItems.push({model: 'Olympus OM-D E-M5', value: '175', final: '454'})
+- tradeInItems.push({model: 'Olympus PEN E-PL7', value: '175', final: '454'})
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Olympus OM-D E-M10 Mark III vs E-M10 Mark II Review', img: 'https://4.bp.blogspot.com/-Pk7tBcC1PdE/WaAwcOJUh_I/AAAAAAAAE2o/ouyZG_HCpQs0niK94wn-KHrlHFbcAI-VwCLcBGAs/s1600/Olympus-OM-D-E-M10-Mark-II-vs-E-M10-Mark-III.jpg', url: 'http://blog.parkcameras.com/2017/08/olympus-om-d-e-m10-mark-iii-vs-e-m10.html', desc: "The E-M10 Mark II is a follow-up to 2015's E-M10 Mark II and is a beautifully crafted camera that follows Olympus' classic design standards from days of yore, which makes it a fantastic looking piece of equipment."}];
+
+// Videos
+- var videos = [{title: 'Video Title', img: 'https://placehold.it/600x400', url: 'https://www.youtube.com/user/parkcameras', desc: 'Insert Description Here'}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Trade-In Bonus
+          include includes/tradeInNoEnh.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
