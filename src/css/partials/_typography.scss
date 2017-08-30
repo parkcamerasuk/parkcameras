@@ -49,6 +49,11 @@
           p.pc-footerNote {
             font-size: 0.9rem;
           }
+          @include media($media-phone) {
+            p.pc-footerNote {
+              font-size: 0.75rem;
+            }
+          }
           h1,
           h2,
           h3,
@@ -133,6 +138,13 @@
               }
             }
           }
+          @include media($media-phone) {
+            ul {
+              li {
+                font-size: 0.75rem;
+              }
+            }
+          }
           ol {
             li {
               margin: $margin-medium;
@@ -193,6 +205,13 @@
               background: $park-lightGrey;
               padding: 0.3rem 0.6rem;
               border: 1px solid $park-lightGrey;
+            }
+          }
+          @include media($media-phone) {
+            table {
+              td {
+                font-size: 0.75rem;
+              }
             }
           }
           iframe {

@@ -50,6 +50,10 @@
 .pc-mainWrapper p.pc-footerNote {
   font-size: 0.9rem; }
 
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper p.pc-footerNote {
+    font-size: 0.75rem; } }
+
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
 .pc-mainWrapper h3,
@@ -124,6 +128,10 @@
   .pc-mainWrapper ul li:before {
     content: "\2023";
     padding-right: 0.5rem; }
+
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper ul li {
+    font-size: 0.75rem; } }
 
 .pc-mainWrapper ol li {
   margin: 0 0 1rem; }
@@ -215,6 +223,10 @@
     background: #EEE;
     padding: 0.3rem 0.6rem;
     border: 1px solid #EEE; }
+
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper table td {
+    font-size: 0.75rem; } }
 
 .pc-mainWrapper iframe {
   margin: 1rem; }
@@ -421,6 +433,9 @@
   .pc-mainWrapper hr {
     opacity: 0.15;
     margin: 2rem 0; }
+  @media screen and (max-width: 375px) {
+    .pc-mainWrapper hr {
+      margin: 1rem 0; } }
   .pc-mainWrapper .pc-pluginLayout {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -578,6 +593,12 @@
       margin: 0.5rem; }
       .pc-mainWrapper .pc-itemGallery a.swipebox img {
         max-width: 5rem; } }
+
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper .pc-itemGallery a.swipebox {
+    margin: 0; }
+    .pc-mainWrapper .pc-itemGallery a.swipebox img {
+      display: none; } }
 
 .pc-mainWrapper .pc-social {
   -webkit-box-pack: center;

@@ -27,6 +27,16 @@
             }
         }
     }
+  @include media($media-phone) {
+    .pc-itemGallery {
+      a.swipebox {
+        margin: 0;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
     .pc-social {
         justify-content: center;
         align-items: center;
