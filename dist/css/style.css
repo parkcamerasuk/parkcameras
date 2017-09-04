@@ -8,6 +8,14 @@
 .pc-mainWrapper p {
   margin: 0 0 1rem; }
 
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper h1 {
+    font-size: 1.5rem; }
+  .pc-mainWrapper h2 {
+    font-size: 1.25rem; }
+  .pc-mainWrapper h3 {
+    font-size: 1rem; } }
+
 .pc-mainWrapper h3,
 .pc-mainWrapper h4 {
   margin: 0 0 0.5rem; }
@@ -464,6 +472,17 @@
       margin-top: 12px; }
     .pc-mainWrapper .pc-pluginLayout .testfreaks-items {
       display: none; }
+  @media screen and (max-width: 375px) {
+    .pc-mainWrapper .pc-pluginLayout img {
+      max-width: 10rem; }
+    .pc-mainWrapper .pc-pluginLayout .prodName {
+      line-height: 1.5rem; }
+    .pc-mainWrapper .pc-pluginLayout .prodOffer {
+      padding: 0;
+      margin: 0; }
+    .pc-mainWrapper .pc-pluginLayout span.priceTxt {
+      font-size: 1.25rem;
+      margin: 4.5rem; } }
   .pc-mainWrapper .pc-pluginLayoutHidePrice .prodOffer {
     display: none; }
   .pc-mainWrapper .pc-spacer-s {

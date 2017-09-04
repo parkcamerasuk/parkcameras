@@ -1,0 +1,64 @@
+// Title
+- var title = 'Olympus OM-D E-M1 Mark II'
+
+// Product
+- var mainImageURL = '55914-Olympus-OM-D-E-M1-Mark-II-1.jpg';
+- var subImageURL = ['41018-OM-D_E-M1_Mark_II_black__Product_180.jpg', '55916-Olympus-OM-D-E-M1-Mark-II-3.jpg', '41022-OM-D_E-M1_Mark_II_black__Product_0901.jpg', '41021-OM-D_E-M1_Mark_II_black__Product_270.jpg', '41020-OM-D_E-M1_Mark_II_black__Product_183.jpg'];
+- var description = ["A micro four-thirds camera with almighty ability - this will be known for its performance in the high speed action field of photography. Add 4K, multiple types of '-proofs' and a great battery for a superb all-round camera."];
+- var features = ['20.4MP Live MOS Micro Four-Thirds sensor', 'Truepic VIII AF Processor', 'High speed autofocus with 121 cross-type AF points', '18fps in continuous mode', '50-Megapixel High Res Shot capability', 'In-body 5-axis Image Stabilisation', '4K Video Capture at 30fps and 102Mbps bit-rate', 'EVF with 6ms response rate, frame rate of 120fps', 'Dual SD Card', 'New improved battery with 40% greater performance', 'High speed battery charging in 2 hours or under', 'USB 3.0 Connectivity for high-speed image transfer to computers',];
+- var productSKU = '4010971B';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:4010971B}]', '@@plugin[IndividualProduct{stockcode:4010971BKIT}]', '@@plugin[IndividualProduct{stockcode:4010972B}]'];
+
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:4153435J}]', '@@plugin[IndividualProduct{stockcode:4090907G}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:4245131H}]', '@@plugin[IndividualProduct{stockcode:4245101K}]', '@@plugin[IndividualProduct{stockcode:4245141K}]', '@@plugin[IndividualProduct{stockcode:4245123N}]', '@@plugin[IndividualProduct{stockcode:4246556F}]', '@@plugin[IndividualProduct{stockcode:4245130X}]'];
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Olympus O-MD E-M1 Mark II - A Sports & Wildlife Dream', img: 'https://2.bp.blogspot.com/-BLlSELCQW14/V-FisdF5WvI/AAAAAAAABcc/5EqOslS15kgz6YkWsU6iiqhFq-nGs9NtgCLcB/s640/OM-D_E-M1_Mark_II_EF-M0818_black__Product_010.jpg', url: 'http://blog.parkcameras.com/2016/09/OlympusOMDEM1MarkII.html', desc: 'One of the more intriguing Photokina 2016 announcements was the one coming from Olympus where they confirmed development of their new flagship camera, the OM-D E-M1 Mark II.'}];
+
+// Videos
+- var videos = [{title: 'Olympus OM-D E-M1 Mark II Hands On First Look', img: 'https://i.ytimg.com/vi/xtyPiz6KmAc/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDRIr62Mz6xw4hulSgd7e9LGvzuoA', url: 'https://www.youtube.com/watch?v=xtyPiz6KmAc&feature=youtu.be', desc: 'Mike from the Park Cameras store in London gets his hands on the eagerly anticipated Olympus E-M1 II.'}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
