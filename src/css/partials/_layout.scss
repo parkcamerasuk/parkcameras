@@ -85,9 +85,12 @@
         padding: 0;
         margin: 0;
       }
-      span.priceTxt {
+      .priceTxt {
         font-size: 1.25rem;
         margin: 4.5rem;
+      }
+      .strike {
+        display: none;
       }
     }
   }

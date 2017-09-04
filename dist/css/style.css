@@ -480,9 +480,11 @@
     .pc-mainWrapper .pc-pluginLayout .prodOffer {
       padding: 0;
       margin: 0; }
-    .pc-mainWrapper .pc-pluginLayout span.priceTxt {
+    .pc-mainWrapper .pc-pluginLayout .priceTxt {
       font-size: 1.25rem;
-      margin: 4.5rem; } }
+      margin: 4.5rem; }
+    .pc-mainWrapper .pc-pluginLayout .strike {
+      display: none; } }
   .pc-mainWrapper .pc-pluginLayoutHidePrice .prodOffer {
     display: none; }
   .pc-mainWrapper .pc-spacer-s {
