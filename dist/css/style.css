@@ -8,14 +8,6 @@
 .pc-mainWrapper p {
   margin: 0 0 1rem; }
 
-@media screen and (max-width: 375px) {
-  .pc-mainWrapper h1 {
-    font-size: 1.5rem; }
-  .pc-mainWrapper h2 {
-    font-size: 1.25rem; }
-  .pc-mainWrapper h3 {
-    font-size: 1rem; } }
-
 .pc-mainWrapper h3,
 .pc-mainWrapper h4 {
   margin: 0 0 0.5rem; }
@@ -29,6 +21,14 @@
 
 .pc-mainWrapper h4 {
   font-size: 1rem; }
+
+@media screen and (max-width: 375px) {
+  .pc-mainWrapper h1 {
+    font-size: 1.5rem; }
+  .pc-mainWrapper h2 {
+    font-size: 1.25rem; }
+  .pc-mainWrapper h3 {
+    font-size: 1rem; } }
 
 .pc-mainWrapper ul {
   margin: 1rem; }
