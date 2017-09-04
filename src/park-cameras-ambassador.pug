@@ -28,11 +28,11 @@ html(lang="en")
               .pc-wrapper.pc-rowNoWrap.pc-social.pc-col1
                 h4 Follow #{photographer}
                 a(href='' title='')
-                  img(src='https://content.parkcameras.com/5/1/images/Icon_Facebook.png' alt='')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Facebook.png', alt='')
                 a(href='' title='')
-                  img(src='https://content.parkcameras.com/5/1/images/Icon_Twitter.png' alt='')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Twitter.png', alt='')
                 a(href='' title='')
-                  img(src='https://content.parkcameras.com/5/1/images/Icon_Instagram.png' alt='')
+                  img(src='https://content.parkcameras.com/5/1/images/Icon_Instagram.png', alt='')
             .pc-column.pc-col2
                 each paragraph in biography
                     p=paragraph
@@ -45,8 +45,8 @@ html(lang="en")
             h3 SHOWCASE
             .pc-itemGallery
               each URL in galleryImageURL   
-                a.swipebox(rel='1', href=URL, alt='')
-                    img(src=URL, alt='')
+                a.swipebox(rel='1', href=URL, title='')
+                    img(src=URL, alt=photographer)
             span.pc-trademark #{photographer}
           hr
           .pc-wrapper.pc-column.pc-col1
