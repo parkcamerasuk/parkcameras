@@ -136,7 +136,8 @@ html.swipebox-html.swipebox-touch {
 #swipebox-title {
   display: block;
   width: 100%;
-  text-align: center
+  text-align: center;
+  color: #000;
 }
 
 #swipebox-close,
@@ -279,12 +280,12 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-overlay {
-  background: #ffffff
+  background: #FFF
 }
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
-  text-shadow: 1px 1px 1px #000;
-  background: #000;
+  text-shadow: 1px 1px 1px #FFF;
+  background: #FFF;
   opacity: .95
 }
