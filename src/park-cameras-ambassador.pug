@@ -45,7 +45,7 @@ html(lang="en")
             h3 SHOWCASE
             .pc-itemGallery
               each URL in galleryImageURL   
-                a.swipebox(rel='1', href=URL, title='')
+                a.swipebox(rel='1', href=URL, title=photographer)
                     img(src=URL, alt=photographer)
             span.pc-trademark #{photographer}
           hr
