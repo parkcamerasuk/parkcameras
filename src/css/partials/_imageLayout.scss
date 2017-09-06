@@ -1,32 +1,36 @@
 // Image and Gallery Layout
 .pc-mainWrapper {
-    img {
-        width: 100%;
-        margin: 0 auto;
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pc-pageBanner {
+    width: 70%;
+  }
+  .pc-brandImg {
+    min-width: 10rem;
+    max-width: 10rem;
+  }
+  .pc-itemGallery {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 2rem 0 0;
+    a.swipebox {
+      margin: 1rem;
     }
-    .pc-pageBanner {
-        width: 70%;
-    }
+  }
+  @include media($media-tablet) {
     .pc-itemGallery {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        margin: 2rem 0 0;
-        a.swipebox {
-            margin: 1rem;
+      flex-flow: row wrap;
+      a.swipebox {
+        margin: 0.5rem;
+        img {
+          max-width: 5rem;
         }
+      }
     }
-    @include media($media-tablet) {
-        .pc-itemGallery {
-            flex-flow: row wrap;
-            a.swipebox {
-                margin: 0.5rem;
-                img {
-                    max-width: 5rem;
-                }
-            }
-        }
-    }
+  }
   @include media($media-phone) {
     .pc-itemGallery {
       a.swipebox {
@@ -37,19 +41,19 @@
       }
     }
   }
-    .pc-social {
-        justify-content: center;
-        align-items: center;
-        h4 {
-            margin: 0.5rem;
-            font-weight: $font-regular;
-        }
-        a {
-            img {
-                width: auto;
-                height: 2rem;
-                margin: 0.5rem;
-            }
-        }
+  .pc-social {
+    justify-content: center;
+    align-items: center;
+    h4 {
+      margin: 0.5rem;
+      font-weight: $font-regular;
     }
+    a {
+      img {
+        width: auto;
+        height: 2rem;
+        margin: 0.5rem;
+      }
+    }
+  }
 }

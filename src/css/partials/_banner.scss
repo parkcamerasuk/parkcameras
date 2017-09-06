@@ -105,4 +105,9 @@
       margin: $margin-medium;
     }
   }
+  .pc-promoBanner {
+    @extend .pc-banner;
+    padding: 2rem;
+    margin: $margin-medium;
+  }
 }
