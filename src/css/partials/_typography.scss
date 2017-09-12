@@ -56,14 +56,13 @@
           ul,
           ol,
           li,
-          p.pc-trademark,
-          p.pc-footerNote {
+          p.pc-trademark {
             font-size: 0.9rem;
           }
-          @include media($media-phone) {
-            p.pc-footerNote {
-              font-size: 0.75rem;
-            }
+          
+          p.pc-footerNote {
+            font-size: 0.75rem;
+            margin: 0.5rem 0 0;
           }
           h1,
           h2,

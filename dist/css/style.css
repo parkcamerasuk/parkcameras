@@ -54,13 +54,12 @@
 .pc-mainWrapper ul,
 .pc-mainWrapper ol,
 .pc-mainWrapper li,
-.pc-mainWrapper p.pc-trademark,
-.pc-mainWrapper p.pc-footerNote {
+.pc-mainWrapper p.pc-trademark {
   font-size: 0.9rem; }
 
-@media screen and (max-width: 375px) {
-  .pc-mainWrapper p.pc-footerNote {
-    font-size: 0.75rem; } }
+.pc-mainWrapper p.pc-footerNote {
+  font-size: 0.75rem;
+  margin: 0.5rem 0 0; }
 
 .pc-mainWrapper h1,
 .pc-mainWrapper h2,
@@ -452,6 +451,8 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-align: center; }
+    .pc-mainWrapper .pc-pluginLayout img {
+      max-width: 12rem; }
     .pc-mainWrapper .pc-pluginLayout article {
       border-bottom: 0;
       padding: 0; }

@@ -51,6 +51,9 @@
     flex-flow: row wrap;
     justify-content: space-around;
     text-align: center;
+    img {
+      max-width: 12rem;
+    }
     article {
       border-bottom: 0;
       padding: 0;
