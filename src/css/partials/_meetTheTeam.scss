@@ -1,0 +1,53 @@
+.pc-mainWrapper {
+  .pc-employeePortrait {
+    h3 {
+      margin: 1rem;
+      color: $black;
+    }
+    .pc-portraitFrame {
+      position: relative;
+    }
+    .pc-portraitContent {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+    }
+    .pc-portraitContent:hover {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  @include media($media-tablet) {
+    .pc-employeePortrait {
+      h3,
+      ul {
+        margin: 1rem 0;
+      }
+      .pc-potraitFrame {
+        position: static;
+      }
+      .pc-portraitContent {
+        width: auto;
+        height: auto;
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        background: none;
+        opacity: 1;
+        transition: none;
+        cursor: auto;
+      }
+      .pc-portraitContent:hover {
+        transform: none;
+      }
+    }
+  }
+}

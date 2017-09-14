@@ -98,7 +98,6 @@
     }
   }
   .pc-pluginLayoutHidePrice {
-    
     .prodOffer {
       display: none;
     }
@@ -117,5 +116,19 @@
   }
   .pc-spacer-xxl {
     margin: $margin-xxlarge;
+  }
+  @for $col from 1 through 4 {
+    .pc-colNoWrap#{$col} {
+      flex: 0;
+      flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
+      margin: 1rem;
+    }
+  }
+  @include media($media-phone) {
+    @for $col from 1 through 4 {
+      .pc-colNoWrap#{$col} {
+        margin: 1rem 0;
+      }
+    }
   }
 }

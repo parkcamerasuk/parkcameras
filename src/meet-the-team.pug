@@ -1,0 +1,32 @@
+extends template.pug
+
+block vars
+  - var title = 'Meet the Team';
+  
+  - var employees = [];
+
+  - employees.push({img: 'http://www.israellycool.com/wordpress/wp-content/uploads/Simon-Calllow-portrait-square-crop-500px.jpeg', name: 'Name', about:['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis.', 'Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.']});
+  
+  - employees.push({img: 'http://www.israellycool.com/wordpress/wp-content/uploads/Simon-Calllow-portrait-square-crop-500px.jpeg', name: 'Name', about:['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis.', 'Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. ', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.']});
+
+block content
+  .pc-wrapper.pc-column.pc-col1
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis. Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. Sed sed odio eu nibh gravida ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam varius pulvinar quam vitae porta. Aenean nisl quam, dictum id sem in, sodales tristique tortor.
+      
+    p.
+      #[strong Etiam nec porttitor erat.] Donec pellentesque fringilla ex vitae pulvinar. Suspendisse turpis sapien, pretium nec nisi sollicitudin, molestie venenatis sapien. Proin accumsan imperdiet augue, id porttitor diam condimentum ut. Ut orci nisi, scelerisque et libero in, consectetur porta eros. Donec ex erat, sodales eu lacus at, feugiat placerat erat. Etiam nisl eros, fringilla a hendrerit quis, ullamcorper id diam. Sed nec interdum sapien. Nulla tincidunt malesuada venenatis.
+  
+    hr
+    .pc-wrapper.pc-row.pc-employeePortrait
+      each employee in employees
+        .pc-column.pc-colNoWrap3.pc-portraitFrame
+          img(src=employee.img)
+          .pc-portraitContent
+            h3=employee.name
+            ul
+              each p in employee.about
+                p=p
+
+block bottomScripts
+    script(src='js/swipebox.js')
+    

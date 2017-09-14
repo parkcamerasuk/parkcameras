@@ -1,4 +1,4 @@
-- var title = 'Template'
+block vars
 
 doctype html
 html(lang="en")
@@ -12,6 +12,7 @@ html(lang="en")
                 h1 #{title}
             hr
 
+            block content
 
             include includes/foot.pug
         
