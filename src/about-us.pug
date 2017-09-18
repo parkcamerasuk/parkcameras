@@ -1,139 +1,58 @@
-- var title = 'About Park Cameras'
+extends template.pug
 
-doctype html
-html(lang="en")
-    include includes/head.pug
-    body
-        include includes/breadcrumbs.pug
+block vars
+  - var title = 'About Park Cameras';
 
-        // START
-        .pc-mainWrapper
-            .pc-wrapper.pc-column.pc-col1
-                h1 #{title}
-            hr
-            .pc-column.pc-column.pc-col1
-            
-                    p Park Cameras was established in 1971 in Burgess Hill, West Sussex. For over forty years we have forged a reputation across the photographic industry as one of the top independent photographic retailers in the UK, serving the needs of all photographers, from enthusiasts through to professionals, through the very highest level of customer service.
-                    
-                    p In 2008 we radically altered our business approach, creating a bespoke, purpose-built showroom which successfully married the very latest instore experience with our staff’s unrivalled level of photographic knowledge and customer care.
-                    
-                    p November 2013 saw another milestone in Park Cameras history as we set about opening our brand new store in London, run with the same ethos as Burgess Hill we're well on our way to becoming London's best camera store.
-                    
-            .pc-wrapper.pc-column.pc-col1
-            
-                    blockquote We aim to replicate a consistent, unrivalled level of customer service across our various purchasing platforms ensuring that, no matter what your buying preference happens to be, you can always expect the very highest level of service.
-            
-            hr
-            .pc-wrapper.pc-column.pc-col1
-            
-                    p Customer Promise would mean little without the actions to ensure that we proactively work towards achieving it. Pleasingly, over the last few years, Park Cameras has been recognised on several occasions, both by the wider industry and our actual customer base, for award-winning customer service as well as the standard of both our ‘high street’ and online retail shopping experience. Recent awards are as follows:
-            
-            .pc-wrapper.pc-row
-            
-                .pc-column.pc-col2
-                    
-                    ul
-                        li Amateur Photographer & What Digital Camera Gold Good Service Award 2015
-                        li What Digital Camera Gold Good Service Award (High Street) 2014
-                        li What Digital Camera Good Service Award (High Street) 2013
-                        li What Digital Camera Good Service Award (High Street) 2012
-                        li Bright FM - Best Business 2011
-                        li What Digital Camera Good Service Award (High Street) 2011
-                        li What Digital Camera Good Service Award(Online) 2011
-                        li What Digital Camera Good Service Award (Online) 2009
-                        li What Digital Camera Good Service Award (High Street) 2009
-                        li Digital Photo ‘Gear of the Year’ Best Independent Photographic Retailer 2009
-                        li What Digital Camera Good Service Award (High Street) 2008
-                        li Pixel Independent Retailer of the Year 2008
-                            
-                .pc-column.pc-col2
-                
-                    img(src='https://content.parkcameras.com/5/1/images/Article%20Imagesabout_us_london.jpg' alt='')
-                    
-            hr
-            .pc-wrapper.pc-column.pc-col1
-                
-                h2 Park Cameras - The Specialist Pro Dealer
-                
-                p As a Pro-Dealer, our knowledgeable staff receive regular training to ensure that the buying advice and technical assistance we can offer is second to none - for both photographic beginners and pros alike. In addition to this, our Pro-Dealer status helps us to ensure that we continue to only supply UK stock to our customers and ensures that we are amongst the first to receive stock of the latest digital cameras, camcorders and accessories in the UK.
-                
-                ul.pc-ul3
-                    li Adobe Digital Imaging Specialist
-                    li Bowens Gold Dealer
-                    li Canon EOS Pro Centre
-                    li Canon Video Pro Dealer
-                    li Epson Pro Photo Specialist Partner
-                    li Fujifilm Approved Digital Retail Centre
-                    li Fuji Digital Imaging Dealer
-                    li Fujifilm Minilab Gold Award Winner - 2008, 2010
-                    li Gitzo 5 Star Dealer
-                    li Nikon Binocular and Spotting Scope Specialist
-                    li Nikon Pro Dealer
-                    li Olympus PEN Elite Centre
-                    li Panasonic Photographic Specialist
-                    li Pentax Pro Centre
-                    li Ricoh Platinum Dealer
-                    li Samsung Specialist Centre
-                    li Sandisk Authorised Stockist
-                    li Sigma Digital Specialist Stockist
-                    li Sony Alpha Centre of Excellence
-                    li Tamron Super Stockist
-                
-            hr
-            .pc-wrapper.pc-column.pc-col1
-            
-                h2 Touch and Try Showrooms
-                
-                h3 Burgess Hill
-            
-            .pc-wrapper.pc-row
-            
-                .pc-column.pc-col2
+block content
+  .pc-wrapper.pc-column.pc-col1
+    img.pc-spacer-m(src='https://placehold.it/1140x400')
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis. Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. Sed sed odio eu nibh gravida ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam varius pulvinar quam vitae porta. Aenean nisl quam, dictum id sem in, sodales tristique tortor.
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis. Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. Sed sed odio eu nibh gravida ultrices.
+  
+  hr
+  
+  .pc-wrapper.pc-row
+    .pc-column.pc-col4
+      h3.
+        #[a(href='#history', title='') History of Park Cameras]
+    .pc-column.pc-col4
+      h3.
+        #[a(href='#') Awards &amp; Recognition]
+    .pc-column.pc-col4
+      h3.
+        #[a(href='#') Specialist Pro Dealer]
+    .pc-column.pc-col4
+      h3.
+        #[a(href='#') School of Photography]
 
-                    p Since its Grand Opening in 2008 by none other than David Bailey, our Showroom has gone from strength to strength. Adopting a fresh approach to photographic retailing, our Showroom adopts a ‘touch and try’ ethos, designed to put the very latest photographic products and technologies into the hands of the customer – the ideal way to choose the right product for your needs. Home to over 7,000 imaging products, including 250 within our branded ‘touch and try’ zones, we have made it our aim to ensure that we can provide a product and/or service solution across both imaging input and output. With over 50 of the world’s leading brands all under one roof, including the likes of Canon, Nikon, Olympus, Pentax, Panasonic, Sony and Samsung to name but a few. With a huge selection of cameras, lenses, photographic accessories, studio lighting, printers, scanners and software we are confident that, combined with our staff’s excellent level of product knowledge, photographic solutions to meet every need can be found all under the one roof.
-
-                    p In addition to the very latest products available at Park Cameras we also offer a range of added value services. Our award-winning Fujifilm processing lab combines traditional and modern forms of mass photo printing, complemented by the presence of instore self-service kiosks and extended printing options, such as canvas prints, all managed and supported by a dedicated section of our team.
-
-                    p Further to this we are able to offer vital services such as a range of sensor cleaning options as well as acting as the conduit between the customer and the manufacturer when it comes to dealing with repairs and faulty items. To find our Burgess Hill Store and view the opening times please click 
-                        a(href='https://www.parkcameras.com/burgess-hill-store', alt='') here
-                        |.
-                        
-                .pc-column.pc-col4
-                
-                    img(src='https://content.parkcameras.com/5/1/images/l.jpg' alt='')
-                    
-            .pc-wrapper.pc-column.pc-col1
-            
-                h3 London
-            
-            .pc-wrapper.pc-row
-             
-                .pc-column.pc-col2
-                    
-                    p In November 2013 Park Cameras opened a fantastic new store in the centre of London, situated in Rathbone Place, just off Oxford Street and minutes from Oxford Circus and Tottenham Court Road Tube Stations. 
-                        a(href='https://www.parkcameras.com/london-store', alt='') Click here for full directions, as well as our opening times.
-                        |.
-                    
-                    p At the store, you’ll find two floors packed with equipment. On the ground floor, you can get your hands on a impressive range of cameras and lenses from all the major players including Canon, Nikon, Fujifilm, Olympus, Panasonic, Pentax, Samsung and Sony. Head down stairs and discover an extensive range of tripods, bags and other photographic accessories from Manfrotto, Gitzo, Giottos, Joby and Lowepro – as well as plenty of others.
-                    
-                    p There are often technical experts around as well as our own staff, able to answer any queries you may have.
-                    
-                .pc-column.pc-col4
-                    
-                    img(src='https://content.parkcameras.com/5/1/images/Article%20Imagesabout_us_london2.jpg' alt='')
-            
-            hr
-            .pc-wrapper.pc-column.pc-col1
-            
-                h2 Education
-                
-                p The role of educator is one that we take very seriously at Park Cameras, aiming to ensure that we impart our knowledge to the customer in a friendly and helpful way that complements their buying experience with Park Cameras. All of our staff attend regular brand training to ensure that their level of knowledge remains up to date which, when combined with the fact that all of our staff are genuine photo enthusiasts themselves, ensures you will feel at home talking to a fellow photographer!
-                
-                p Utilising an inhouse education suite consisting of classroom, seminar and studio learning zones, photographers of all abilities and interests have the opportunity to attend one of our many day-long training courses designed to assist you in your photographic learning experience. Across camera, software and lighting, we hold regular weekly and weekend courses utilising both inhouse and renowned photographers to deliver our training sessions. To ensure diversity and flexibility we also offer a range of ‘on location’ courses as well as bespoke 1-2-1 training sessions, tailored to the individual needs of the photographer.
-                    
-
-            include includes/foot.pug
-        
-        // FINISH
-
-        include includes/bottomScripts.pug
+      
+  hr
+  
+  .pc-wrapper.pc-column.pc-col1
+      
+    h2#history History of Park Cameras
+    
+  .pc-wrapper.pc-rowNoWrap
+    .pc-column.pc-col2.pc-order-1
+      h4 Now
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis. Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. Sed sed odio eu nibh gravida ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam varius pulvinar quam vitae porta. Aenean nisl quam, dictum id sem in, sodales tristique tortor.
+    .pc-column.pc-col2.pc-order-2
+      img(src='https://placehold.it/400x400', alt='')
+      
+  .pc-wrapper.pc-rowNoWrap
+    .pc-column.pc-col2.pc-order-4
+      img(src='https://placehold.it/400x400', alt='')
+    .pc-column.pc-col2.pc-order-3
+      h4 Past
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis. Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. Sed sed odio eu nibh gravida ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam varius pulvinar quam vitae porta. Aenean nisl quam, dictum id sem in, sodales tristique tortor.
+      
+  .pc-wrapper.pc-rowNoWrap
+    .pc-column.pc-col2.pc-order-5
+      h4 PastER?
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla nisi neque, non commodo diam tincidunt quis. Donec a nibh sed ipsum fermentum vehicula vel ac lectus. Nulla congue feugiat tellus, ut imperdiet enim elementum a. Sed sed odio eu nibh gravida ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam varius pulvinar quam vitae porta. Aenean nisl quam, dictum id sem in, sodales tristique tortor.
+    .pc-column.pc-col2.pc-order-6
+      img(src='https://placehold.it/400x400', alt='')
+      
+block bottomScripts
+    script(src='js/swipebox.js')
+    

@@ -36,6 +36,14 @@
       flex-basis: ((($wrapper-size / $base-size) / $col) - $col)+rem;
     }
   }
+  // Order
+  @include media($media-tablet) {
+    @for $order from 1 through 24 {
+      .pc-order-#{$order} {
+        order: $order;
+      }
+    }
+  }
   // Horizontal Rule
   hr {
     opacity: 0.15;
