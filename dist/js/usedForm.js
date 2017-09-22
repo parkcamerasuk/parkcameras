@@ -52,7 +52,7 @@ function addItem() {
     newName.appendTo(newItem);
 
     var conditionId = 'item_' + itemCount + '_condition';
-    makeLabel('Condition*', conditionId, false, '<a style="display: block" href="#condition">Need help?</a>').appendTo(newItem);
+    makeLabel('Condition*', conditionId, false, '<a style="display: none" href="#condition">Need help?</a>').appendTo(newItem);
     var newCondition = $('<select>').attr({
         'id': conditionId,
         'name': 'items[' + itemCount + '][condition]'
