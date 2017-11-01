@@ -57,6 +57,9 @@ html(lang="en")
                   select#type(name='type', required='')
                     option(value='Part Exchange') Part Exchange
                     option(value='Sale Only') Sale Only
+                .form-row
+                  label(for='purchase-info') What are you looking to buy?
+                  input#purchase-info(name='purchase-info')
                     
                 h3 Item Details
                 // Populated with JS

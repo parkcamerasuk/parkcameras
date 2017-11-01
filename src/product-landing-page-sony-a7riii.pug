@@ -1,0 +1,65 @@
+// Title
+- var title = 'Sony a7R III'
+
+// Product
+- var mainImageURL = '75966-A7RM3_front.jpg';
+
+- var subImageURL = ['75967-A7RM3_rear.jpg', '75968-A7RM3_terminal.jpg', '75972-A7RM3_top.jpg', '75969-A7RM3.jpg', '75970-A7RM3_FE2470GM_right.jpg'];
+
+- var description = ['The Alpha a7R III is Sony’s latest full-frame mirrorless camera and joins their comprehensive line-up of professionally focussed compact mirrorless cameras.', 'The a7R III is a camera built for professionals, with a number of advancements over its predecessor that make it a true photographic heavyweight.', 'Key improvements include faster and more accurate focusing, an improved processor, improved image stabilisation with more stops of compensation, higher resolution LCD screen and Electronic Viewfinder, professional connectivity, dual SD card slots, and vastly improved battery life. ']
+
+- var features = ['42.4 effective megapixels', '35mm full-frame back-illuminated Exmor R CMOS sensor', 'Hybrid AF system – 399 points Phase Detection AF & 425 points Contrast Detection AF', 'Up to 10 frames per second continuous shooting for up to 76 RAW frames', 'High resolution 4K movie recording with full pixel readout & no pixel binning', '7.5cm (3.0 inch) tilting LCD TFT touchscreen with 1,440,000 dot resolution', '0.5 inch Quad-VGA OLED electronic viewfinder with 3,686,400 dot resolution', 'Wi-Fi, NFC, HDMI micro, USB-C 3.1, and Bluetooth connectivity', 'Dual SD Card slots (one with UHS-II compatibility & one multi-slot)', 'Battery life of up to 650 still images or 190 minutes continuous movie recording'];
+
+- var productSKU = '7014841P';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:7014841P}]'];
+
+// Trade-In Items
+- var tradeInItems = []
+
+- tradeInItems.push({model: 'Sony a7R II', value: '1,200', enhanced: '200', final: '1,799.00'})
+- tradeInItems.push({model: 'Sony a7S II', value: '1,200', enhanced: '200', final: '1,799.00'})
+- tradeInItems.push({model: 'Sony a7 II', value: '550', enhanced: '100', final: '2,549.00'})
+- tradeInItems.push({model: 'Sony a7R', value: '450', enhanced: '100', final: '2,649.00'})
+- tradeInItems.push({model: 'Sony a7S', value: '700', enhanced: '100', final: '2,399.00'})
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Sony Alpha a7R III vs a7R II Review', img: 'https://4.bp.blogspot.com/--CvFcN8Fp50/WfCKy0sTrPI/AAAAAAAAFgw/2Rs8VYbJXtoWxU3pGED3NUD7POIS3M5NQCLcBGAs/s640/sony-a7r-ii-vs-a7r-iii.jpg', url: 'http://blog.parkcameras.com/2017/10/sony-alpha-a7r-iii-vs-a7r-ii-review.html', desc: "In this review we're looking at what those changes are from the Sony a7R II to the latest a7R III, we'll run through what's changed, what's new, and .."}];
+
+// Videos
+- var videos = [{title: 'Sony a7R III Product Feature', img: 'https://i.ytimg.com/vi/W6YBnjNOi1U/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAUpEWfc5P15yhKLT2s2Vx3yDLlZA', url: 'https://www.youtube.com/watch?v=W6YBnjNOi1U&t=2s', desc: "The α7R III combines a high-resolution 42.4 MP back-illuminated Exmor R CMOS image sensor with impressive shooting speeds at up to 10 fps.."}];
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+          
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Trade-In Bonus
+          include includes/tradeInNoEnh.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

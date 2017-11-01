@@ -13,6 +13,19 @@
 
 - var accessories = ['@@plugin[IndividualProduct{stockcode:7152043E}]', '@@plugin[IndividualProduct{stockcode:7152044E}]', '@@plugin[IndividualProduct{stockcode:7090068W}]', '@@plugin[IndividualProduct{stockcode:7152045E}]', '@@plugin[IndividualProduct{stockcode:7150248E}]', '@@plugin[IndividualProduct{stockcode:7153235H}]'];
 
+// Trade-In Items
+- var tradeInItems = []
+
+- tradeInItems.push({model: 'Canon EOS-1DX', value: '1,600', enhanced: '500', final: '2,399.00'})
+- tradeInItems.push({model: 'Canon EOS-1DX Mark II', value: '2,350', enhanced: '500', final: '1,649.00'})
+- tradeInItems.push({model: 'Canon EOS 5D Mark III', value: '900', enhanced: '500', final: '3,099.00'})
+- tradeInItems.push({model: 'Canon EOS 5D Mark IV', value: '1,400', enhanced: '500', final: '2,599.00'})
+- tradeInItems.push({model: 'Nikon D4', value: '1,250', enhanced: '500', final: '2,749.00'})
+- tradeInItems.push({model: 'Nikon D5', value: '2,850', enhanced: '500', final: '1,149.00'})
+- tradeInItems.push({model: 'Nikon D810', value: '1,150', enhanced: '500', final: '2,849.00'})
+- tradeInItems.push({model: 'Nikon D800', value: '600', enhanced: '500', final: '3,399.00'})
+- tradeInItems.push({model: 'Nikon D750', value: '750', enhanced: '500', final: '3,249.00'})
+
 //
 
 doctype html
@@ -54,7 +67,7 @@ html(lang="en")
           include includes/accessories.pug
           
           // Trade-In Bonus
-          include includes/tradeIn-a9.pug
+          include includes/tradeIn.pug
         
           include includes/foot.pug
         

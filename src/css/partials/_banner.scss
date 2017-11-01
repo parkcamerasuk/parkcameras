@@ -110,4 +110,32 @@
     padding: 2rem;
     margin: $margin-medium;
   }
+  .pc-productBanner {
+    @extend .pc-banner;
+    padding: 1.5rem;
+    background-color: $white;
+    border: 1px solid rgba(45, 76, 156, 0.25);
+    h2 {
+      font-size: 1.5rem;
+    }
+    h2,
+    img {
+      margin: $margin-medium;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    a.pc-btn-standard {
+      margin: 0;
+    }
+    h2,
+    p,
+    .pc-price {
+      color: $park-blue;
+    }
+    .pc-price {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
 }
