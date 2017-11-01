@@ -110,32 +110,39 @@
     padding: 2rem;
     margin: $margin-medium;
   }
+  a.alt {
+    &:hover {
+      text-decoration: none;
+    }
+  }
   .pc-productBanner {
     @extend .pc-banner;
-    padding: 1.5rem;
+    padding: 0;
     background-color: $white;
-    border: 1px solid rgba(45, 76, 156, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     h2 {
       font-size: 1.5rem;
     }
     h2,
+    p,
+    .pc-price,
     img {
-      margin: $margin-medium;
-    }
-    p {
-      font-size: 0.9rem;
-    }
-    a.pc-btn-standard {
-      margin: 0;
+      margin: $margin-small;
     }
     h2,
     p,
     .pc-price {
-      color: $park-blue;
+      padding: 0 1rem;
+      font-size: 1rem;
     }
+    p,
     .pc-price {
-      font-size: 1.5rem;
+      color: $black;
       font-weight: 400;
+    }
+    h2 {
+      font-weight: 700;
+      color: $park-blue;
     }
   }
 }

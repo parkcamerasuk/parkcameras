@@ -550,7 +550,7 @@
               order: 24; } }
   .pc-mainWrapper hr {
     opacity: 0.15;
-    margin: 2rem 0; }
+    margin: 1rem 0; }
   @media screen and (max-width: 375px) {
     .pc-mainWrapper hr {
       margin: 1rem 0; } }
@@ -735,26 +735,32 @@
   padding: 2rem;
   margin: 0 0 1rem; }
 
+.pc-mainWrapper a.alt:hover {
+  text-decoration: none; }
+
 .pc-mainWrapper .pc-productBanner {
-  padding: 1.5rem;
+  padding: 0;
   background-color: #FFF;
-  border: 1px solid rgba(45, 76, 156, 0.25); }
+  border: 1px solid rgba(0, 0, 0, 0.15); }
   .pc-mainWrapper .pc-productBanner h2 {
     font-size: 1.5rem; }
   .pc-mainWrapper .pc-productBanner h2,
+  .pc-mainWrapper .pc-productBanner p,
+  .pc-mainWrapper .pc-productBanner .pc-price,
   .pc-mainWrapper .pc-productBanner img {
-    margin: 0 0 1rem; }
-  .pc-mainWrapper .pc-productBanner p {
-    font-size: 0.9rem; }
-  .pc-mainWrapper .pc-productBanner a.pc-btn-standard, .pc-mainWrapper .pc-productBanner a.pc-btn-sop {
-    margin: 0; }
+    margin: 0 0 0.5rem; }
   .pc-mainWrapper .pc-productBanner h2,
   .pc-mainWrapper .pc-productBanner p,
   .pc-mainWrapper .pc-productBanner .pc-price {
-    color: #2D4C9C; }
+    padding: 0 1rem;
+    font-size: 1rem; }
+  .pc-mainWrapper .pc-productBanner p,
   .pc-mainWrapper .pc-productBanner .pc-price {
-    font-size: 1.5rem;
+    color: #000;
     font-weight: 400; }
+  .pc-mainWrapper .pc-productBanner h2 {
+    font-weight: 700;
+    color: #2D4C9C; }
 
 .pc-mainWrapper img {
   width: 100%;
