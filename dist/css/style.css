@@ -550,7 +550,7 @@
               order: 24; } }
   .pc-mainWrapper hr {
     opacity: 0.15;
-    margin: 1rem 0; }
+    margin: 0; }
   @media screen and (max-width: 375px) {
     .pc-mainWrapper hr {
       margin: 1rem 0; } }

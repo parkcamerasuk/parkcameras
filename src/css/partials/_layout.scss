@@ -47,7 +47,7 @@
   // Horizontal Rule
   hr {
     opacity: 0.15;
-    margin: 1rem 0;
+    margin: 0;
   }
   @include media($media-phone) {
     hr {
