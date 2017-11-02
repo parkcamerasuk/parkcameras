@@ -70,7 +70,9 @@
 .pc-mainWrapper h4 {
   font-weight: 700; }
 
-.pc-mainWrapper h1,
+.pc-mainWrapper h1 {
+  text-align: left; }
+
 .pc-mainWrapper h2,
 .pc-mainWrapper h3,
 .pc-mainWrapper table {
