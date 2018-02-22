@@ -6,7 +6,7 @@ block vars
 block content
   .pc-wrapper.pc-column.pc-col1.signupHeader
   
-  .pc-wrapper.pc-column.pc-col1
+  .pc-wrapper.pc-column.pc-col1.signupText
     p By signing up to the Park Cameras newsletter you'll become part of a service that promises to keep you up to date with the latest products and promotions - including exclusive offers to Park Cameras customers only, and often promoted only via our newsletter!
     
     p We will not clog up your inbox with spammy content - we're only interested in telling you about our latest and greatest - plus we'll point you in the direction of more of our content, including videos and blogs.
@@ -37,8 +37,8 @@ block bottomScripts
       return decodeURIComponent(results[2].replace(/\\+/g, " "));
       }
       var qryString = getParameterByName('mail');
-      var signupSuccess = '';
-      var signupError = '';
+      var signupSuccess = '<h2>Success</h2>';
+      var signupError = '<h2>Failed. Please Try Again.</h2>';
       if(qryString == '')
       {
       return false;
@@ -48,12 +48,13 @@ block bottomScripts
       if(qryString == 'yes')
       {
       $('.signupHeader').html(signupSuccess);
+      $('.signupText').html('');
       $('.signupForm').html('');
       }
       if(qryString == 'no')
       {
       $('.signupHeader').html(signupError);
-      $('.signupForm').html('');
+      $('.signupText').html('');
       }
       }
       });

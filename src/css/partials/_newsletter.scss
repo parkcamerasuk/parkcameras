@@ -9,6 +9,8 @@
       padding: 0.5rem 1rem;
       margin: 0.25rem auto;
       font-size: 1rem;
+      background: $white;
+      border: 1px solid $park-lightGrey;
     }
     input[type="submit"] {
       background: #2d4d9c;
@@ -16,11 +18,14 @@
       border: none;
       height: 3rem;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: $font-bold;
       margin: 2rem auto;
     }
     .g-recaptcha{
       margin: 0 auto;
+    }
+    iframe {
+      margin: 1rem auto;
     }
   }
 }
