@@ -1,7 +1,7 @@
 extends template.pug
 
 block vars
-  - var title = 'Newsletter Signup';
+  - var title = 'Sign up to the Park Cameras Newsletter';
 
 block content
   .pc-wrapper.pc-column.pc-col1.signupHeader
@@ -16,7 +16,7 @@ block content
       input(type='hidden', name='accName', value='ParkCameras')
       input(type='hidden', name='listName', value='All Email Subscribers')
       input(name='successUrl', type='hidden', value='https://www.parkcameras.com/krishna-3?signup=success')
-      input(name='errorUrl', type='hidden', value='https://www.parkcameras.com/krishna-3?signup=failed')
+      input(name='errorUrl', type='hidden', value='https://www.parkcameras.com/krishna-3?signup=error')
       input(name='Firstname', placeholder='Enter your first name here...')
       input(type='email', name='email', placeholder='Enter your email here...')
       script(src='https://www.google.com/recaptcha/api.js')
@@ -24,7 +24,6 @@ block content
       input(type='submit', value='Sign Up')
 
 block bottomScripts
-    script(src='js/swipebox.js')
     script.
       $(document).ready(function() {
       function getParameterByName(name, url) {
@@ -38,8 +37,8 @@ block bottomScripts
       return decodeURIComponent(results[2].replace(/\\+/g, " "));
       }
       var qryString = getParameterByName('signup');
-      var signupSuccess = '<h2>Success! You will shortly receive a confirmation email from us.</h2>';
-      var signupError = '<h2>Failed. Please try again with a valid email address.</h2>';
+      var signupSuccess = '<h2>Success! You will shortly receive a confirmation email from us.</h2><br /><a class="pc-btn-standard" href="https://www.parkcameras.com/">Continue Shopping</a>';
+      var signupError = '<h2>Error. Please try again with a valid email address.</h2>';
       if(qryString == '')
       {
       return false;
@@ -52,7 +51,7 @@ block bottomScripts
       $('.signupText').html('');
       $('.signupForm').html('');
       }
-      if(qryString == 'failed')
+      if(qryString == 'error')
       {
       $('.signupHeader').html(signupError);
       $('.signupText').html('');

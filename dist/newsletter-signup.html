@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Newsletter Signup</title>
+    <title>Sign up to the Park Cameras Newsletter</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scrollToTop.js"></script>
     <script src="js/jquery.swipebox.js"></script>
@@ -17,14 +17,14 @@
       <section class="container" id="breadcrumbs">
         <ul class="breadcrumbs">
           <li class="home" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="home" href="/" itemprop="url"><span itemprop="title">Home</span></a></li>
-          <li class="here" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">Newsletter Signup</span></a></li>
+          <li class="here" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">Sign up to the Park Cameras Newsletter</span></a></li>
         </ul>
       </section>
     </div>
     <!-- START-->
     <div class="pc-mainWrapper">
       <div class="pc-wrapper pc-column pc-col1">
-        <h1>Newsletter Signup</h1>
+        <h1>Sign up to the Park Cameras Newsletter</h1>
       </div>
       <hr>
       <div class="pc-wrapper pc-column pc-col1 signupHeader"></div>
@@ -37,7 +37,7 @@
           <input type="hidden" name="accName" value="ParkCameras">
           <input type="hidden" name="listName" value="All Email Subscribers">
           <input name="successUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?signup=success">
-          <input name="errorUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?signup=failed">
+          <input name="errorUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?signup=error">
           <input name="Firstname" placeholder="Enter your first name here...">
           <input type="email" name="email" placeholder="Enter your email here...">
           <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -47,7 +47,6 @@
       </div><br><a class="scrollToTop" href="#"></a>
     </div>
     <!-- FINISH-->
-    <script src="js/swipebox.js"></script>
     <script>
       $(document).ready(function() {
       function getParameterByName(name, url) {
@@ -61,8 +60,8 @@
       return decodeURIComponent(results[2].replace(/\\+/g, " "));
       }
       var qryString = getParameterByName('signup');
-      var signupSuccess = '<h2>Success! You will shortly receive a confirmation email from us.</h2>';
-      var signupError = '<h2>Failed. Please try again with a valid email address.</h2>';
+      var signupSuccess = '<h2>Success! You will shortly receive a confirmation email from us.</h2><br /><a class="pc-btn-standard" href="https://www.parkcameras.com/">Continue Shopping</a>';
+      var signupError = '<h2>Error. Please try again with a valid email address.</h2>';
       if(qryString == '')
       {
       return false;
@@ -75,7 +74,7 @@
       $('.signupText').html('');
       $('.signupForm').html('');
       }
-      if(qryString == 'failed')
+      if(qryString == 'error')
       {
       $('.signupHeader').html(signupError);
       $('.signupText').html('');

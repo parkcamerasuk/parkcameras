@@ -5,20 +5,23 @@
     flex-flow: column wrap;
     input {
       width: 20rem;
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1rem;
       margin: 0.25rem auto;
       font-size: 1rem;
+      font-weight: $font-regular;
       background: $white;
       border: 1px solid #c7c7c7;
     }
     input[type="submit"] {
-      background: #2d4d9c;
-      color: #FFFFFF;
+      background: $park-blue;
+      color: $white;
       border: none;
-      height: 3rem;
       font-size: 1rem;
-      font-weight: $font-bold;
       margin: 2rem auto;
+      opacity: 1;
+      &:hover {
+        opacity: 0.75;
+      }
     }
     .g-recaptcha{
       margin: 0 auto;
