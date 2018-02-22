@@ -1,0 +1,26 @@
+// Newsletter Signup
+.pc-mainWrapper {
+  .signupForm {
+    display: flex;
+    flex-flow: column wrap;
+    input {
+      width: 20rem;
+      height: 2rem;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem auto;
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      background: #2d4d9c;
+      color: #FFFFFF;
+      border: none;
+      height: 3rem;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 2rem auto;
+    }
+    .g-recaptcha{
+      margin: 0 auto;
+    }
+  }
+}

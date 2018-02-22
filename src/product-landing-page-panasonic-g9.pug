@@ -1,0 +1,122 @@
+// Title
+- var title = 'Panasonic Lumix G9'
+
+// Product
+- var mainImageURL = '77114-G9_BODY_front_K.jpg';
+
+- var subImageURL = ['77115-G9_BODY_back_K.jpg', '77116-G9_BODY_top_K.jpg', '77117-G9_BODY_back2_K.jpg', '77118-G9_BODY_back_K_LCD.jpg', '77119-G9_BODY_slant_K.jpg'];
+
+- var description = ['The Lumix G9 is Panasonic’s answer to wildlife and outdoor photography, boasting outstanding image quality and an enviable feature list. The Lumix G9 is an evolution of its video-centric brother, the GH5, and is built around the needs of stills photographers, particularly those who spend time outdoors and shoot fast moving subjects.']
+
+- var features = ['20.2 megapixel Digital Live MOS sensor', 'No Low-Pass Filter', '80 megapixel equivalent High Resolution mode', 'Large top-panel Status LCD monitor', '6.5 stop in-body image stabilisation', '5-Axis Dual I.S. with O.I.S lenses', 'DFD (Depth from Defocus) technology', 'World’s fastest AF speed of 0.04 seconds', '20 fps (AF-C) and 60 fps (AF-S) continuous shooting', '6K PHOTO & 4K PHOTO', 'Largest-in-class OLED Live View Finder at 1.66x magnification ratio', 'No blackout viewfinder even in high burst shooting', 'EVF has 120fps high speed refresh rate & 0.005 sec lag', '3.0 inch 1,040k-dot free-angle LCD touchscreen', 'Magnesium alloy full die-cast front/rear frame body', 'Splashproof, dustproof, freezeproof down to -10 degrees Celsius', 'Dual SD Memory Card slots – both with UHS-II compatibility', 'Bluetooth Low Energy & Wi-Fi connectivity'];
+
+- var productSKU = 'P016565K';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:P016565K}]','@@plugin[IndividualProduct{stockcode:P016565M}]','@@plugin[IndividualProduct{stockcode:P016565L}]'];
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:P156022G}]', '@@plugin[IndividualProduct{stockcode:P092588C}]', '@@plugin[IndividualProduct{stockcode:P156022H}]', '@@plugin[IndividualProduct{stockcode:P156022J}]'];
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:P241210K}]'];
+
+// Trade-In Items
+- var tradeInItems = []
+
+- tradeInItems.push({model: 'Panasonic Lumix G7', value: '250', final: '1,249.00'})
+- tradeInItems.push({model: 'Panasonic Lumix G80', value: '250', final: '1,249.00'})
+- tradeInItems.push({model: 'Panasonic Lumix GX8', value: '300', final: '1,199.00'})
+- tradeInItems.push({model: 'Panasonic Lumix GH4R', value: '450', final: '1,049.00'})
+
+
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Panasonic Lumix G9 vs Lumix GH5 Review', img: 'https://2.bp.blogspot.com/-zkx0f5Rxk08/WgGHGSM1C7I/AAAAAAAAFkM/b28SZLYJEiYbnirCOZ_OHKwR_K-tI6OKQCLcBGAs/s640/Panasonic-Lumix-G9-vs-GH5.jpg', url: 'http://blog.parkcameras.com/2017/11/panasonic-lumix-g9-vs-lumix-gh5-review.html', desc: "Compare the video-centric Lumix GH5 with the stills photography focussed Lumix G9"}];
+
+// Videos
+- var videos = [{title: 'Panasonic Lumix G9 First Look Hands-On Review', img: 'https://i.ytimg.com/vi/dCMdmwO_stw/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBuVYVItDkC_gVoQPG1ZjsFpp-Lug', url: 'https://www.youtube.com/watch?v=dCMdmwO_stw&t=3s', desc: "We’ve been hands-on with the Lumix G9 – check out our first look review"}];
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+          
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          .pc-wrapper.pc-pluginLayout
+            .pc-col4
+              span
+                article.product.summary.stamp(itemtype='http://schema.org/Product')
+                  a.setScroll(href='/p/_BUN-P016565-200', title='Lumix G9 Micro Four Thirds Digital Camera Body - Black + Leica DG Elmarit 200mm f/2.8 Power O.I.S + 1.4x Teleconverter Lens')
+                    img.prodImg.med(src='https://content.parkcameras.com/5/1/images/catalog/i/m_77046-G9_BODY_front_K.jpg')
+                    .prodOffer(itemprop='offers', itemtype='http://schema.org/Offer')
+                      .prodName(itemprop='name', style='word-wrap: break-word;')
+                        | Lumix G9 Micro Four Thirds Digital Camera Body - Black + Leica DG Elmarit 200mm f/2.8 Power O.I.S + 1.4x Teleconverter Lens
+                      span.prodPrice(itemprop='price')
+                        span
+                          span.small  
+                          span.priceTxt
+                            span(itemprop='price') £3,998.00
+                            
+            .pc-col4
+              span
+                article.product.summary.stamp(itemtype='http://schema.org/Product')
+                  a.setScroll(href='/p/_BUN-P016565-100400', title='Lumix G9 Micro Four Thirds Digital Camera Body - Black + Panasonic 100-400mm f/4-6.3 Leica DG Vario-Elmar Zoom Lens')
+                    img.prodImg.med(src='https://content.parkcameras.com/5/1/images/catalog/i/m_77047-G9_BODY_front_K.jpg')
+                    .prodOffer(itemprop='offers', itemtype='http://schema.org/Offer')
+                      .prodName(itemprop='name', style='word-wrap: break-word;')
+                        | Lumix G9 Micro Four Thirds Digital Camera Body - Black + Panasonic 100-400mm f/4-6.3 Leica DG Vario-Elmar Zoom Lens
+                      span.prodPrice(itemprop='price')
+                        span
+                          span.small  
+                          span.priceTxt
+                            span(itemprop='price') £2,600.00
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Lenses
+          include includes/recommendedLenses.pug
+          
+          // Trade-In Bonus
+          include includes/tradeInNoEnh.pug
+          
+          hr
+          .pc-wrapper.pc-column.pc-spacer-xl
+            h2 Panasonic Lumix G9 Event
+            .pc-banner.pc-banner-overlay(style="background-image:  url('https://content.parkcameras.com/5/1/images/landing_pages/Panasonic-G9-BG.jpg');")
+              h2 Experience the Panasonic Lumix G9 In-Store
+              p Be one of the first in the UK to get hands on with the new Panasonic LUMIX G9 by visiting our stores on either 17th November (
+                a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London Store') London
+                |) or 23rd November (
+                a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill Store') Burgess Hill
+                |) from 10:00am to 4:00pm. A technical expert from Panasonic UK will be on-hand throughout the day to show you through the camera, and help answer any queries you might have. 
+              p No booking is required – simply head in store on the day!
+              p For opening times and directions, visit 
+                a(href='https://www.parkcameras.com/contact-us', title='Park Cameras Contact Us') www.parkcameras.com/contact-us
+                |.
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

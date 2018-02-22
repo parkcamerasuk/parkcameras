@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newsletter Signup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+    <script src="js/lity.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="css/lity.css">
+  </head>
+  <body>
+    <div>
+      <section class="container" id="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="home" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="home" href="/" itemprop="url"><span itemprop="title">Home</span></a></li>
+          <li class="here" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">Newsletter Signup</span></a></li>
+        </ul>
+      </section>
+    </div>
+    <!-- START-->
+    <div class="pc-mainWrapper">
+      <div class="pc-wrapper pc-column pc-col1">
+        <h1>Newsletter Signup</h1>
+      </div>
+      <hr>
+      <div class="pc-wrapper pc-column pc-col1 signupHeader"></div>
+      <div class="pc-wrapper pc-column pc-col1">
+        <p>By signing up to the Park Cameras newsletter you'll become part of a service that promises to keep you up to date with the latest products and promotions - including exclusive offers to Park Cameras customers only, and often promoted only via our newsletter!</p>
+        <p>We will not clog up your inbox with spammy content - we're only interested in telling you about our latest and greatest - plus we'll point you in the direction of more of our content, including videos and blogs.</p>
+        <form class="signupForm" method="POST" action="http://email.parkcameras.com/interface/list.php">
+          <input type="hidden" name="accName" value="ParkCameras">
+          <input type="hidden" name="listName" value="All Email Subscribers">
+          <input name="successUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?mail=yes">
+          <input name="errorUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?mail=no">
+          <input name="Firstname" placeholder="Enter your first name here...">
+          <input type="email" name="email" placeholder="Enter your email here...">
+          <script src="https://www.google.com/recaptcha/api.js"></script>
+          <div class="g-recaptcha" data-sitekey="6Lda1BAUAAAAABeemGvQod8rVNQQUSM2y9pFK_gS"></div>
+          <input type="submit" value="Sign Up">
+        </form>
+      </div><br><a class="scrollToTop" href="#"></a>
+    </div>
+    <!-- FINISH-->
+    <script src="js/swipebox.js"></script>
+    <script>
+      $(document).ready(function() {
+      function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      url = url.toLowerCase(); // This is just to avoid case sensitiveness
+      name = name.replace(/[\\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\\+/g, " "));
+      }
+      var qryString = getParameterByName('mail');
+      var signupSuccess = '';
+      var signupError = '';
+      if(qryString == '')
+      {
+      return false;
+      }
+      else
+      {
+      if(qryString == 'yes')
+      {
+      $('.signupHeader').html(signupSuccess);
+      $('.signupForm').html('');
+      }
+      if(qryString == 'no')
+      {
+      $('.signupHeader').html(signupError);
+      $('.signupForm').html('');
+      }
+      }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+// Title
+- var title = 'Fujifilm X-H1'
+
+// Product
+- var mainImageURL = '85408-X-H1_Black_Front.jpg';
+- var subImageURL = ['85406-X-H1_Black_Back.jpg', '85409-X-H1_Black_LeftSide.jpg', '85410-X-H1_Black_Top.jpg', '85407-X-H1_Black_Bottom.jpg'];
+- var description = ['The flagship in their renowned range of X-Series mirrorless cameras, the Fujifilm X-H1 is the first X-series camera to feature in-body image stabilisation, and it does so at up to 5.5 stops of compensation. The Fuji X-H1 is a professional level mirrorless camera with a rugged and durable build quality that features, among other things, 4K video at up to 200 Mbps output, dual SD card slots, Wi-Fi and Bluetooth connectivity, and F-Log recording at 4K directly to the SD card.', 'Weighing only 673g (with battery and memory cards), the X-H1 has been built around the needs of professionals, fulfilling the desires of both photographers and videographers alike. ']
+- var features = ['5-axis in-body image stabilisation up to 5.5 stops of compensation', '24.3 Megapixel APS-C X-Trans CMOS III sensor with no low-pass filter', 'High speed X-Processor Pro image processing engine', 'Uses 25% thicker magnesium alloy compared to X-T2 for more robust build', 'Additional 1.28 inch sub-LCD on top of the camera', 'Large grip design with a new shape & leaf-spring switch on the shutter release button', 'Quietest shutter of all X-Series cameras', 'New ETERNA film simulation mode for shooting movies with a cinematic film appearance', 'X-H1 now records at up to 200 Mbps bit rate', 'New F-Log to SD card recording', 'New DCI 4K video recording at 4096x2160 resolution', 'New 400% dynamic range setting (approx. 12 stops)', 'New 200Mbps high bit rate recording & new high-sound quality internal microphone at 24 bit/48 kHz) and verbal time codes.'];
+- var productSKU = '2011570K';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:2011570K}]', '@@plugin[IndividualProduct{stockcode:2011570V}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:2242325K}]', '@@plugin[IndividualProduct{stockcode:2242361K}]', '@@plugin[IndividualProduct{stockcode:2242366E}]'];
+
+
+// Trade-In Items
+- var tradeInItems = [{model: 'Fujifilm X-T2', value: '580', enhanced: '100', final: '1,019.00'}, {model: 'Fujifilm X-T1', value: '290', enhanced: '100', final: '1,309.00'}, {model: 'Fujifilm X-Pro2', value: '580', enhanced: '100', final: '1,019.00'}, {model: 'Fujifilm X-Pro1', value: '190', enhanced: '100', final: '1,409.00'}];
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Fujifilm X-H1 Review', img: 'https://www.uploadlibrary.com/ParkCameras/2018-02-15/BLOG.jpg', url: 'http://blog.parkcameras.com/', desc: 'Insert Description Here'}];
+
+// Videos
+- var videos = [{title: 'Fujifilm X-H1 Hands-On First Look', img: 'https://www.uploadlibrary.com/ParkCameras/2018-02-15/VIDEO.jpg', url: 'https://www.youtube.com/watch?v=afgy0zsXwIE', desc: 'Insert Description Here'}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          hr
+          .pc-wrapper.pc-column.pc-spacer-xl
+            h2 Be the first to see the Fujifilm X-H1 - today in our London Store from 8-4pm
+            .pc-banner.pc-banner-overlay(style="background-image:  url('http://content.parkcameras.com/5/1/images/landing_pages/fujifilm-xh1.jpg'); background-color: rgba(0, 0, 0, 0.6);")
+              h2 Meet the Fujifilm X-H1 In-Store - Today from 8am to 4pm in London
+              p Join us for breakfast and a coffee today and be one of the first people in the UK to get your hands on the brand new X-H1, the most advanced mirrorless in the Fuji X series.
+              p Our London store on Rathbone Place will be open early from 8am - 4pm today for you to come along and get hands-on with the new Fuji X-H1. Technical Experts from Fuji will be on hand all day to answer your questions.
+              h2 Saturday 17th February in Burgess Hill
+              p If you can't make it to our London store today or you live further away, we'll be holding another Fuji Breakfast for the X-H1 this Saturday 17th February at our Burgess Hill store in West Sussex.
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
+          // Trade-In Bonus
+          include includes/tradeIn.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

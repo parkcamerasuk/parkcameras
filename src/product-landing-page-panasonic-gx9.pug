@@ -1,0 +1,64 @@
+// Title
+- var title = 'Panasonic Lumix GX9'
+
+// Product
+- var mainImageURL = '85259-GX9_MKIT_front_K_1.jpg';
+- var subImageURL = ['85261-GX9_BODY_front_K.jpg', '85262-GX9_BODY_slant_K.jpg', '85260-GX9_MKIT_slant_K_1.jpg'];
+- var description = ['The Panasonic Lumix GX9 is a mirrorless camera that combines premium levels of technology in a compact camera body. Boasting a 20.3 megapixel Micro Four Thirds sensor with no low-pass filter, the Lumix GX9 captures the maximum amount of detail in every image possible. Its compact body is filled with high-end technology, making this the perfect mirrorless camera for street-style shooters, and those looking for a professional feel camera without the bulk.'];
+- var features = ['20.3 Megapixel Digital Live MOS Sensor with no Low-Pass Filter', 'Optimised gradation setting - wide dynamic range', 'Three-dimensional Colour Control', 'Contrast AF System with DFD Technology', 'High-speed Autofocus at approx. 0.07 seconds', 'Burst shooting at up to 9 fps (AF-S) or 6 fps (AF-C)', 'Low Light AF for shooting down to -4 EV', 'New Live View Finder that tilts up to 80 degrees', '2,760K-dot Live View Finder with 100% colour reproduction at 1:9 ratio', 'New 3.0 inch, 1,240K-dot monitor that tilts up to 80 degrees up & 45 degrees down', '5-axis Dual Image Stabilisation combines 2-axis Optical Image Stabiliser & 5-axis Body Image Stabiliser', '4K video recording at 30p at 3840x2160 resolution', '4K PHOTO records 8 megapixel stills at 30 fps', 'New Light Composition function combines images by saving the brighter pixel', 'New Exposure Dial for quick exposure setting changes', 'Focus lever for quick adjustment from AF-S to AF-C and Manual Focus'];
+- var productSKU = 'P016440K';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:P016440K}]', '@@plugin[IndividualProduct{stockcode:P016441M}]', '@@plugin[IndividualProduct{stockcode:P016441K}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:P241322T}]', '@@plugin[IndividualProduct{stockcode:P241356P}]', '@@plugin[IndividualProduct{stockcode:P241551T}]', '@@plugin[IndividualProduct{stockcode:P241198C}]'];
+
+
+// Trade-In Items
+- var tradeInItems = [{model: 'Panasonic Lumix G7', value: '240', final: '459.00'}, {model: 'Panasonic Lumix GX7', value: '200', final: '499.00'}, {model: 'Olympus OM-D E-M5 Mark II', value: '370', final: '329.00'}, {model: 'Olympus OM-D E-M10 Mark II', value: '250', final: '449.00'}];
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: '', img: '', url: '', desc: ''}];
+
+// Videos
+- var videos = [{title: 'Panasonic Lumix GX9 Hands-On First Look', img: 'https://www.uploadlibrary.com/ParkCameras/2018-02-13/VIDEO.jpg', url: 'https://www.youtube.com/watch?v=CSA14HrSXEA', desc: 'A 20.3 megapixel Micro Four Thirds mirrorless camera that’s packed full of high-end technology'}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
+          // Trade-In Bonus
+          include includes/tradeInNoEnh.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

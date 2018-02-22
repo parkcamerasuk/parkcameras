@@ -1,0 +1,114 @@
+// Title
+- var title = 'Panasonic Lumix GH5S'
+
+// Product
+- var mainImageURL = '82289-GH5S_BODY_front_K.jpg';
+- var subImageURL = ['82291-GH5S_BODY_slant_K.jpg', '82292-GH5S_BODY_back_K.jpg', '82288-GH5S_BODY_back2_K.jpg', '82290-GH5S_BODY_front_K_BGGH5.jpg', '82293-GH5S_BODY_back_K_BGGH5.jpg'];
+- var description = ['Just when you thought Panasonic couldn’t make the Lumix GH5 any better for video, they announce the Lumix GH5S – a low light capable, video-centric, professional production ready version of the already brilliant Lumix GH5.','With a highly sensitive 10.2 megapixel micro four thirds MOS sensor at its heart, Dual Native ISO technology, a multi aspect ratio sensor, and a long list of video features, the Panasonic GH5S is a feature packed dream camera for filmmakers and video production houses.']
+- var features = ['10.2 megapixel High Sensitivity MOS Sensor', 'New Venus Engine', 'Dual Native ISO technology', 'ISO range from ISO 160 to 51,200 native', 'Extended ISO range from ISO 80 to ISO 204,800', '4:2:2 10-bit internal recording', 'Cinematic 4K, at 60p/50p with no cropping', 'Multi aspect ratio sensor', 'V-Log comes pre-installed', '14-bit RAW imaging', 'Depth from Defocus Autofocus technology', 'Time-Code input/output', 'Bluetooth & Wi-Fi wireless connectivity', '200,000 shutter life', '11fps burst shooting in 14-bit AFS, 7fps in AFC', 'Battery life of up to 440 pictures'];
+- var productSKU = 'P016560K';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:P016560K}]'];
+
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:P156021H}]', '@@plugin[IndividualProduct{stockcode:P092588C}]', '@@plugin[IndividualProduct{stockcode:P156021K}]', '@@plugin[IndividualProduct{stockcode:P072010E}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:P241356P}]', '@@plugin[IndividualProduct{stockcode:P241355P}]', '@@plugin[IndividualProduct{stockcode:P241551T}]', '@@plugin[IndividualProduct{stockcode:P241198C}]'];
+
+
+// Trade-In Items
+- var tradeInItems = [{model: 'Panasonic Lumix GH5', value: '900', final: '1,149.00'}, {model: 'Panasonic Lumix GH4R', value: '500', final: '1,599.00'}, {model: 'Panasonic Lumix GH4', value: '450', final: '1,699.00'}, {model: 'Panasonic Lumix GH3', value: '250', final: '1,899.00'}];
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'Panasonic Announces the Lumix GH5S', img: 'https://www.uploadlibrary.com/ParkCameras/2018-01-08/BLOG1.jpg', url: 'http://blog.parkcameras.com/2018/01/panasonic-announces-lumix-gh5s.html', desc: 'Just over a year since the launch of the original GH5, Panasonic have followed up today by launching their latest mirrorless camera - the Lumix GH5S, an addition to the lineup to sit alongside the original GH5 and the Lumix G9.'}, {title: 'Panasonic Lumix GH5S vs Lumix GH5 Review', img: 'https://www.uploadlibrary.com/ParkCameras/2018-01-08/BLOG2.jpg', url: 'http://blog.parkcameras.com/2018/01/panasonic-lumix-gh5s-vs-lumix-gh5-review.html', desc: "In this review, we're comparing the latest Panasonic Lumix GH5S with its sibling, the Lumix GH5 so you can make an informed buying decision about which camera best suits your needs."}];
+
+// Videos
+- var videos = [{title: 'Panasonic Lumix GH5S - Hands On First Look', img: 'https://i.ytimg.com/vi/xRbgYSeikx0/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA7cuu_m851JOlQh_XuamO211rk7A', url: 'https://www.youtube.com/watch?v=xRbgYSeikx0', desc: "Amy gives us a hands on first look at the brand new GH5S, Panasonic's 'Ultimate Video Camera' released at CES 2018."}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          .pc-wrapper.pc-pluginLayout
+            .pc-col4
+              span
+                article.product.summary.stamp(itemtype='http://schema.org/Product')
+                  a.setScroll(href='/p/_BUN_P016560K_1260', title='Panasonic Lumix GH5S + Leica DG Vario-Elmarit 12-60mm f/2.8-4.0 Asph.')
+                    img.prodImg.med(src='https://content.parkcameras.com/5/1/images/catalog/i/m_82374-tmp201D.jpg')
+                    .prodOffer(itemprop='offers', itemtype='http://schema.org/Offer')
+                      .prodName(itemprop='name', style='word-wrap: break-word;')
+                        | Panasonic Lumix GH5S + Leica DG Vario-Elmarit 12-60mm f/2.8-4.0 Asph.
+                      span.prodPrice(itemprop='price')
+                        span
+                          span.small  
+                          span.priceTxt
+                            span(itemprop='price') £2,899.00
+                            
+            .pc-col4
+              span
+                article.product.summary.stamp(itemtype='http://schema.org/Product')
+                  a.setScroll(href='/p/_BUN_P016560K_GRIP', title='Panasonic Lumix GH5S + DMW-BGGH5 Battery Grip')
+                    img.prodImg.med(src='https://content.parkcameras.com/5/1/images/catalog/i/m_82373-tmp1652.jpg')
+                    .prodOffer(itemprop='offers', itemtype='http://schema.org/Offer')
+                      .prodName(itemprop='name', style='word-wrap: break-word;')
+                        | Panasonic Lumix GH5S + DMW-BGGH5 Battery Grip
+                      span.prodPrice(itemprop='price')
+                        span
+                          span.small  
+                          span.priceTxt
+                            span(itemprop='price') £2,399.00
+        
+            .pc-col4
+              span
+                article.product.summary.stamp(itemtype='http://schema.org/Product')
+                  a.setScroll(href='/p/_BUN_P016560K_XLR', title='Panasonic Lumix GH5S + DMW-XLR1 XLR Microphone Adaptor')
+                    img.prodImg.med(src='https://content.parkcameras.com/5/1/images/catalog/i/m_82375-tmpD904.jpg')
+                    .prodOffer(itemprop='offers', itemtype='http://schema.org/Offer')
+                      .prodName(itemprop='name', style='word-wrap: break-word;')
+                        | Panasonic Lumix GH5S + DMW-XLR1 XLR Microphone Adaptor
+                      span.prodPrice(itemprop='price')
+                        span
+                          span.small  
+                          span.priceTxt
+                            span(itemprop='price') £2,399.00
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
+          // Trade-In Bonus
+          include includes/tradeInNoEnh.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug
