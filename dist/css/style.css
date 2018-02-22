@@ -1198,12 +1198,11 @@
           flex-flow: column wrap; }
   .pc-mainWrapper .signupForm input {
     width: 20rem;
-    height: 2rem;
     padding: 0.5rem 1rem;
     margin: 0.25rem auto;
     font-size: 1rem;
     background: #FFF;
-    border: 1px solid #EEE; }
+    border: 1px solid #c7c7c7; }
   .pc-mainWrapper .signupForm input[type="submit"] {
     background: #2d4d9c;
     color: #FFFFFF;

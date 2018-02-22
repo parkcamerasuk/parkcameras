@@ -31,11 +31,13 @@
       <div class="pc-wrapper pc-column pc-col1 signupText">
         <p>By signing up to the Park Cameras newsletter you'll become part of a service that promises to keep you up to date with the latest products and promotions - including exclusive offers to Park Cameras customers only, and often promoted only via our newsletter!</p>
         <p>We will not clog up your inbox with spammy content - we're only interested in telling you about our latest and greatest - plus we'll point you in the direction of more of our content, including videos and blogs.</p>
+      </div>
+      <div class="pc-wrapper pc-column pc-col1">
         <form class="signupForm" method="POST" action="http://email.parkcameras.com/interface/list.php">
           <input type="hidden" name="accName" value="ParkCameras">
           <input type="hidden" name="listName" value="All Email Subscribers">
-          <input name="successUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?mail=yes">
-          <input name="errorUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?mail=no">
+          <input name="successUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?signup=success">
+          <input name="errorUrl" type="hidden" value="https://www.parkcameras.com/krishna-3?signup=failed">
           <input name="Firstname" placeholder="Enter your first name here...">
           <input type="email" name="email" placeholder="Enter your email here...">
           <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -58,22 +60,22 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\\+/g, " "));
       }
-      var qryString = getParameterByName('mail');
-      var signupSuccess = '<h2>Success</h2>';
-      var signupError = '<h2>Failed. Please Try Again.</h2>';
+      var qryString = getParameterByName('signup');
+      var signupSuccess = '<h2>Success! You will shortly receive a confirmation email from us.</h2>';
+      var signupError = '<h2>Failed. Please try again with a valid email address.</h2>';
       if(qryString == '')
       {
       return false;
       }
       else
       {
-      if(qryString == 'yes')
+      if(qryString == 'success')
       {
       $('.signupHeader').html(signupSuccess);
       $('.signupText').html('');
       $('.signupForm').html('');
       }
-      if(qryString == 'no')
+      if(qryString == 'failed')
       {
       $('.signupHeader').html(signupError);
       $('.signupText').html('');

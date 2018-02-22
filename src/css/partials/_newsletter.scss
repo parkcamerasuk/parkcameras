@@ -5,12 +5,11 @@
     flex-flow: column wrap;
     input {
       width: 20rem;
-      height: 2rem;
       padding: 0.5rem 1rem;
       margin: 0.25rem auto;
       font-size: 1rem;
       background: $white;
-      border: 1px solid $park-lightGrey;
+      border: 1px solid #c7c7c7;
     }
     input[type="submit"] {
       background: #2d4d9c;
