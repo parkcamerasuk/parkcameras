@@ -1,0 +1,71 @@
+// Title
+- var title = 'Sony a7 III'
+
+// Product
+- var mainImageURL = '86199-tmp2000.jpg';
+- var subImageURL = ['86200-tmpAC91.jpg', '86219-a7III_rightside_EU01_2.jpg', '86201-tmp3644.jpg', '86218-a7III_bottom_EU01_2.jpg', '86202-tmpCB32.jpg'];
+- var description = ['Sony continues to deliver industry-leading full-frame mirrorless cameras with the Sony a7 III. Boasting a brand new 24.2MP back-illuminated Exmor R CMOS image sensor with increased sensitivity, outstanding resolution and an impressive 15 stops of dynamic range at low sensitivities, the a7 III will give you the tools to produce an amazing range of images. Pair these with cutting edge software features such as 93% coverage lightning-fast autofocus and 5-axis image stabilisation to capture content in new and different ways with stunning results.'];
+- var features = ['Newly Developed Full-frame 24.2MP Back-Illuminated Exmor R CMOS Image Sensor with Evolved Image Processing', 'Wide ISO range of 100 - 51200 (expandable to ISO 50 – 204800 for still images) and 15-Stop Dynamic Range at low sensitivities', 'World Class Auto Focus (AF) system featuring 693 phase-detection AF points covering 93% of image area, 425 contrast AF points and fast and reliable Eye AF', 'Continuous Shooting at up to 10 fps with either Mechanical Shutter or Silent Shooting and full Auto Focus/Auto Exposure tracking', '5-axis optical in-body image stabilisation with a 5.0 step shutter speed advantage', 'High Resolution 4K Movie Shooting with full pixel readout and no pixel binning across full-width of full-frame sensor', 'The longest rated battery life of any Mirrorless camera at 710 shots per charge', 'Upgraded operability and functionality including addition of joystick for adjusting focus points, Dual SD Card Slots, SuperSpeed USB (USB 3.1 Gen 1) USB Type-C Terminal and more'];
+- var productSKU = '7014826K';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:7014826K}]', '@@plugin[IndividualProduct{stockcode:7014826V}]'];
+
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:7090068W}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:7240583N}]', '@@plugin[IndividualProduct{stockcode:7240744E}]', '@@plugin[IndividualProduct{stockcode:7240745H}]', '@@plugin[IndividualProduct{stockcode:7240787E}]'];
+
+
+// Trade-In Items
+- var tradeInItems = [{model: 'Sony a7', value: '320', enhanced: '350', final: '1,649'}, {model: 'Sony a7 II', value: '450', enhanced: '500', final: '1,499'}, {model: 'Sony a7R', value: '420', enhanced: '520', final: '1,479'}, {model: 'Sony a7R II', value: '950', enhanced: '1,050', final: '949'}, {model: 'Sony a7S', value: '600', enhanced: '720', final: '1,279'}, {model: 'Sony a7S II', value: '950', enhanced: '1,050', final: '949'}];
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: 'New Sony A7 III just announced - compared with the A7 II what has changed?', img: 'https://www.uploadlibrary.com/ParkCameras/2018-02-27/BLOG.jpg', url: 'http://blog.parkcameras.com/2018/02/new-sony-a7-iii-just-announced-compared.html', desc: 'The new Sony A7 III just announced is unsurprisingly the third generation of the series and includes a number of improvements and innovations compared to it’s predecessors the A7 II and original A7.'}];
+
+// Videos
+- var videos = [{title: '', img: '', url: '', desc: ''}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
+          // Trade-In Bonus
+          include includes/tradeIn.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

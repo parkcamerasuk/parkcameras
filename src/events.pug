@@ -1,0 +1,60 @@
+extends template.pug
+
+
+block vars
+  - var title = 'Events at Park Cameras';
+
+
+block content
+
+  .pc-wrapper.pc-column.pc-col1
+    img(src='http://content.parkcameras.com/5/1/images/Article%20Images/Park%20Cameras%20Events%20Header.jpeg', alt='Park Cameras Events')
+
+  .pc-wrapper.pc-column.pc-col1.pc-spacer-xl
+    h3 Throughout the year, Park Cameras hold and attend a range of events. These events are held at our stores in Central 
+      a( href='https://www.parkcameras.com/london-store', title='Park Cameras London Store') London
+      |, 
+      a( href='https://www.parkcameras.com/burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill 
+      | 
+      | (West Sussex) and on the road! Keep a note of this page for all future events in 2018!
+      
+  .pc-wrapper.pc-row.pc-spacer-xl
+    .pc-column.pc-col3
+      a.pc-btn-standard(href='#', title='') All Events
+      
+    .pc-column.pc-col3
+      a.pc-btn-standard(href='#', title='') Burgess Hill
+      
+    .pc-column.pc-col3
+      a.pc-btn-standard(href='#', title='') London
+
+  //MARCH
+  .pc-wrapper.pc-column.pc-col1
+    h2 March
+      
+  .pc-wrapper.pc-row   
+    .pc-column.pc-col3
+      img(src='https://placehold.it/600x400')
+      h4 Lorem Ipsum
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa vel efficitur eleifend. In imperdiet, tellus vel semper tincidunt, mauris arcu blandit nulla, nec auctor arcu risus sit amet lacus.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      h5 
+        a(href='', title='') CTA
+    .pc-column.pc-col3
+      img(src='https://placehold.it/600x400')
+      h4 Lorem Ipsum
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa vel efficitur eleifend. In imperdiet, tellus vel semper tincidunt, mauris arcu blandit nulla, nec auctor arcu risus sit amet lacus.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      h5 
+        a(href='', title='') CTA
+    .pc-column.pc-col3
+      img(src='https://placehold.it/600x400')
+      h4 Lorem Ipsum
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra massa vel efficitur eleifend. In imperdiet, tellus vel semper tincidunt, mauris arcu blandit nulla, nec auctor arcu risus sit amet lacus.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      h5 
+        a(href='', title='') CTA
+    //END MARCH
+      
+block bottomScripts
+  script(src='js/swipebox.js')

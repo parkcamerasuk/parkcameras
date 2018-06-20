@@ -1,0 +1,64 @@
+// Title
+- var title = 'Canon EOS M50'
+
+// Product
+- var mainImageURL = '85986-08-BK_The-Front_Body-RTI_822[1].jpg';
+- var subImageURL = ['85983-05-BK_Back_Body-RTI_822[1].jpg', '85982-04-BK_Left_Body[1].jpg', '85981-03-BK_Right_Body[1].jpg', '85979-01-BK_TOP_Body-RTI_822[1].jpg', '85980-02-BK_Bottom_Body[1].jpg'];
+- var description = ['The Canon EOS M50 Mirrorless Digital Camera will inspire you to make memorable stories you’ll be proud to share. With 4K movies, a DSLR sized sensor and a whole host of connectivity options, you are able to shoot in amazing quality and then share seamlessly wherever you may be.', 'Beautifully designed and packed full of the latest technology, this sleek compact camera delivers a refined, intuitive shooting experience from any angle thanks to the large electronic viewfinder and a 3 inch Vari-Angle Touch screen.'];
+- var features = ['24.1 Megapixel APS-C sensor', 'DIGIC8 Image Processor for even better image quality and faster shooting', '4K Movie (23.98/25p)', '5-axis Image Stabilisation', 'Dual Pixel CMOS Auto Focus', 'Up to 10fps continuous shooting', '3.0 inch vari-angle touchscreen LCD', 'ISO 25.600 (expandable to 51,200)'];
+- var productSKU = '1013141K';
+
+// Body and Kits
+- var bodyAndKits = ['@@plugin[IndividualProduct{stockcode:1013141K}]', '@@plugin[IndividualProduct{stockcode:1013142W}]', '@@plugin[IndividualProduct{stockcode:1013141V}]', '@@plugin[IndividualProduct{stockcode:1013142V}]', '@@plugin[IndividualProduct{stockcode:1013141T}]', '@@plugin[IndividualProduct{stockcode:1013142T}]'];
+
+
+// Recommended Accessories
+- var accessories = ['@@plugin[IndividualProduct{stockcode:5090248B}]'];
+
+
+// Recommended Lenses
+- var recommendedLenses = ['@@plugin[IndividualProduct{stockcode:1245311E}]', '@@plugin[IndividualProduct{stockcode:1245230W}]', '@@plugin[IndividualProduct{stockcode:1245318E}]', '@@plugin[IndividualProduct{stockcode:1245319K}]'];
+
+// Fix
+mixin emptyMixin()
+  if false
+    p >_<
+
+// Blogs
+- var blogs = [{title: '', img: '', url: '', desc: ''}];
+
+// Videos
+- var videos = [{title: 'Canon EOS M50 Camera Hands-On First Look', img: 'https://www.uploadlibrary.com/ParkCameras/2018-02-26/VIDEO.jpg', url: 'https://youtu.be/lTlBgJCpoCc', desc: 'James from Park Cameras chats with David from Canon and gets hands-on with the new Canon EOS M50 and to learn more about this exciting new mirrorless camera, find out what they thought in our first look video.'}];
+
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/breadcrumbs.pug
+
+        // START
+        
+        .pc-mainWrapper
+        
+          // Product
+          include includes/product.pug
+        
+          // Body and Kits
+          include includes/bodyAndKits.pug
+          
+          // Accessories
+          include includes/accessories.pug
+          
+          // Recommended Lenses
+          include includes/recommendedLenses.pug
+          
+          // Blog and Videos
+          include includes/blogAndVideos.pug
+          
+          // Foot
+          include includes/foot.pug
+        
+        // FINISH
+
+        include includes/bottomScripts.pug

@@ -1210,7 +1210,7 @@
     color: #FFF;
     border: none;
     font-size: 1rem;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
     opacity: 1; }
     .pc-mainWrapper .signupForm input[type="submit"]:hover {
       opacity: 0.75; }
