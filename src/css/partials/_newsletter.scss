@@ -57,6 +57,7 @@
     [type="email"] {
       padding: 0.75rem 0.5rem;
       width: 90%;
+      height: 2.75rem;
       border: 1px solid $park-lightGrey;
     }
 
@@ -66,6 +67,7 @@
       padding: 0.75rem 3rem;
       border: none;
       cursor: pointer;
+      text-indent: 0;
       &:hover {
         opacity: 0.9;
       }

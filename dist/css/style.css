@@ -1241,13 +1241,15 @@
   .pc-mainWrapper .pc-signup .pc-signupForm [type="email"] {
     padding: 0.75rem 0.5rem;
     width: 90%;
+    height: 2.75rem;
     border: 1px solid #EEE; }
   .pc-mainWrapper .pc-signup .pc-signupForm [type="submit"] {
     color: #FFF;
     background: #2D4C9C;
     padding: 0.75rem 3rem;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    text-indent: 0; }
     .pc-mainWrapper .pc-signup .pc-signupForm [type="submit"]:hover {
       opacity: 0.9; }
   .pc-mainWrapper .pc-signup .pc-signupHeader,
