@@ -31,4 +31,60 @@
       margin: 1rem auto;
     }
   }
+
+  .pc-signup {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $park-darkGrey;
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: column wrap;
+
+  .pc-signupHeader {
+    font-size: 1.5rem;
+    color: $park-blue;
+  }
+
+  .pc-signupText {
+  }
+
+  .pc-signupError {
+    color: $park-red;
+  }
+  .pc-signupForm {
+    [type="email"] {
+      padding: 0.75rem 0.5rem;
+      width: 90%;
+      border: 1px solid $park-lightGrey;
+    }
+
+    [type="submit"] {
+      color: $white;
+      background: $park-blue;
+      padding: 0.75rem 3rem;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .pc-signupHeader,
+  [type="submit"] {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .pc-signupHeader,
+  .pc-signupText,
+  .pc-signupError,
+  [type] {
+    margin: $margin-medium;
+  }
 }
+  
+}
+

@@ -1218,3 +1218,44 @@
     margin: 0 auto; }
   .pc-mainWrapper .signupForm iframe {
     margin: 1rem auto; }
+
+.pc-mainWrapper .pc-signup {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444;
+  text-align: center;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
+  .pc-mainWrapper .pc-signup .pc-signupHeader {
+    font-size: 1.5rem;
+    color: #2D4C9C; }
+  .pc-mainWrapper .pc-signup .pc-signupError {
+    color: #cc0000; }
+  .pc-mainWrapper .pc-signup .pc-signupForm [type="email"] {
+    padding: 0.75rem 0.5rem;
+    width: 90%;
+    border: 1px solid #EEE; }
+  .pc-mainWrapper .pc-signup .pc-signupForm [type="submit"] {
+    color: #FFF;
+    background: #2D4C9C;
+    padding: 0.75rem 3rem;
+    border: none;
+    cursor: pointer; }
+    .pc-mainWrapper .pc-signup .pc-signupForm [type="submit"]:hover {
+      opacity: 0.9; }
+  .pc-mainWrapper .pc-signup .pc-signupHeader,
+  .pc-mainWrapper .pc-signup [type="submit"] {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .pc-mainWrapper .pc-signup .pc-signupHeader,
+  .pc-mainWrapper .pc-signup .pc-signupText,
+  .pc-mainWrapper .pc-signup .pc-signupError,
+  .pc-mainWrapper .pc-signup [type] {
+    margin: 0 0 1rem; }

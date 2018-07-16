@@ -30,68 +30,209 @@
       <div class="pc-wrapper pc-row pc-storeLocator">
         <div class="pc-column pc-col4 pc-spacer-xl pc-storeLocator-marginFix">
           <h2>Get In Touch</h2>
+          <p class="pc-footerNote" id="phone-times">Available Monday to Saturday 9.00 - 5.30pm<br>&amp Sunday 10.00 - 4.00pm</p>
           <h3>Call Us</h3>
           <p>Call our UK Customer Service Team on:</p>
-          <p class="pc-contactLinks"><a class="pc-btn-switch" href="tel:+44444237070" itemprop="telephone"><span class="pc-telephoneIcon"></span>01444 23 70 70</a></p>
-          <p class="pc-footerNote" id="phone-times">Available Monday to Saturday 9-5.30pm (Closed Sunday)</p>
+          <p class="pc-contactLinks"><a class="pc-btn-switch" href="tel:+441444237070" itemprop="telephone" onclick="ga('send','event', 'Contact Us Page', 'Telephone')"><span class="pc-telephoneIcon"></span>01444 23 70 70</a></p>
+          <p class="pc-footerNote" id="phone-status"></p>
           <h3>Email Us</h3>
           <p>Write to us for help and support at:</p>
-          <p class="pc-contactLinks"><a class="pc-btn-switch" href="mailto:sales@parkcameras.com" target="_blank">sales@parkcameras.com </a></p>
+          <p class="pc-contactLinks"><a class="pc-btn-switch" href="mailto:sales@parkcameras.com" target="_blank" onclick="ga('send','event', 'Contact Us Page', 'E-mail')">sales@parkcameras.com</a></p>
           <p class="pc-footerNote" id="email-times">Current response time: 24 hours</p>
+          <h3 id="chat-header">Live Chat</h3>
+          <p id="chat-text">Chat with our Customer Service Team now:</p>
+          <p class="pc-contactLinks" id="chat-link"><a class="pc-btn-switch" href="javascript:$zopim(function(){$zopim.livechat.window.show();});" onclick="ga('send','event', 'Contact Us Page', 'Live Chat')">Live Chat</a></p>
+          <p class="pc-footerNote" id="chat-times">Current response time: 10 minutes</p>
           <h3>Tweet Us</h3>
           <p>Direct Message us on Twitter at:</p>
-          <p class="pc-contactLinks"><a class="pc-btn-switch" href="https://twitter.com/messages/compose?recipient_id=35701499" target="_blank">@ParkTweets </a></p>
-          <p class="pc-footerNote" id="tweet-times">Typical response time: 4 hours</p>
+          <p class="pc-contactLinks"><a class="pc-btn-switch" href="https://twitter.com/messages/compose?recipient_id=35701499" target="_blank" onclick="ga('send','event', 'Contact Us Page', 'Twitter')">@ParkTweets</a></p>
+          <p class="pc-footerNote" id="tweet-times">Typical response time: 15 minutes</p>
           <h3>Facebook Messenger</h3>
           <p>Message us on Facebook at:</p>
-          <p class="pc-contactLinks"><a class="pc-btn-switch" href="https://m.me/parkcameras" target="_blank">@ParkCameras</a></p>
-          <p class="pc-footerNote" id="facebook-times">Typical response time: 4 hours</p>
-          <h3>Live Chat</h3>
-          <p>Chat with our Customer Service Team now:</p>
-          <p class="pc-contactLinks"><a class="pc-btn-switch" href="">LiveChat</a></p>
-          <p class="pc-footerNote" id="chat-times">Current response time: 10 minutes</p>
+          <p class="pc-contactLinks"><a class="pc-btn-switch" href="https://m.me/parkcameras" target="_blank" onclick="ga('send','event', 'Contact Us Page', 'Facebook')">@ParkCameras</a></p>
+          <p class="pc-footerNote" id="facebook-times">Typical response time: 15 minutes</p>
         </div>
         <div class="pc-column pc-col2 pc-spacer-xl">
           <h2>Store Locator</h2>
           <div class="pc-wrapper pc-row pc-storeLocator-lineHeightFix">
-            <div class="pc-column pc-col3 pc-spacer-xl">
-              <h3><a href="https://www.parkcameras.com/park-cameras-burgess-hill-store" title="Park Cameras Burgess Hill">Burgess Hill<span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"></span></a></h3>
+            <div class="pc-column pc-col3 pc-spacer-xl" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+              <h3><a href="https://www.parkcameras.com/park-cameras-burgess-hill-store" title="Park Cameras Burgess Hill">Burgess Hill</a></h3>
               <iframe frameborder="0" height="auto" src="https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975" width="auto"></iframe>
               <h3><small>Address</small></h3>
               <p><span itemprop="streetAddress">York Road</span></p>
               <p><span itemprop="addressLocality">Burgess Hill</span></p>
               <p><span itemprop="addressRegion">West Sussex</span></p>
-              <p class="pc-spacer-xl"><span itemprop="postalCode">RH15 9TT</span></p>
+              <p class="pc-spacer-xl" itemprop="postalCode">RH15 9TT</p>
               <h3><small>Opening Times</small></h3>
-              <p id="monday-bh">Monday: 9 - 5.30pm</p>
-              <p id="tuesday-bh">Tuesday: 9 - 5.30pm</p>
-              <p id="wedneday-bh">Wednesday: 9 - 5.30pm</p>
-              <p id="thursday-bh">Thursday: 9 - 7.30pm</p>
-              <p id="friday-bh">Friday: 9 - 5.30pm</p>
-              <p id="saturday-bh">Saturday: 9 - 5.30pm</p>
-              <p id="sunday-bh">Sunday: 10 - 4pm</p>
+              <p id="monday-bh">Monday: 9.00 - 5.30pm</p>
+              <p id="tuesday-bh">Tuesday: 9.00 - 5.30pm</p>
+              <p id="wednesday-bh">Wednesday: 9.00 - 5.30pm</p>
+              <p id="thursday-bh">Thursday: 9.00 - 7.30pm</p>
+              <p id="friday-bh">Friday: 9.00 - 5.30pm</p>
+              <p id="saturday-bh">Saturday: 9.00 - 5.30pm</p>
+              <p id="sunday-bh">Sunday: 10.00 - 4pm</p>
             </div>
-            <div class="pc-column pc-col3 pc-spacer-xl pc-storeLocator-lineHeightFix">
-              <h3> <a href="https://www.parkcameras.com/park-cameras-london-store" title="Park Cameras London">London</a></h3>
+            <div class="pc-column pc-col3 pc-spacer-xl pc-storeLocator-lineHeightFix" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+              <h3><a href="https://www.parkcameras.com/park-cameras-london-store" title="Park Cameras London">London</a></h3>
               <iframe frameborder="0" height="auto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4965.626397745077!2d-0.133401!3d51.516643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2cec88a6bb%3A0xefb2f3c4da6f2115!2s53-54+Rathbone+Pl%2C+Fitzrovia%2C+London+W1T+1JR%2C+UK!5e0!3m2!1sen!2suk!4v1496850265917" width="auto"></iframe>
               <h3><small>Address</small></h3>
-              <p>53-54 Rathbone Place</p>
-              <p>London</p>
-              <p>Fitzrovia</p>
-              <p class="pc-spacer-xl">W1T 1JR</p>
-              <h3> <small>Opening Times</small></h3>
-              <p id="monday-ldn">Monday: 10 - 6.30pm</p>
-              <p id="tuesday-ldn">Tuesday: 10 - 6.30pm</p>
-              <p id="wednesday-ldn">Wednesday: 10 - 6.30pm</p>
-              <p id="thursday-ldn">Thursday: 10 - 7.30pm</p>
-              <p id="friday-ldn">Friday: 10 - 7.30pm</p>
-              <p id="saturday-ldn">Saturday:  10 - 6.30pm</p>
-              <p id="saturday-ldn">Sunday: 10.30 - 4.30pm</p>
+              <p itemprop="streetAddress">53-54 Rathbone Place</p>
+              <p itemprop="addressLocality">London</p>
+              <p itemprop="addressRegion">Fitzrovia</p>
+              <p class="pc-spacer-xl" itemprop="postalCode">W1T 1JR</p>
+              <h3><small>Opening Times</small></h3>
+              <p id="monday-ldn">Monday: 10.00 - 6.30pm</p>
+              <p id="tuesday-ldn">Tuesday: 10.00 - 6.30pm</p>
+              <p id="wednesday-ldn">Wednesday: 10.00 - 6.30pm</p>
+              <p id="thursday-ldn">Thursday: 10.00 - 7.30pm</p>
+              <p id="friday-ldn">Friday: 10.00 - 7.30pm</p>
+              <p id="saturday-ldn">Saturday: 10.00 - 6.30pm</p>
+              <p id="sunday-ldn">Sunday: 10.30 - 4.30pm</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="pc-wrapper pc-column pc-col1">
+        <h2>Our Latest Reviews on Trustpilot</h2>
+        <!-- TrustBox widget - Carousel-->
+        <div class="trustpilot-widget" data-businessunit-id="477447a300006400050209bb" data-locale="en-GB" data-schema-type="Organization" data-stars="1,2,3,4,5" data-style-height="130px" data-style-width="100%" data-template-id="53aa8912dec7e10d38f59f36" data-theme="light"><a href="https://uk.trustpilot.com/review/www.parkcameras.com" target="_blank">Trustpilot</a></div>
+        <!-- End TrustBox widget-->
       </div><br><a class="scrollToTop" href="#"></a>
     </div>
+    <!-- FINISH-->
+    <script src="js/w3cAccordion.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $(document).swipebox({
+      selector: '.swipebox'
+      });
+      });
+    </script>
+    <script>
+      // Get the day of the week
+      var d = new Date();
+      var n = d.getDay();
+      var time = d.getHours() + ":" + d.getMinutes()
+      //London Opening Times
+      var ldnOpening = '';
+      var ldnClosed = '';
+      var ldnClosing = '';
+      var ldnIsopen = '';
+      var ldnIsclosing = '';
+      if (n == 1 || n == 2 || n == 3 || n == 5 || n == 6) {
+      ldnOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 10, 00);
+      ldnClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 17, 30);
+      ldnClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 30);
+      } else if (n == 4) {
+      ldnOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 10, 00);
+      ldnClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 30);
+      ldnClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 19, 30);
+      } else if (n == 0) {
+      ldnOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 13, 00);
+      ldnClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 15, 30);
+      ldnClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 30);
+      }
+      ldnIsopen = (d.getTime()> ldnOpening.getTime() && d.getTime() <ldnClosing.getTime());
+      ldnIsclosing = (d.getTime()> ldnClosing.getTime() && d.getTime() <ldnClosed.getTime());
+      //Burgess Hill Opening Times
+      var bhOpening = '';
+      var bhClosed = '';
+      var bhClosing = '';
+      var bhIsopen = '';
+      var bhIsclosing = '';
+      if (n == 1 || n == 2 || n == 3 || n == 5 || n == 6) {
+      bhOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 00);
+      bhClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 30);
+      bhClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 17, 30);
+      } else if (n == 4) {
+      bhOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 00);
+      bhClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 30);
+      bhClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 19, 30);
+      } else if (n == 0) {
+      bhOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 10, 00);
+      bhClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 15, 00);
+      bhClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 00);
+      }
+      bhIsopen = (d.getTime()> bhOpening.getTime() && d.getTime() <bhClosing.getTime());
+      bhIsclosing = (d.getTime()> bhClosing.getTime() && d.getTime() <bhClosed.getTime());
+      //Phone Opening Times
+      var phoneOpening = '';
+      var phoneClosed = '';
+      var phoneClosing = '';
+      var phoneIsopen = '';
+      var phoneIsclosing = '';
+      if (n != 0) {
+      phoneOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 00);
+      phoneClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 30);
+      phoneClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 17, 30);
+      }
+      phoneIsopen = (d.getTime()> phoneOpening.getTime() && d.getTime() <phoneClosing.getTime());
+      phoneIsclosing = (d.getTime()> phoneClosing.getTime() && d.getTime() <phoneClosed.getTime());
+      if (phoneIsopen) {
+      $('#phone-status').html('Open Now');
+      $('#phone-status').css('color', '#41a940');
+      } else if (phoneIsclosing) {
+      $('#phone-status').html('Closing Soon');
+      $('#phone-status').css('color', '#ff5f00');
+      } else {
+      $('#phone-status').html('Closed');
+      $('#phone-status').css('color', '#CC0000');
+      }
+      // Bold the day of the week in opening times
+      if (n == '1') {
+      $('#monday-bh').css('font-weight', 'bold');
+      $('#monday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#monday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#monday-bh').css('color', '#ff5f00'); } else { $('#monday-bh').css('color', '#00000'); }
+      if (ldnIsopen) { $('#monday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#monday-ldn').css('color', '#ff5f00'); } else { $('#monday-ldn').css('color', '#00000'); }
+      } else if (n == '2') {
+      $('#tuesday-bh').css('font-weight', 'bold');
+      $('#tuesday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#tuesday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#tuesday-bh').css('color', '#ff5f00'); } else { $('#tuesday-bh').css('color', '#00000'); }
+      if (ldnIsopen) { $('#tuesday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#tuesday-ldn').css('color', '#ff5f00'); } else { $('#tuesday-ldn').css('color', '#00000'); }
+      } else if (n == '3') {
+      $('#wednesday-bh').css('font-weight', 'bold');
+      $('#wednesday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#wednesday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#wednesday-bh').css('color', '#ff5f00'); } else { $('#wednesday-bh').css('color', '#00000'); }
+      if (ldnIsopen) { $('#wednesday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#wednesday-ldn').css('color', '#ff5f00'); } else { $('#wednesday-ldn').css('color', '#00000'); }
+      } else if (n == '4') {
+      $('#thursday-bh').css('font-weight', 'bold');
+      $('#thursday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#thursday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#thursday-bh').css('color', '#ff5f00'); } else { $('#thursday-bh').css('color', '#00000'); }
+      if (ldnIsopen) { $('#thursday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#thursday-ldn').css('color', '#ff5f00'); } else { $('#thursday-ldn').css('color', '#00000'); }
+      } else if (n == '5') {
+      $('#friday-bh').css('font-weight', 'bold');
+      $('#friday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#friday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#friday-bh').css('color', '#ff5f00'); } else { $('#friday-bh').css('color', '#00000'); }
+      if (ldnIsopen) { $('#friday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#friday-ldn').css('color', '#ff5f00'); } else { $('#friday-ldn').css('color', '#00000'); }
+      } else if (n == '6') {
+      $('#saturday-bh').css('font-weight', 'bold');
+      $('#saturday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#saturday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#saturday-bh').css('color', '#ff5f00'); } else { $('#saturday-bh').css('color', '#00000'); }
+      if (ldnIsopen) { $('#saturday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#saturday-ldn').css('color', '#ff5f00'); } else { $('#saturday-ldn').css('color', '#00000'); }
+      } else if (n == '0') {
+      $('#sunday-bh').css('font-weight', 'bold');
+      $('#sunday-ldn').css('font-weight', 'bold');
+      if (bhIsopen) { $('#sunday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#sunday-bh').css('color', '#ff5f00'); } else { $('#sunday-bh').css('color', '#000000'); }
+      if (ldnIsopen) { $('#sunday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#sunday-ldn').css('color', '#ff5f00'); } else { $('#sunday-ldn').css('color', '#000000'); }
+      }
+      //Zopim Livechat - Show live chat button if status is online...
+      $zopim(function() {
+      $zopim.livechat.setOnStatus(livechat_status);
+      });
+      function livechat_status(status) {
+      if (status == 'offline') {
+      $('#chat-header').css('display', 'none');
+      $('#chat-text').css('display', 'none');
+      $('#chat-link').css('display', 'none');
+      $('#chat-times').css('display', 'none');
+      } else {
+      console.log('Zopim Online');
+      }
+      }
+      
+        include includes/foot.pug
+      
+    </script>
     <!-- FINISH-->
     <script src="js/w3cAccordion.js"></script>
     <script type="text/javascript">

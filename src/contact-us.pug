@@ -8,111 +8,226 @@ html(lang="en")
 
         // START
         .pc-mainWrapper
-            .pc-wrapper.pc-column.pc-col1
-                h1 #{title}
-            hr
-            
-            .pc-wrapper.pc-row.pc-storeLocator
-            
-              .pc-column.pc-col4.pc-spacer-xl.pc-storeLocator-marginFix
-              
-                h2 Get In Touch
-              
-                h3 Call Us
-                p Call our UK Customer Service Team on:
-                p.pc-contactLinks
-                    a.pc-btn-switch(href='tel:+44444237070', itemprop='telephone')
-                      span.pc-telephoneIcon
-                      | 01444 23 70 70
-                p.pc-footerNote#phone-times Available Monday to Saturday 9-5.30pm (Closed Sunday)
-                      
-                h3 Email Us
-                p Write to us for help and support at:
-                p.pc-contactLinks
-                    a.pc-btn-switch(href='mailto:sales@parkcameras.com', target='_blank') sales@parkcameras.com 
-                p.pc-footerNote#email-times Current response time: 24 hours
-              
-                h3 Tweet Us
-                p Direct Message us on Twitter at:
-                p.pc-contactLinks
-                    a.pc-btn-switch(href='https://twitter.com/messages/compose?recipient_id=35701499', target='_blank') @ParkTweets 
-                p.pc-footerNote#tweet-times Typical response time: 4 hours
-            
-                h3 Facebook Messenger
-                p Message us on Facebook at:
-                p.pc-contactLinks
-                    a.pc-btn-switch(href='https://m.me/parkcameras', target='_blank') @ParkCameras
-                p.pc-footerNote#facebook-times Typical response time: 4 hours
-              
-                h3 Live Chat
-                p Chat with our Customer Service Team now:
-                p.pc-contactLinks
-                    a.pc-btn-switch(href='') LiveChat
-                p.pc-footerNote#chat-times Current response time: 10 minutes
-              
-              .pc-column.pc-col2.pc-spacer-xl
-              
-                h2 Store Locator
-            
-                .pc-wrapper.pc-row.pc-storeLocator-lineHeightFix
-                
-                  .pc-column.pc-col3.pc-spacer-xl
-                
-                    h3
-                      a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill
-                        span(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
-
-                    iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
-
-                    h3
-                      small Address
-
-                    p
-                        span(itemprop='streetAddress') York Road
-                    p
-                        span(itemprop='addressLocality') Burgess Hill
-                    p
-                        span(itemprop='addressRegion') West Sussex
-                    p.pc-spacer-xl
-                        span(itemprop='postalCode') RH15 9TT
-
-                    h3
-                      small Opening Times
-                    p#monday-bh Monday: 9 - 5.30pm
-                    p#tuesday-bh Tuesday: 9 - 5.30pm
-                    p#wedneday-bh Wednesday: 9 - 5.30pm
-                    p#thursday-bh Thursday: 9 - 7.30pm
-                    p#friday-bh Friday: 9 - 5.30pm
-                    p#saturday-bh Saturday: 9 - 5.30pm
-                    p#sunday-bh Sunday: 10 - 4pm
-                    
-                    
-               
-                  .pc-column.pc-col3.pc-spacer-xl.pc-storeLocator-lineHeightFix
-
-                    h3 
-                        a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London') London
-                    
-                    iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4965.626397745077!2d-0.133401!3d51.516643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2cec88a6bb%3A0xefb2f3c4da6f2115!2s53-54+Rathbone+Pl%2C+Fitzrovia%2C+London+W1T+1JR%2C+UK!5e0!3m2!1sen!2suk!4v1496850265917', width='auto')
-                    
-                    h3
-                      small Address
-                        
-                    p 53-54 Rathbone Place
-                    p London
-                    p Fitzrovia
-                    p.pc-spacer-xl W1T 1JR
-
-                    h3 
-                      small Opening Times
-                    p#monday-ldn Monday: 10 - 6.30pm
-                    p#tuesday-ldn Tuesday: 10 - 6.30pm
-                    p#wednesday-ldn Wednesday: 10 - 6.30pm
-                    p#thursday-ldn Thursday: 10 - 7.30pm
-                    p#friday-ldn Friday: 10 - 7.30pm
-                    p#saturday-ldn Saturday:  10 - 6.30pm
-                    p#saturday-ldn Sunday: 10.30 - 4.30pm
-                    
+          .pc-wrapper.pc-column.pc-col1
+            h1 How to Contact Park Cameras
+          hr
+          .pc-wrapper.pc-row.pc-storeLocator
+            .pc-column.pc-col4.pc-spacer-xl.pc-storeLocator-marginFix
+              h2 Get In Touch
+              p#phone-times.pc-footerNote
+                | Available Monday to Saturday 9.00 - 5.30pm
+                br 
+                | &amp Sunday 10.00 - 4.00pm
+              h3 Call Us
+              p Call our UK Customer Service Team on:
+              p.pc-contactLinks
+                a.pc-btn-switch(href='tel:+441444237070', itemprop='telephone', onclick="ga('send','event', 'Contact Us Page', 'Telephone')")
+                  span.pc-telephoneIcon
+                  | 01444 23 70 70
+              p#phone-status.pc-footerNote
+              h3 Email Us
+              p Write to us for help and support at:
+              p.pc-contactLinks
+                a.pc-btn-switch(href='mailto:sales@parkcameras.com', target='_blank', onclick="ga('send','event', 'Contact Us Page', 'E-mail')")
+                  | sales@parkcameras.com
+              p#email-times.pc-footerNote Current response time: 24 hours
+              h3#chat-header Live Chat
+              p#chat-text Chat with our Customer Service Team now:
+              p#chat-link.pc-contactLinks
+                a.pc-btn-switch(href='javascript:$zopim(function(){$zopim.livechat.window.show();});', onclick="ga('send','event', 'Contact Us Page', 'Live Chat')") Live Chat
+              p#chat-times.pc-footerNote Current response time: 10 minutes
+              h3 Tweet Us
+              p Direct Message us on Twitter at:
+              p.pc-contactLinks
+                a.pc-btn-switch(href='https://twitter.com/messages/compose?recipient_id=35701499', target='_blank', onclick="ga('send','event', 'Contact Us Page', 'Twitter')")
+                  | @ParkTweets
+              p#tweet-times.pc-footerNote Typical response time: 15 minutes
+              h3 Facebook Messenger
+              p Message us on Facebook at:
+              p.pc-contactLinks
+                a.pc-btn-switch(href='https://m.me/parkcameras', target='_blank', onclick="ga('send','event', 'Contact Us Page', 'Facebook')") @ParkCameras
+              p#facebook-times.pc-footerNote Typical response time: 15 minutes
+            .pc-column.pc-col2.pc-spacer-xl
+              h2 Store Locator
+              .pc-wrapper.pc-row.pc-storeLocator-lineHeightFix
+                .pc-column.pc-col3.pc-spacer-xl(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+                  h3
+                    a(href='https://www.parkcameras.com/park-cameras-burgess-hill-store', title='Park Cameras Burgess Hill') Burgess Hill
+                  iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=%211m14%211m8%211m3%211d2513.344258022704%212d-0.1559005%213d50.95433905%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x48758dbeae99ba11%3A0xe18db3c1e0dfadb9%212spark+cameras+burgess+hill%215e0%213m2%211sen%212suk%214v1389700462975', width='auto')
+                  h3
+                    small Address
+                  p
+                    span(itemprop='streetAddress') York Road
+                  p
+                    span(itemprop='addressLocality') Burgess Hill
+                  p
+                    span(itemprop='addressRegion') West Sussex
+                  p.pc-spacer-xl(itemprop='postalCode') RH15 9TT
+                  h3
+                    small Opening Times
+                  p#monday-bh Monday: 9.00 - 5.30pm
+                  p#tuesday-bh Tuesday: 9.00 - 5.30pm
+                  p#wednesday-bh Wednesday: 9.00 - 5.30pm
+                  p#thursday-bh Thursday: 9.00 - 7.30pm
+                  p#friday-bh Friday: 9.00 - 5.30pm
+                  p#saturday-bh Saturday: 9.00 - 5.30pm
+                  p#sunday-bh Sunday: 10.00 - 4pm
+                .pc-column.pc-col3.pc-spacer-xl.pc-storeLocator-lineHeightFix(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+                  h3
+                    a(href='https://www.parkcameras.com/park-cameras-london-store', title='Park Cameras London') London
+                  iframe(frameborder='0', height='auto', src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4965.626397745077!2d-0.133401!3d51.516643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2cec88a6bb%3A0xefb2f3c4da6f2115!2s53-54+Rathbone+Pl%2C+Fitzrovia%2C+London+W1T+1JR%2C+UK!5e0!3m2!1sen!2suk!4v1496850265917', width='auto')
+                  h3
+                    small Address
+                  p(itemprop='streetAddress') 53-54 Rathbone Place
+                  p(itemprop='addressLocality') London
+                  p(itemprop='addressRegion') Fitzrovia
+                  p.pc-spacer-xl(itemprop='postalCode') W1T 1JR
+                  h3
+                    small Opening Times
+                  p#monday-ldn Monday: 10.00 - 6.30pm
+                  p#tuesday-ldn Tuesday: 10.00 - 6.30pm
+                  p#wednesday-ldn Wednesday: 10.00 - 6.30pm
+                  p#thursday-ldn Thursday: 10.00 - 7.30pm
+                  p#friday-ldn Friday: 10.00 - 7.30pm
+                  p#saturday-ldn Saturday: 10.00 - 6.30pm
+                  p#sunday-ldn Sunday: 10.30 - 4.30pm
+          .pc-wrapper.pc-column.pc-col1
+            h2 Our Latest Reviews on Trustpilot
+            // TrustBox widget - Carousel
+            .trustpilot-widget(data-businessunit-id='477447a300006400050209bb', data-locale='en-GB', data-schema-type='Organization', data-stars='1,2,3,4,5', data-style-height='130px', data-style-width='100%', data-template-id='53aa8912dec7e10d38f59f36', data-theme='light')
+              a(href='https://uk.trustpilot.com/review/www.parkcameras.com', target='_blank') Trustpilot
+            // End TrustBox widget
+          br
+          a.scrollToTop(href='#')
+        // FINISH
+        script(src='js/w3cAccordion.js')
+        script(type='text/javascript').
+          $(document).ready(function() {
+          $(document).swipebox({
+          selector: '.swipebox'
+          });
+          });
+        script.
+          // Get the day of the week
+          var d = new Date();
+          var n = d.getDay();
+          var time = d.getHours() + ":" + d.getMinutes()
+          //London Opening Times
+          var ldnOpening = '';
+          var ldnClosed = '';
+          var ldnClosing = '';
+          var ldnIsopen = '';
+          var ldnIsclosing = '';
+          if (n == 1 || n == 2 || n == 3 || n == 5 || n == 6) {
+          ldnOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 10, 00);
+          ldnClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 17, 30);
+          ldnClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 30);
+          } else if (n == 4) {
+          ldnOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 10, 00);
+          ldnClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 30);
+          ldnClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 19, 30);
+          } else if (n == 0) {
+          ldnOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 13, 00);
+          ldnClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 15, 30);
+          ldnClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 30);
+          }
+          ldnIsopen = (d.getTime()> ldnOpening.getTime() && d.getTime() <ldnClosing.getTime());
+          ldnIsclosing = (d.getTime()> ldnClosing.getTime() && d.getTime() <ldnClosed.getTime());
+          //Burgess Hill Opening Times
+          var bhOpening = '';
+          var bhClosed = '';
+          var bhClosing = '';
+          var bhIsopen = '';
+          var bhIsclosing = '';
+          if (n == 1 || n == 2 || n == 3 || n == 5 || n == 6) {
+          bhOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 00);
+          bhClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 30);
+          bhClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 17, 30);
+          } else if (n == 4) {
+          bhOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 00);
+          bhClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 18, 30);
+          bhClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 19, 30);
+          } else if (n == 0) {
+          bhOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 10, 00);
+          bhClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 15, 00);
+          bhClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 00);
+          }
+          bhIsopen = (d.getTime()> bhOpening.getTime() && d.getTime() <bhClosing.getTime());
+          bhIsclosing = (d.getTime()> bhClosing.getTime() && d.getTime() <bhClosed.getTime());
+          //Phone Opening Times
+          var phoneOpening = '';
+          var phoneClosed = '';
+          var phoneClosing = '';
+          var phoneIsopen = '';
+          var phoneIsclosing = '';
+          if (n != 0) {
+          phoneOpening = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 00);
+          phoneClosing = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 16, 30);
+          phoneClosed = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 17, 30);
+          }
+          phoneIsopen = (d.getTime()> phoneOpening.getTime() && d.getTime() <phoneClosing.getTime());
+          phoneIsclosing = (d.getTime()> phoneClosing.getTime() && d.getTime() <phoneClosed.getTime());
+          if (phoneIsopen) {
+          $('#phone-status').html('Open Now');
+          $('#phone-status').css('color', '#41a940');
+          } else if (phoneIsclosing) {
+          $('#phone-status').html('Closing Soon');
+          $('#phone-status').css('color', '#ff5f00');
+          } else {
+          $('#phone-status').html('Closed');
+          $('#phone-status').css('color', '#CC0000');
+          }
+          // Bold the day of the week in opening times
+          if (n == '1') {
+          $('#monday-bh').css('font-weight', 'bold');
+          $('#monday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#monday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#monday-bh').css('color', '#ff5f00'); } else { $('#monday-bh').css('color', '#00000'); }
+          if (ldnIsopen) { $('#monday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#monday-ldn').css('color', '#ff5f00'); } else { $('#monday-ldn').css('color', '#00000'); }
+          } else if (n == '2') {
+          $('#tuesday-bh').css('font-weight', 'bold');
+          $('#tuesday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#tuesday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#tuesday-bh').css('color', '#ff5f00'); } else { $('#tuesday-bh').css('color', '#00000'); }
+          if (ldnIsopen) { $('#tuesday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#tuesday-ldn').css('color', '#ff5f00'); } else { $('#tuesday-ldn').css('color', '#00000'); }
+          } else if (n == '3') {
+          $('#wednesday-bh').css('font-weight', 'bold');
+          $('#wednesday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#wednesday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#wednesday-bh').css('color', '#ff5f00'); } else { $('#wednesday-bh').css('color', '#00000'); }
+          if (ldnIsopen) { $('#wednesday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#wednesday-ldn').css('color', '#ff5f00'); } else { $('#wednesday-ldn').css('color', '#00000'); }
+          } else if (n == '4') {
+          $('#thursday-bh').css('font-weight', 'bold');
+          $('#thursday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#thursday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#thursday-bh').css('color', '#ff5f00'); } else { $('#thursday-bh').css('color', '#00000'); }
+          if (ldnIsopen) { $('#thursday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#thursday-ldn').css('color', '#ff5f00'); } else { $('#thursday-ldn').css('color', '#00000'); }
+          } else if (n == '5') {
+          $('#friday-bh').css('font-weight', 'bold');
+          $('#friday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#friday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#friday-bh').css('color', '#ff5f00'); } else { $('#friday-bh').css('color', '#00000'); }
+          if (ldnIsopen) { $('#friday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#friday-ldn').css('color', '#ff5f00'); } else { $('#friday-ldn').css('color', '#00000'); }
+          } else if (n == '6') {
+          $('#saturday-bh').css('font-weight', 'bold');
+          $('#saturday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#saturday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#saturday-bh').css('color', '#ff5f00'); } else { $('#saturday-bh').css('color', '#00000'); }
+          if (ldnIsopen) { $('#saturday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#saturday-ldn').css('color', '#ff5f00'); } else { $('#saturday-ldn').css('color', '#00000'); }
+          } else if (n == '0') {
+          $('#sunday-bh').css('font-weight', 'bold');
+          $('#sunday-ldn').css('font-weight', 'bold');
+          if (bhIsopen) { $('#sunday-bh').css('color', '#41a940'); } else if (bhIsclosing) { $('#sunday-bh').css('color', '#ff5f00'); } else { $('#sunday-bh').css('color', '#000000'); }
+          if (ldnIsopen) { $('#sunday-ldn').css('color', '#41a940'); } else if (ldnIsclosing) { $('#sunday-ldn').css('color', '#ff5f00'); } else { $('#sunday-ldn').css('color', '#000000'); }
+          }
+          //Zopim Livechat - Show live chat button if status is online...
+          $zopim(function() {
+          $zopim.livechat.setOnStatus(livechat_status);
+          });
+          function livechat_status(status) {
+          if (status == 'offline') {
+          $('#chat-header').css('display', 'none');
+          $('#chat-text').css('display', 'none');
+          $('#chat-link').css('display', 'none');
+          $('#chat-times').css('display', 'none');
+          } else {
+          console.log('Zopim Online');
+          }
+          }
 
             include includes/foot.pug
         

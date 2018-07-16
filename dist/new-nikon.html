@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Nikon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/jquery.swipebox.js"></script>
+    <script src="js/lity.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link rel="stylesheet" href="css/lity.css">
+  </head>
+  <body>
+    <div>
+      <section class="container" id="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="home" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="home" href="/" itemprop="url"><span itemprop="title">Home</span></a></li>
+          <li class="here" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">New Nikon</span></a></li>
+        </ul>
+      </section>
+    </div>
+    <!-- START-->
+    <div class="pc-mainWrapper">
+      <div class="pc-wrapper pc-column pc-col1">
+        <h1>New Nikon</h1>
+      </div>
+      <hr>
+      <div class="pc-wrapper pc-column">
+        <div class="pc-banner pc-banner-overlay pc-spacer-xl" style="background-color: rgba(0, 0, 0, 0.60); background-image: url(&quot;https://images.pexels.com/photos/1165001/pexels-photo-1165001.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;);">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed pulvinar enim, sed semper felis. Nam tincidunt interdum fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vehicula risus tellus, a rhoncus risus pretium eleifend. Sed et dui magna. Vestibulum ac tempor elit. Vestibulum venenatis elit id orci finibus, ac sollicitudin mauris tincidunt. Nullam iaculis ornare lectus nec commodo. Maecenas sed elit metus. Vivamus eget elit libero. Quisque quis felis lacus. Donec ultrices dui ut quam aliquet consectetur.</p>
+          <div class="pc-signup">
+            <div class="pc-signupHeader" style="color: #fff;">Register your interest</div>
+            <div class="pc-signupText" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed pulvinar enim, sed semper felis.</div>
+            <form class="pc-signupForm" novalidate="novalidate" onsubmit="return pc_frel_validate_signup(this)" style="display: flex; flex-flow: column wrap; align-items: center;">
+              <input name="email" placeholder="Enter your email here..." type="email" style="width: 20rem;">
+              <input type="submit" value="Register Interest" style="background: #ffe01a; color: #000;">
+            </form>
+            <div class="pc-signupError"></div>
+          </div>
+        </div>
+      </div><br><a class="scrollToTop" href="#"></a>
+    </div>
+    <!-- FINISH-->
+    <script>
+      function pc_frel_validate_signup(frm) {
+        var emailAddress = frm.email.value;
+        var errorString = "";
+        $(".pc-signupError").text("");
+        if (emailAddress.indexOf("@") == -1 || emailAddress.indexOf(".") == -1) {
+          errorString = "Please enter a valid email address.";
+        } else {
+            $.ajax({
+              type: "POST",
+              url: "https://response.pure360.com/interface/list.php",
+              dataType: "json",
+              data: {
+                accName: "ParkCameras",
+                listName: "Registered Interest: New Nikon",
+                email: frm.email.value,
+                doubleOptin: false
+              }
+            });
+          var successString = "Lorem ipsum dolor sit amet";
+          $(".pc-signupHeader").text(successString);
+          $(".pc-signupText").hide();
+          $(".pc-signupForm").hide();
+        }
+        var isError = false;
+      
+        if (errorString.length > 0) isError = true;
+      
+        if (isError) $(".pc-signupError").text(errorString);
+      
+        return !isError;
+      }
+      
+      $(".pc-signupForm").submit(function(e) {
+        e.preventDefault();
+      });
+      
+      
+      
+    </script>
+    <script src="js/swipebox.js"></script>
+  </body>
+</html>

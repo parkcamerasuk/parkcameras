@@ -1,0 +1,61 @@
+extends template.pug
+
+block vars
+  - var title = 'New Nikon';
+
+block content
+  .pc-wrapper.pc-column
+    .pc-banner.pc-banner-overlay.pc-spacer-xl(style='background-color: rgba(0, 0, 0, 0.60); background-image: url("https://images.pexels.com/photos/1165001/pexels-photo-1165001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");')
+      h2 Lorem ipsum dolor sit amet
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed pulvinar enim, sed semper felis. Nam tincidunt interdum fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vehicula risus tellus, a rhoncus risus pretium eleifend. Sed et dui magna. Vestibulum ac tempor elit. Vestibulum venenatis elit id orci finibus, ac sollicitudin mauris tincidunt. Nullam iaculis ornare lectus nec commodo. Maecenas sed elit metus. Vivamus eget elit libero. Quisque quis felis lacus. Donec ultrices dui ut quam aliquet consectetur.
+      
+      div.pc-signup
+        div.pc-signupHeader(style='color: #fff;') Register your interest
+        div.pc-signupText(style='color: #fff') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed pulvinar enim, sed semper felis.
+        form.pc-signupForm(novalidate='novalidate', onsubmit='return pc_frel_validate_signup(this)' style='display: flex; flex-flow: column wrap; align-items: center;')
+          input(name='email', placeholder='Enter your email here...', type='email' style='width: 20rem;')
+          input(type='submit', value='Register Interest' style='background: #ffe01a; color: #000;')
+        div.pc-signupError
+
+block bottomScripts
+
+  script.
+    function pc_frel_validate_signup(frm) {
+      var emailAddress = frm.email.value;
+      var errorString = "";
+      $(".pc-signupError").text("");
+      if (emailAddress.indexOf("@") == -1 || emailAddress.indexOf(".") == -1) {
+        errorString = "Please enter a valid email address.";
+      } else {
+          $.ajax({
+            type: "POST",
+            url: "https://response.pure360.com/interface/list.php",
+            dataType: "json",
+            data: {
+              accName: "ParkCameras",
+              listName: "Registered Interest: New Nikon",
+              email: frm.email.value,
+              doubleOptin: false
+            }
+          });
+        var successString = "Lorem ipsum dolor sit amet";
+        $(".pc-signupHeader").text(successString);
+        $(".pc-signupText").hide();
+        $(".pc-signupForm").hide();
+      }
+      var isError = false;
+
+      if (errorString.length > 0) isError = true;
+
+      if (isError) $(".pc-signupError").text(errorString);
+
+      return !isError;
+    }
+
+    $(".pc-signupForm").submit(function(e) {
+      e.preventDefault();
+    });
+
+
+
+  script(src='js/swipebox.js')
