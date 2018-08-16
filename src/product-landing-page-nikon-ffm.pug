@@ -1,0 +1,144 @@
+extends template.pug
+
+block vars
+
+  // Title
+  - var title = 'Nikon Full Frame Mirrorless'
+
+    // Product
+  -
+    var prod1 = [
+      {
+        SKU: 'string',
+        name: 'string',
+        mainImageURL: 'string',
+        subImageURL: [],
+        description: [],
+        features: [] 
+      }
+    ];
+
+    var prod2 = [
+      {
+        SKU: 'string',
+        name: 'string',
+        mainImageURL: 'string',
+        subImageURL: [],
+        description: [],
+        features: [] 
+      }
+    ];
+
+    // Body and Kits
+    var bodyAndKitsHeader = 'string';
+    var bodyAndKits = [
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]'
+    ];
+
+
+    // Recommended Accessories
+    var accessoriesHeader = 'string';
+    var accessoriesParagraph = 'string';
+    var accessories = [
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]'
+    ];
+
+
+    // Recommended Lenses
+    var lensesHeader = 'string';
+    var lensesParagraph = 'string';
+    var lenses = [
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]', 
+      '@@plugin[IndividualProduct{stockcode:}]'
+    ];
+
+
+    // Trade-In Items
+    var tradeInHeader = 'string';
+    var tradeInName = 'string';
+    var tradeInProds = [
+      {
+        model: 'string', 
+        value: '000', 
+        enhanced: '000',
+        final: '0,000.00'
+      }, 
+      {
+        model: 'string', 
+        value: '000', 
+        enhanced: '000',
+        final: '0,000.00'
+      }, 
+      {
+        model: 'string', 
+        value: '000', 
+        enhanced: '000',
+        final: '0,000.00'
+      }
+    ];
+
+    // Blogs
+    var contentHeader = 'string';
+    var blogs = [
+      {
+        title: 'Blog Title', 
+        img: 'https://placehold.it/600x400', 
+        url: 'https://www.parkcameras.com', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet magna vel metus consequat hendrerit.'
+      }
+    ];
+
+    // Videos
+    var videos = [
+      {
+        title: 'Video Title', 
+        img: 'https://placehold.it/600x400', 
+        url: 'https://www.parkcameras.com', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet magna vel metus consequat hendrerit.'
+      }
+    ];
+
+  // Fix
+  mixin emptyMixin()
+    if false
+      p >_<
+
+block content
+        
+  // Mixins
+  include includes/mixins.pug
+
+  // Product
+  +products(title, prod1)
+
+  // Body and Kits
+  +prodPlugin(bodyAndKitsHeader, bodyAndKits)
+
+  // Product
+  +products(title, prod2)
+
+  // Body and Kits
+  +prodPlugin(bodyAndKitsHeader, bodyAndKits)
+
+  // Accessories
+  +prodPlugin(accessoriesHeader, accessories, accessoriesParagraph)
+
+  // Recommended Lenses
+  +prodPlugin(lensesHeader, lenses, lensesParagraph)
+
+  // Trade-In Bonus
+  +tradeIn(tradeInHeader, tradeInName, tradeInProds)
+
+  // Blog and Videos
+  +content(blogs, videos)
+
+block bottomScripts
+    script(src='js/swipebox.js')
