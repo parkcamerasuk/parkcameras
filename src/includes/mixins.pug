@@ -1,5 +1,7 @@
 mixin products(title, prods)
   each prod, prodIdx in prods
+    .pc-wrapper.pc-column.pc-col1.pc-spacer-xl
+      h2=prod.name
     .pc-wrapper.pc-rowNoWrap
       .pc-column.pc-col2
         a.swipebox(rel=prodIdx, href='https://content.parkcameras.com/5/1/images/catalog/i/' + prod.mainImageURL, title=prod.name)
@@ -19,20 +21,19 @@ mixin products(title, prods)
             each feats in prod.features
               li= feats
         br
-        a.pc-btn-standard(href='https://www.parkcameras.com/p/' + prod.SKU) Learn More
+        a.pc-btn-standard.pc-spacer-xl(href='https://www.parkcameras.com/p/' + prod.SKU) Learn More
         
 mixin prodPlugin(header, prods, paragraph)
   h2=header
   if (paragraph)
     p=paragraph
-  .pc-wrapper.pc-pluginLayout
+  .pc-wrapper.pc-pluginLayout.pc-spacer-xl
     each SKU in prods
       .pc-col4
         span=SKU
 
 mixin content(blogs, videos)
-  .pc-wrapper.pc-row
-
+  .pc-wrapper.pc-row.pc-spacer-xl
     if (blogs)
       .pc-column.pc-col2
         h2 Blog Posts
@@ -72,10 +73,36 @@ mixin content(blogs, videos)
       .pc-wrapper.pc-row
         .pc-column.pc-col4
         .pc-column.pc-col4
-        
-mixin tradeIn(header, name, tradeInProds)
+
+mixin tableVertical(header, tableContent)
+  - var highlight = 'background-color: #2d4d9c; color: #ffffff;';
   .pc-wrapper.pc-column.pc-spacer-xl
     h2=header
+    table
+      tr
+        each columnHeader in tableContent
+          td(style=columnHeader.highlighted ? highlight : 'background-color: #e4e4e4;')
+            b !{columnHeader.header}
+      each row, rIdx in tableContent[0].content
+        tr
+          each column in tableContent
+            td !{column.content[rIdx]}
+            
+mixin tableHorizontal(header, tableContent)
+  - var highlight = 'background-color: #2d4d9c; color: #ffffff;';
+  .pc-wrapper.pc-column.pc-spacer-xl
+    h2=header
+    table
+      each row in tableContent
+        tr
+          td(style=columnHeader.highlighted ? highlight : 'background-color: #e4e4e4;') !{row.header}
+          each content in row.content
+            td !{content}
+
+mixin tradeIn(header, name, tradeInProds)
+  .pc-wrapper.pc-column.pc-spacer-xl
+    if (header)
+      h2=header
     table
       tr
         td(style='background-color: #e4e4e4;')
@@ -84,16 +111,18 @@ mixin tradeIn(header, name, tradeInProds)
           b Trade-In Value
         if (tradeInProds[0].enhanced)
           td(style='background-color: #e4e4e4;')
-            b Enhanced Trade-In
-        td(style='color: #FFF; background-color: #2d4d9c;')
-          b You Could Pay
+            b Trade-In Bonus
+        if (tradeInProds[0].final)
+          td(style='color: #FFF; background-color: #2d4d9c;')
+            b You Could Pay
       each prod in tradeInProds
         tr
-          td= prod.model
-          td &pound;#{prod.value}
+          td !{prod.model}
+          td !{prod.value}
           if (prod.enhanced)
-            td &pound;#{prod.enhanced}
-          td(style='color: #2d4d9c;') &pound;#{prod.final}
+            td !{prod.enhanced}
+          if (prod.final)
+            td(style='color: #2d4d9c;') !{prod.final}
 
     p.pc-footerNote
       | *Trade-in value dependent on condition of used camera, prices shown are maximum paid for each model.

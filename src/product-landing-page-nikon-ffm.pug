@@ -3,85 +3,142 @@ extends template.pug
 block vars
 
   // Title
-  - var title = 'Nikon Full Frame Mirrorless'
+  - var title = 'Nikon Launch Full-Frame Mirrorless Compact Camera System'
 
     // Product
   -
     var prod1 = [
       {
-        SKU: 'string',
-        name: 'string',
-        mainImageURL: 'string',
-        subImageURL: [],
-        description: [],
-        features: [] 
+        SKU: '3017600K',
+        name: 'Nikon Z7',
+        mainImageURL: '',
+        subImageURL: [''],
+        description: ['With a 45.7MP CMOS sensor, the Nikon Z7’s high resolution will appeal to professional portrait photographers, commercial and landscape photographers alike. And with a speed of 9fps, it is no slouch – capable of capturing sports and action.'],
+        features: ['45.7MP FX BSI CMOS Sensor', '493 Autofocus points', '9 FPS Continuous Shooting', 'eXpeed 6 Processing Engine', '5-Axis In-body Image Stabilisation', '4K UHD Video Capacity with NLog, Timecode, 10-bit HDMI Output', 'Weather & Dust-resistant Body'] 
       }
     ];
 
     var prod2 = [
       {
-        SKU: 'string',
-        name: 'string',
-        mainImageURL: 'string',
-        subImageURL: [],
-        description: [],
-        features: [] 
+        SKU: '3017500K',
+        name: 'Nikon Z6',
+        mainImageURL: '',
+        subImageURL: [''],
+        description: ["Boasting 12fps performance, you can be sure you'll never miss a moment - especially when combined the the lighteniing fast autofocus. The Z6 has features that will appeal to even the most fastidious videographer out there, including 8:2:2 colour bit depth."],
+        features: ['24.5MP FX BSI CMOS Sensor', '273 Autofocus Points', '12 FPS Continuous Shooting', 'eXpeed 6 Processing Engine', '5-axis In-body Image Stabilisation', '4K UHD Video Capacity with NLog, Timecode, 10-bit HDMI Output', 'Weather & Dust-resistant Body'] 
       }
     ];
 
     // Body and Kits
-    var bodyAndKitsHeader = 'string';
-    var bodyAndKits = [
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]'
+    var bodyAndKitsHeader1 = 'Nikon Z7 Body and Kits';
+    var bodyAndKits1 = [
+      '@@plugin[IndividualProduct{stockcode:3017600K}]', 
+      '@@plugin[IndividualProduct{stockcode:3017601K}]', 
+      '@@plugin[IndividualProduct{stockcode:3017602K}]', 
+      '@@plugin[IndividualProduct{stockcode:3017603K}]'
     ];
-
+    
+     var bodyAndKitsHeader2 = 'Nikon Z6 Body and Kits';
+    var bodyAndKits2 = [
+      '@@plugin[IndividualProduct{stockcode:3017500K}]', 
+      '@@plugin[IndividualProduct{stockcode:3017501K}]', 
+      '@@plugin[IndividualProduct{stockcode:3017502K}]', 
+      '@@plugin[IndividualProduct{stockcode:3017503K}]'
+    ];   
+    
+    // Comparison Table
+    var compTableHeader = 'Nikon Z7 and Z6 Specs Comparison Table';
+    var compTableContent = 
+      [
+        {
+          header: 'Specs',
+          content: [
+            '<span style="font-weight: 700;">spec1</span>',
+            '<span style="font-weight: 700;">spec2</span>',
+            '<span style="font-weight: 700;">spec3</span>',
+          ]
+        },
+        {
+          header: 'Nikon Z7',
+          content: [
+            'content1',
+            'content2',
+            'content3'
+          ]
+        },
+        {
+          header: 'Nikon Z6',
+          content: [
+            'content1',
+            'content2',
+            'content3'
+          ]
+        }
+      ]
 
     // Recommended Accessories
-    var accessoriesHeader = 'string';
-    var accessoriesParagraph = 'string';
+    var accessoriesHeader = 'So Fast It Blurs The Lines Between Stills And Video';
+    var accessoriesParagraph = ["The eXpeed 6 processing engine takes its heritage from the Nikon D5 – it’s inherently designed to deal with shooting at fast frame rates - absorbing the associated buffering without reducing the camera’s ability to be ready for the next shot. With a 45.7MP sensor, it needs it – which is why it requires either an XQD card or CF Express card, rather than a ‘standard’ SD card.", "With a 45.7MP CMOS sensor, the Z7’s high resolution will appeal to professional portrait photographers, commercial and landscape photographers alike. And with a speed of 9fps, it is no slouch – capable of capturing sports and action.", "The video features look to distinguish this camera – 4K UHD with NLog, Time Code, 10 BIT HDMI and a colour bit depth of 8:2:2 will get video buffs sitting on the edge of their seat. There is also Focus Peaking on 4K video, and the option of extracting stills at 8K."];
     var accessories = [
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]'
+      '@@plugin[IndividualProduct{stockcode:3150080K}]', 
+      '@@plugin[IndividualProduct{stockcode:3090242B}]', 
+      '@@plugin[IndividualProduct{stockcode:3100200K}]'
     ];
 
 
     // Recommended Lenses
-    var lensesHeader = 'string';
-    var lensesParagraph = 'string';
+    var lensesHeader = 'Nikon Announce New Z-NIKKOR Mount and Lenses';
+    var lensesParagraph = ["Nikon have looked to the future with their new Z-NIKKOR mount. Wider than the F Mount used on Nikon’s DSLR system, it has been designed to be compatible with lenses that have an aperture of f/0.95.", "This shows that Nikon intend for their mirrorless full-frame system to be a market leader when it comes to low light performance – as critical to video performance as it is for shooting stills in low-light conditions.", "The good news for Nikon DSLR users is that there is a mount adapter available for the current range of F Mount lenses. This enables a transition period of using a whole range of existing lenses that are not yet available with the new Z-NIKKOR mount.", "And of course, it ensures that the booming second-hand market is available to mirrorless users – so if you require an ultra-wide-angle, macro or telephoto lens, you have these available straight from launch."];
     var lenses = [
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]', 
-      '@@plugin[IndividualProduct{stockcode:}]'
+      '@@plugin[IndividualProduct{stockcode:3243250F}]', 
+      '@@plugin[IndividualProduct{stockcode:3242100H}]', 
+      '@@plugin[IndividualProduct{stockcode:3242171G}]', 
+      '@@plugin[IndividualProduct{stockcode:3242020K}]'
     ];
 
-
+    // Trade-In Bonus
+    var tableHeader = 'Up to 15% Bonus when you trade-in to the Nikon Z6 or Z7';
+    var tableContent = 
+      [
+        {
+          header: 'Trade-In Value',
+          content: [
+            'Cameras under £500',
+            'Cameras from £500 to £1,000',
+            'Cameras over £1,000'
+          ]
+        },
+        {
+          header: 'Trade-In Bonus',
+          highlighted: true,
+          content: [
+            '<span style="font-weight: 700; color: #2d4d9c;">15%</span>',
+            '<span style="font-weight: 700; color: #2d4d9c;">10%</span>',
+            '<span style="font-weight: 700; color: #2d4d9c;">5%</span>'
+          ]
+        }
+      ]
     // Trade-In Items
-    var tradeInHeader = 'string';
-    var tradeInName = 'string';
+    var tradeInHeader = 'Sample Trade-In';
+    var tradeInName = 'Nikon Z7 and Z6';
     var tradeInProds = [
       {
-        model: 'string', 
-        value: '000', 
-        enhanced: '000',
-        final: '0,000.00'
+        model: 'Nikon D850', 
+        value: '£1,800', 
+        enhanced: '£90',
+        final: '<span style="font-weight: 700;">from £209.00</span>'
       }, 
       {
-        model: 'string', 
-        value: '000', 
-        enhanced: '000',
-        final: '0,000.00'
+        model: 'Nikon D810', 
+        value: '£1,000', 
+        enhanced: '£100',
+        final: '<span style="font-weight: 700;">from £999.00</span>'
       }, 
       {
-        model: 'string', 
-        value: '000', 
-        enhanced: '000',
-        final: '0,000.00'
+        model: 'Nikon D750', 
+        value: '£700', 
+        enhanced: '£70',
+        final: '<span style="font-weight: 700;">from £1,329.00</span>'
       }
     ];
 
@@ -115,26 +172,42 @@ block content
         
   // Mixins
   include includes/mixins.pug
+  
+  .pc-wrapper.pc-column.pc-col1.pc-spacer-xl
+    h2 Nikon launch new mirroless Nikon Z6 & Z7 
+    p Nikon’s long-awaited launch into the full-frame mirrorless market has finally arrived with the release of the NIKON Z7 and Z6, with new 24-70mm f/4 zoom lens, 35mm f/1.8 and 50mm f/1.8 lenses available as launch. With the introduction of the new Nikon Z-NIKKOR mount, Nikon say they are putting in the groundwork for the next 100 years and launching a new era of optical perfection, with ground-breaking low-light performance.
+    p The Nikon Z7 & Z6 both feature specifications to rival professional level Digital SLRs (DSLRs), with the benefits that full-frame mirrorless have to offer – small, incredible autofocus, and the capacity to shoot & process at frame rates that a DSLR would struggle to match.
+    p The camera bodies are noticeably smaller and lighter than a DSLR with equivalent specification. Nikon have focused on making it comfortable to hold - with a deep grip and textured grip. The rear of the cameras have controls that are easily accessible (with custom functions to allow for personalisation), with the option to use either the high resolution 3.6m dot Eye View Finder or the tilt and touch 3.2” LCD screen.
+  hr
 
   // Product
   +products(title, prod1)
 
   // Body and Kits
-  +prodPlugin(bodyAndKitsHeader, bodyAndKits)
+  +prodPlugin(bodyAndKitsHeader1, bodyAndKits1)
 
   // Product
   +products(title, prod2)
 
   // Body and Kits
-  +prodPlugin(bodyAndKitsHeader, bodyAndKits)
+  +prodPlugin(bodyAndKitsHeader2, bodyAndKits2)
 
-  // Accessories
-  +prodPlugin(accessoriesHeader, accessories, accessoriesParagraph)
+  // Comparison Table
+  hr
+  +tableVertical(compTableHeader, compTableContent)
 
   // Recommended Lenses
+  hr
   +prodPlugin(lensesHeader, lenses, lensesParagraph)
 
+  // Accessories
+  hr
+  +prodPlugin(accessoriesHeader, accessories, accessoriesParagraph)
+
   // Trade-In Bonus
+  hr
+  +tableVertical(tableHeader, tableContent)
+  
   +tradeIn(tradeInHeader, tradeInName, tradeInProds)
 
   // Blog and Videos
