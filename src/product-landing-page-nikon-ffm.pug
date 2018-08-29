@@ -3,7 +3,7 @@ extends template.pug
 block vars
 
   // Title
-  - var title = 'Nikon Launch Full-Frame Mirrorless Compact Camera System'
+  - var title = 'Nikon Launch Full-Frame Mirrorless Cameras and Lenses'
 
     // Product
   -
@@ -11,8 +11,8 @@ block vars
       {
         SKU: '3017600K',
         name: 'Nikon Z7',
-        mainImageURL: '',
-        subImageURL: [''],
+        mainImageURL: '99962-Z7_front.jpg',
+        subImageURL: ['99964-Z7_Z6_back.jpg', '99965-Z7_Z6_top.jpg', '99966-Z7_Z6_bottom.jpg', '99969-Z7_Z6_24-70_4_tilt_monitor.jpg'],
         description: ['With a 45.7MP CMOS sensor, the Nikon Z7’s high resolution will appeal to professional portrait photographers, commercial and landscape photographers alike. And with a speed of 9fps, it is no slouch – capable of capturing sports and action.'],
         features: ['45.7MP FX BSI CMOS Sensor', '493 Autofocus points', '9 FPS Continuous Shooting', 'eXpeed 6 Processing Engine', '5-Axis In-body Image Stabilisation', '4K UHD Video Capacity with NLog, Timecode, 10-bit HDMI Output', 'Weather & Dust-resistant Body'] 
       }
@@ -22,8 +22,8 @@ block vars
       {
         SKU: '3017500K',
         name: 'Nikon Z6',
-        mainImageURL: '',
-        subImageURL: [''],
+        mainImageURL: '99954-Z6_front.jpg',
+        subImageURL: ['99955-Z7_Z6_back.jpg', '99956-Z7_Z6_top.jpg', '99957-Z7_Z6_bottom.jpg', '99969-Z7_Z6_24-70_4_tilt_monitor.jpg'],
         description: ["Boasting 12fps performance, you can be sure you'll never miss a moment - especially when combined the the lighteniing fast autofocus. The Z6 has features that will appeal to even the most fastidious videographer out there, including 8:2:2 colour bit depth."],
         features: ['24.5MP FX BSI CMOS Sensor', '273 Autofocus Points', '12 FPS Continuous Shooting', 'eXpeed 6 Processing Engine', '5-axis In-body Image Stabilisation', '4K UHD Video Capacity with NLog, Timecode, 10-bit HDMI Output', 'Weather & Dust-resistant Body'] 
       }
@@ -53,25 +53,67 @@ block vars
         {
           header: 'Specs',
           content: [
-            '<span style="font-weight: 700;">spec1</span>',
-            '<span style="font-weight: 700;">spec2</span>',
-            '<span style="font-weight: 700;">spec3</span>',
+            '<span style="font-weight: 700;">Effective Pixels</span>',
+            '<span style="font-weight: 700;">Image sensor</span>',
+            '<span style="font-weight: 700;">Image-processing engine</span>',
+            '<span style="font-weight: 700;">Storage media</span>',
+            '<span style="font-weight: 700;">Viewfinder</span>',
+            '<span style="font-weight: 700;">Shutter speed</span>',
+            '<span style="font-weight: 700;">Continuous shooting speed</span>',
+            '<span style="font-weight: 700;">ISO Sensitivity</span>',
+            '<span style="font-weight: 700;">Maximum AF points/area coverage</span>',
+            '<span style="font-weight: 700;">AE</span>',
+            '<span style="font-weight: 700;">Video</span>',
+            '<span style="font-weight: 700;">Time-lapse Photography</span>',
+            '<span style="font-weight: 700;">Monitor</span>',
+            '<span style="font-weight: 700;">Communication</span>',
+            '<span style="font-weight: 700;">Battery Life</span>',
+            '<span style="font-weight: 700;">Dimensions</span>',
+            '<span style="font-weight: 700;">Weight</span>'
           ]
         },
         {
           header: 'Nikon Z7',
           content: [
-            'content1',
-            'content2',
-            'content3'
+            '<span style="font-weight: 700;">45.7 Million</span>',
+            'Backside illumination FX format CMOS sensor, employing focal-plane phase-detection AF pixels',
+            'EXPEED 6',
+            'XQD',
+            'Approx. 100% frame coverage, approx. 0.8× magnification, Quad-VGA, approx. 3690k-dot EVF',
+            '1/8000 to 30 s, x200',
+            '<span style="font-weight: 700;">Up to approx. 9 fps (extended)</span>',
+            '<span style="font-weight: 700;">64 to 25600</span>',
+            '493 points (phase-detection, in FX format with single-point AF)/90%',
+            'TTL metering using camera image sensor',
+            '<span style="font-weight: 700;">4K UHD/30p Full HD/120p (DX), N-Log (HDMI 10-bit output), eVR, Attenuator</span>',
+            '4K UHD, Full-HD, exposure smoothing, Silent photography',
+            'Tilting, touch-operational 8-cm/3.2-in., 2100k-dot',
+            'Wi-Fi/BT(5 GHz・PC transfer, WT-7/A/B/C supported)',
+            '<span style="font-weight: 700;">330 Shots</span>',
+            'Approx. 134 × 100.5 × 67.5 mm/5.3 × 4 × 2.7 in.',
+            'Approx. 675g/1 lb 7.9 oz'
           ]
         },
         {
           header: 'Nikon Z6',
           content: [
-            'content1',
-            'content2',
-            'content3'
+            '<span style="font-weight: 700;">24.5 Million</span>',
+            'Backside illumination FX format CMOS sensor, employing focal-plane phase-detection AF pixels',
+            'EXPEED 6',
+            'XQD',
+            'Approx. 100% frame coverage, approx. 0.8× magnification, Quad-VGA, approx. 3690k-dot EVF',
+            '1/8000 to 30 s, x200',
+            '<span style="font-weight: 700;">Up to approx. 12 fps (extended)</span>',
+            '<span style="font-weight: 700;">100 to 51200</span>',
+            '273 points (phase-detection, in FX format with single-point AF)/90%',
+            'TTL metering using camera image sensor',
+            '<span style="font-weight: 700;">4K UHD/30p Full HD/120p (FX), N-Log (HDMI 10-bit output), eVR, Attenuator</span>',
+            '4K UHD, Full-HD, exposure smoothing, Silent photography',
+            'Tilting, touch-operational 8-cm/3.2-in., 2100k-dot',
+            'Wi-Fi/BT(5 GHz・PC transfer, WT-7/A/B/C supported)',
+            '<span style="font-weight: 700;">310 shots</span>',
+            'Approx. 134 × 100.5 × 67.5 mm/5.3 × 4 × 2.7 in.',
+            'Approx. 675g/1 lb 7.9 oz'
           ]
         }
       ]
@@ -146,20 +188,20 @@ block vars
     var contentHeader = 'string';
     var blogs = [
       {
-        title: 'Blog Title', 
-        img: 'https://placehold.it/600x400', 
-        url: 'https://www.parkcameras.com', 
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet magna vel metus consequat hendrerit.'
+        title: "First look at Nikon’s full-frame mirrorless Z6 and Z7 cameras", 
+        img: 'https://www.uploadlibrary.com/ParkCameras/2018-08-23/BLOG.jpg', 
+        url: 'https://blog.parkcameras.com/2018/08/first-look-nikon-z6-z7-full-frame-mirrorless.html', 
+        description: "We take a first look at Nikon’s Z6 & Z7 – read our impressions on how it performs and handles."
       }
     ];
 
     // Videos
     var videos = [
       {
-        title: 'Video Title', 
-        img: 'https://placehold.it/600x400', 
-        url: 'https://www.parkcameras.com', 
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet magna vel metus consequat hendrerit.'
+        title: "Nikon Z6 and Z7 Hands-on First Look", 
+        img: 'https://www.uploadlibrary.com/ParkCameras/2018-08-23/VIDEO.jpg', 
+        url: 'https://www.Youtube.com/watch?v=2sTVk_TmpQk&feature=youtu.be', 
+        description: "We spoke to Bruno, a product expert from Nikon, to see what their favourite features of the Z series are."
       }
     ];
 
@@ -174,7 +216,6 @@ block content
   include includes/mixins.pug
   
   .pc-wrapper.pc-column.pc-col1.pc-spacer-xl
-    h2 Nikon launch new mirroless Nikon Z6 & Z7 
     p Nikon’s long-awaited launch into the full-frame mirrorless market has finally arrived with the release of the NIKON Z7 and Z6, with new 24-70mm f/4 zoom lens, 35mm f/1.8 and 50mm f/1.8 lenses available as launch. With the introduction of the new Nikon Z-NIKKOR mount, Nikon say they are putting in the groundwork for the next 100 years and launching a new era of optical perfection, with ground-breaking low-light performance.
     p The Nikon Z7 & Z6 both feature specifications to rival professional level Digital SLRs (DSLRs), with the benefits that full-frame mirrorless have to offer – small, incredible autofocus, and the capacity to shoot & process at frame rates that a DSLR would struggle to match.
     p The camera bodies are noticeably smaller and lighter than a DSLR with equivalent specification. Nikon have focused on making it comfortable to hold - with a deep grip and textured grip. The rear of the cameras have controls that are easily accessible (with custom functions to allow for personalisation), with the option to use either the high resolution 3.6m dot Eye View Finder or the tilt and touch 3.2” LCD screen.
